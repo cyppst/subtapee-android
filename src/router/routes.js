@@ -1,49 +1,54 @@
-import Layout from '@layouts/Layout.vue'
+import Engineer from '@layouts/Engineer.vue'
 import Login from '@pages/Login.vue'
 import Dashboard from '@pages/Dashboard.vue'
+
+import Task from '@pages/task/index.vue'
+import TaskCreate from '@pages/task/create.vue'
 // OnHand
-import Equipment from '@pages/onHand/Equipment.vue'
-import Material from '@pages/onHand/Material.vue'
+// import Equipment from '@pages/onHand/Equipment.vue'
+// import Material from '@pages/onHand/Material.vue'
 
 const routes = [{
+    path: '/login',
+    component: Login,
+    meta: {
+      requireAuth: false
+    }
+  }, {
     path: '/',
-    component: Layout,
+    component: Engineer,
+    redirect: '/dashboard',
     children: [{
-      path: '/login',
-      name: 'Login',
-      component: Login,
+      path: '/dashboard',
+      component: Dashboard,
       meta: {
-        requireAuth: false
+        requireAuth: true
       }
     }]
   },
   {
-    path: '/dashboard',
-    name: 'Dashboard',
-    component: Dashboard,
-    meta: {
-      requireAuth: true
-    }
-  },
-  {
-    path: '/onhand',
-    name: 'Onhand',
-    meta: {
-      requireAuth: false
-    },
+    path: '/task',
+    component: Engineer,
+    redirect: '/task/index',
     children: [{
-        path: '/equipment',
-        name: 'Equipment',
-        component: Equipment,
+        path: 'index',
+        component: Task,
+        meta: {
+          requireAuth: true
+        },
       },
       {
-        path: '/material',
-        name: 'Material',
-        component: Material,
+        path: 'create',
+        component: TaskCreate,
+        meta: {
+          requireAuth: true
+        },
       }
     ]
+
   }
 ]
+
 
 // Always leave this as last one
 if (process.env.MODE !== 'ssr') {
@@ -53,5 +58,6 @@ if (process.env.MODE !== 'ssr') {
       import ('pages/Error404.vue')
   })
 }
+
 
 export default routes

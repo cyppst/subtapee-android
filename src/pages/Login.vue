@@ -1,41 +1,58 @@
 <template>
-<div class="layout-view layout-padding">
-      <q-field icon="account_circle">
-        <q-input v-model="user.email" placeholder="Engineer Username" class="full-width" />
-      </q-field>
-      <q-field icon="vpn_key">
-        <q-input v-model="user.password" type="password" placeholder="Engineer password" class="full-width" />
-      </q-field>
-      <q-btn color="primary" class="full-width" @click="login()">เข้าสู่ระบบ</q-btn>
-    </div>
+    <q-modal v-model="opened" >
+      <div style="padding: 50px">
+<q-field>
+       <q-input v-model="user.username" stack-label="ชื่อผู้ใช้" placeholder="Add some text..."  />
+       <q-input v-model="user.password" stack-label="รหัสผ่าน" placeholder="Add some text..."  />
+   </q-field>
+     <q-btn color="primary" class="full-width q-ma-lg" label="เข้าสู่ระบบ" @click="login" />
+
+      </div>
+    </q-modal>
 </template>
-
-
 <script>
+import { Notify } from "quasar";
 export default {
   data() {
     return {
+      opened: true,
       user: {
-        username: '',
-        password: ''
+        username: "",
+        password: ""
+      },
+      logo: {
+        url: "image/logo.png",
+        alt: "Bangol"
       }
     };
   },
   methods: {
     login() {
       var data = {
-        client_id: 2,
-        client_secret: "iehwzcSJCCbX3L6YJf9coKeEcpebfRZpfpMehqtl",
+        client_id: 4,
+        client_secret: "BL3Bea2H6Fws0g4ulQZ2CIQwmXEnfOceOeOjUIFO",
         grant_type: "password",
-        username: this.user.email,
+        username: this.user.username,
         password: this.user.password
       };
-      this.$axios.post("http://localhost/oauth/token", data).then(response => {
-        //console.log(response);
-        this.$auth.setToken(response.data.access_token);
-        this.$router.push("/dashboard");
-      });
+      this.$axios
+        .post("/oauth/token", data)
+        .then(response => {
+          this.$auth.setToken(
+            response.data.access_token,
+            response.data.expires_in + Date.now()
+          );
+          this.$router.push("/dashboard");
+        })
+        .catch(error => {
+          Notify.create({
+            type: "negative",
+            message: error.message
+          });
+        });
     }
   }
 };
 </script>
+<style>
+</style>

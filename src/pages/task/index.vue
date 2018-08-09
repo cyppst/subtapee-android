@@ -1,13 +1,15 @@
 <template>
   <q-page padding>
     <!-- content -->
-q
+    <p class="caption">Task</p>
+    <q-btn to="create" label="Create" />
+
   </q-page>
 </template>
 
 <script>
 export default {
-  // name: 'PageName',
+  name: "Task"
 };
 </script>
 

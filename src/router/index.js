@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
 import routes from './routes'
-import Middleware from './middleware'
 Vue.use(VueRouter)
 
 /*
@@ -21,5 +19,17 @@ export default function (/* { store, ssrContext } */) {
     base: process.env.VUE_ROUTER_BASE
   })
 
+
+  Router.beforeEach((to, from, next) => {
+    if (!Vue.auth.isLoggedin() && to.meta.requireAuth) {
+      next({
+        path: '/login'
+      })
+    } else {
+      next()
+    }
+  })
+
   return Router
 }
+

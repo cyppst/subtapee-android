@@ -38,7 +38,7 @@ module.exports = function (ctx) {
           ...cfg.resolve.alias,
           '@layouts': path.resolve(__dirname, './src/layouts'),
           '@pages': path.resolve(__dirname, './src/pages'),
-          '@compponents': path.resolve(__dirname, './src/components')
+          '@components': path.resolve(__dirname, './src/components')
         }
       }
     },

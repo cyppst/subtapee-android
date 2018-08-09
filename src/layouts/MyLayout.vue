@@ -1,5 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
+  
     <q-layout-header>
       <q-toolbar
         color="primary"
@@ -63,19 +64,19 @@
 </template>
 
 <script>
-import { openURL } from 'quasar'
+import { openURL } from "quasar";
 
 export default {
-  name: 'MyLayout',
-  data () {
+  name: "MyLayout",
+  data() {
     return {
       leftDrawerOpen: this.$q.platform.is.desktop
-    }
+    };
   },
   methods: {
     openURL
   }
-}
+};
 </script>
 
 <style>
