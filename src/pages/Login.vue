@@ -17,12 +17,8 @@ export default {
     return {
       opened: true,
       user: {
-        username: "",
-        password: ""
-      },
-      logo: {
-        url: "image/logo.png",
-        alt: "Bangol"
+        username: 'admin',
+        password: 'secret'
       }
     };
   },

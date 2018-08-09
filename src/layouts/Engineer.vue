@@ -20,7 +20,7 @@
       <q-btn
         flat round dense
         @click="showRight = !showRight"
-        icon="add_circle"
+        icon="notifications"
       />
     </q-toolbar>
 
