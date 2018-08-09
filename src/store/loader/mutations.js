@@ -4,12 +4,12 @@ export const state = {
 }
 
 export const mutations = {
-	[ 'show_loader']( state, action){
-		state.show = true
-		state.message = action.message
+	[ 'SHOW_LOADER']( state, action){
+		state.SHOW = true
+		state.MESSAGE = action.message
 	},
 	[ 'hide_loader']( state){
-		state.show = false
-		state.message = ''
+		state.SHOW = false
+		state.MESSAGE = ''
 	}
 }

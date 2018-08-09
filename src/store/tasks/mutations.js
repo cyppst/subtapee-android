@@ -1,3 +1,3 @@
-
-export const someMutation = (state) => {}
- 
+export const SET_TASKS = (state, tasks) => {
+  state.TASKS = tasks
+}

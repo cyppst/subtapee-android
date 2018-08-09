@@ -2,8 +2,6 @@
 export const someGetter = (state) => {}
  */
 
- export const ONHAND_EQUIPMENT = (state) => {
-    
+export const TASKS = (state) => {
+  state.TASKS = state;
 }
- 
-

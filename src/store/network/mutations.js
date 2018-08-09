@@ -1,19 +1,19 @@
 export const state = {
-	isfetching: false,
-	error: null
+	ISFETCHING: false,
+	ERROR: null
 }
 
 export const mutations = {
-	[ 'request_api']( state){
+	[ 'REQUEST_API']( state){
 		state.isfetching = true
-		state.error = null
+		state.ERROR = null
 	},
-	[ 'request_api_success']( state){
+	[ 'REQUEST_API_SUCCESS']( state){
 		state.isfetching = false
-		state.error = null
+		state.ERROR = null
 	},
-	[ 'request_api_error']( state, action){
+	[ 'REQUEST_API_ERROR']( state, action){
 		state.isfetching = false
-		state.error = action.error
+		state.ERROR = action.error
 	}
 }

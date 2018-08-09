@@ -53,15 +53,15 @@
 <script>
 import { Notify } from "quasar";
 
+
 export default {
   name: "Task",
+  created() {
+    this.$store.C("loadTasks");
+  },
+  computed: mapState({ TASKS: state => state.TASKS }),
   methods: {
-    toggleNoti: function() {
-      Notify.create({
-        type: "positive",
-        message: "aa"
-      });
-    },
+    ...mapAction(["loadTasks"]),
     scanBarcode: function() {
       if (window.hasOwnProperty("cordova")) {
         cordova.plugins.barcodeScanner.scan(

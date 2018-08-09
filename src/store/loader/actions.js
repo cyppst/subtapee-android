@@ -1,10 +1,10 @@
 export default{
-	show_loader( { commit}, message){
-		commit( 'show_loader', {
+	SHOW_LOADER( { commit}, message){
+		commit( 'SHOW_LOADER', {
 			message
 		})
 	},
-	hide_loader( { commit}){
-		commit( 'hide_loader')
+	HIDE_LOADER( { commit}){
+		commit( 'HIDE_LOADER')
 	}
 }
