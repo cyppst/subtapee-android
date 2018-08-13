@@ -1,63 +1,39 @@
-import Engineer from '@layouts/Engineer.vue'
-import Login from '@pages/Login.vue'
-import Dashboard from '@pages/Dashboard.vue'
-
-import Task from '@pages/task/index.vue'
-import TaskCreate from '@pages/task/create.vue'
-// OnHand
-// import Equipment from '@pages/onHand/Equipment.vue'
-// import Material from '@pages/onHand/Material.vue'
-
-const routes = [{
-    path: '/login',
-    component: Login,
-    meta: {
-      requireAuth: false
-    }
-  }, {
+import {
+  ifAuthenticated,
+  ifNotAuthenticated
+} from './access'
+export default [{
     path: '/',
-    component: Engineer,
-    redirect: '/dashboard',
+    component: () =>
+      import ('layouts/user'),
+    beforeEnter: ifAuthenticated,
     children: [{
-      path: '/dashboard',
-      component: Dashboard,
-      meta: {
-        requireAuth: true
-      }
-    }]
+      path: '',
+      component: () =>
+        import ('pages/index')
+    },]
   },
   {
     path: '/task',
-    component: Engineer,
-    redirect: '/task/index',
+    component: () =>
+      import ('layouts/user'),
+    beforeEnter: ifAuthenticated,
     children: [{
-        path: 'index',
-        component: Task,
-        meta: {
-          requireAuth: true
-        },
-      },
-      {
-        path: 'create',
-        component: TaskCreate,
-        meta: {
-          requireAuth: true
-        },
-      }
-    ]
+      path: '',
+      component: () =>
+        import ('pages/task')
+    },]
+  },
 
-  }
-]
-
-
-// Always leave this as last one
-if (process.env.MODE !== 'ssr') {
-  routes.push({
+  { // Always leave this as last one
     path: '*',
     component: () =>
-      import ('pages/Error404.vue')
-  })
-}
-
-
-export default routes
+      import ('pages/404')
+  },
+  {
+    path: '/login',
+    component: () =>
+      import ('components/auth/Login'),
+    beforeEnter: ifNotAuthenticated
+  }
+]

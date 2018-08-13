@@ -1,32 +1,26 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-  
+  <q-layout view="lHh Lpr lFf" v-if="this.$store.state.auth.loggedIn">
+
     <q-layout-header>
-      <q-toolbar
-        color="primary"
-        :glossy="$q.theme === 'mat'"
-        :inverted="$q.theme === 'ios'"
-      >
-        <q-btn
-          flat
-          dense
-          round
-          @click="leftDrawerOpen = !leftDrawerOpen"
-          aria-label="Menu"
-        >
+      <q-toolbar>
+        <q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen">
           <q-icon name="menu" />
         </q-btn>
-
         <q-toolbar-title>
-          Quasar App
-          <div slot="subtitle">Running on Quasar v{{ $q.version }}</div>
+          Quasar Framework
+          <div slot="subtitle">JWT Authentication Starter Kit</div>
         </q-toolbar-title>
+        <q-tabs>
+          <q-route-tab slot="title" to="/" icon="home"/>
+          <q-route-tab slot="title" to="account" icon="account_circle"/>
+          <q-tab slot="title" v-on:click="logout()" icon="power_settings_new"/>
+        </q-tabs>
       </q-toolbar>
     </q-layout-header>
 
     <q-layout-drawer
       v-model="leftDrawerOpen"
-      :content-class="$q.theme === 'mat' ? 'bg-grey-2' : null"
+      content-class="bg-grey-2"
     >
       <q-list
         no-border
@@ -57,26 +51,51 @@
       </q-list>
     </q-layout-drawer>
 
-    <q-page-container>
-      <router-view />
+    <q-page-container style="padding-top:54px">
+      <router-view/>
     </q-page-container>
+
   </q-layout>
 </template>
 
 <script>
-import { openURL } from "quasar";
+import { openURL } from 'quasar'
+import { mapMutations } from 'vuex'
 
 export default {
-  name: "MyLayout",
-  data() {
+  name: 'LayoutDefault',
+  data () {
     return {
-      leftDrawerOpen: this.$q.platform.is.desktop
-    };
+      leftDrawerOpen: false,
+      leftOverlay: false,
+      leftBreakpoint: 992
+    }
   },
   methods: {
-    openURL
+    ...mapMutations('auth', [
+      'LOGIN_OK'
+    ]),
+    openURL,
+    logout () {
+      this.$auth.logout({
+        makeRequest: true,
+        redirect: '/login',
+        success () {
+          console.log('success ')
+        },
+        error () {
+          console.log('error ')
+        }
+      })
+    }
+  },
+  mounted: function () {
+    this.$auth.fetch({})
+      .then(response => {
+        this.LOGIN_OK(response)
+      })
   }
-};
+}
 </script>
 
 <style>

@@ -1,35 +1,24 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import routes from './routes'
+
 Vue.use(VueRouter)
 
-/*
- * If not building with SSR mode, you can
- * directly export the Router instantiation
- */
+const Router = new VueRouter({
+  /*
+   * NOTE! Change Vue Router mode from quasar.conf.js -> build -> vueRouterMode
+   *
+   * When going with "history" mode, please also make sure "build.publicPath"
+   * is set to something other than an empty string.
+   * Example: '/' instead of ''
+   */
 
-export default function (/* { store, ssrContext } */) {
-  const Router = new VueRouter({
-    scrollBehavior: () => ({ y: 0 }),
-    routes,
+  // Leave as is and change from quasar.conf.js instead!
+  mode: 'history',
+  base: process.env.VUE_ROUTER_BASE,
+  scrollBehavior: () => ({ y: 0 }),
+  routes
+})
 
-    // Leave these as is and change from quasar.conf.js instead!
-    // quasar.conf.js -> build -> vueRouterMode
-    mode: process.env.VUE_ROUTER_MODE,
-    base: process.env.VUE_ROUTER_BASE
-  })
-
-
-  Router.beforeEach((to, from, next) => {
-    if (!Vue.auth.isLoggedin() && to.meta.requireAuth) {
-      next({
-        path: '/login'
-      })
-    } else {
-      next()
-    }
-  })
-
-  return Router
-}
-
+export default Router

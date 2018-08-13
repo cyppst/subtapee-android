@@ -1,14 +1,21 @@
 <template>
   <div id="q-app">
-    <router-view></router-view>
-    </div>
+          <q-ajax-bar/>
+    <router-view />
+  </div>
 </template>
 
 <script>
 
 export default {
-  name: "App",
-};
+  name: 'App',
+  created(){
+    const token = window.localStorage['user-token'] || ''
+    if (token) {
+      this.$setAxiosHeader(token)
+    }
+  }
+}
 </script>
 
 <style>
