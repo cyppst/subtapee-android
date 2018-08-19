@@ -58,7 +58,6 @@
   </q-layout>
 </template>
 
-
 <script>
 import { openURL } from 'quasar'
 import Me from '../components/auth/Me'
@@ -77,11 +76,10 @@ export default {
   },
   methods: {
     openURL,
-    logout() {
-      this.$store.dispatch('auth/logout')
-        .then(response => {
-          this.$router.push('/login')
-        })
+    logout () {
+      this.$store.dispatch('auth/logout').then(response => {
+        this.$router.push('/login')
+      })
     }
   }
 }

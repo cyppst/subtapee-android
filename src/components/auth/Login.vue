@@ -21,20 +21,21 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       form: {
-        username: "admin",
-        password: "secret"
+        username: 'admin',
+        password: 'secret'
       }
-    };
+    }
   },
   methods: {
-    submit() {
-      this.$store.dispatch("auth/login", this.form).then(response => {
-        this.$router.push("/");
-      });
+    submit () {
+      this.$store.dispatch('auth/login', this.form).then(response => {
+        this.$router.push({name: 'index'})
+
+      })
     }
   }
-};
+}
 </script>

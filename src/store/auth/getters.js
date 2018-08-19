@@ -1,4 +1,3 @@
-
-export const getAuthUserStatus = (state) => {
+export const getAuthUserStatus = state => {
   return state.userId !== ''
 }

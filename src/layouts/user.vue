@@ -7,7 +7,6 @@
       <!-- showLeft is a model attached to left side drawer below -->
       <q-btn
         flat round dense
-        @click="showLeft = !showLeft"
         icon="menu"
       />
 
@@ -23,7 +22,6 @@
         icon="notifications"
       />
     </q-toolbar>
-
 
   </q-layout-header>
 
@@ -65,16 +63,14 @@
       <q-tabs>
       <q-route-tab slot="title" icon="home" to="/" replace label="หน้าหลัก" />
       <q-route-tab slot="title" icon="done_all" to="/task" replace label="ประวัติ" />
-      <q-route-tab slot="title" icon="input" to="/" replace label="อุปกรณ์" />
+      <q-route-tab slot="title" icon="input" to="/equipment" replace label="อุปกรณ์" />
     </q-tabs>
   </q-layout-footer>
 </q-layout>
 </template>
 
-
 <script>
 import {
-  GoBack,
   QLayout,
   QToolbar,
   QBtn,
@@ -86,15 +82,15 @@ import {
   QItem,
   QItemTile,
   QListHeader
-} from "quasar";
+} from 'quasar'
 
 export default {
-  name: "Layout",
-  data() {
+  name: 'Layout',
+  data () {
     return {
       title: 'aa',
       leftDrawer: true
-    };
+    }
   },
   components: {
     QLayout,
@@ -110,9 +106,9 @@ export default {
     QListHeader
   },
   computed: {
-    currentPath() {
-      return this.$route.path;
-    },
+    currentPath () {
+      return this.$route.path
+    }
     //   swiped(obj) {
     //     let path = this.currentPath;
     //     let goto = function() {
@@ -151,7 +147,7 @@ export default {
     // routeList () {
     //   return this.$router.options.routes.map((route) => route.path )}
   }
-};
+}
 </script>
 
 <style>

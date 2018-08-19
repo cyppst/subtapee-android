@@ -16,28 +16,28 @@
 </template>
 
 <style scoped>
-  .loader{
-    height: 100px;
-    width: 100%;
-    text-align: center;
-    padding: 1em;
-    margin: 0 auto 1em;
-    display: inline-block;
-    vertical-align: top;
-  }
+.loader {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
 
-  svg path {
-    fill: #ffa035;
-  }
+svg path {
+  fill: #ffa035;
+}
 </style>
 
 <script>
-  export default {
-    name: 'loader',
-    props: {},
-    components: {},
-    data () {
-      return {}
-    },
+export default {
+  name: 'loader',
+  props: {},
+  components: {},
+  data () {
+    return {}
   }
+}
 </script>
