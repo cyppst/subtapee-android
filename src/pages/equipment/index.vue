@@ -47,7 +47,19 @@
       }
     },
     methods: {
-      ...mapActions('equipment', ['refresh']),
+      ...mapActions('equipment', ['refresh','transfer','response']),
+      transferEquipmentTo: function () {
+        this.$axiosInstance
+          .post('/equipment/verify', {body: serial})
+          .then(response => {
+            console.log(response.data)
+            this.Equipment = response.data
+
+          })
+          .catch(err => {
+            console.log(err)
+          })
+      }
     }
   }
 </script>

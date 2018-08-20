@@ -1,22 +1,16 @@
 <template>
   <q-page padding>
-    <q-page-sticky expand position="top-right" :offset="[18, 18]">
-      <q-btn to="/task/create" round color="primary" icon="add"/>
-    </q-page-sticky>
     <!-- content -->
-
-    <q-timeline responsive color="secondary">
-      <q-timeline-entry heading>
-        Recent Tasks
-      </q-timeline-entry>
-
-      <q-timeline-entry v-for="task in tasks" v-bind:title="task.customer_name" v-bind:subtitle="task.created_at" side="left" :key="task.id">
-        <div>
-          {{task.Equipment.brand}} {{task.Equipment.model}} {{task.Equipment.type}}
-        </div>
-      </q-timeline-entry>
-    </q-timeline>
-
+    <q-list highlight>
+      <q-item>
+        <q-item-side avatar="assets/linux-avatar.png"/>
+        <q-item-main label="Jack Doe"/>
+      </q-item>
+      <q-item>
+        <q-item-side avatar="assets/linux-avatar.png"/>
+        <q-item-main label="Jack Doe"/>
+      </q-item>
+    </q-list>
   </q-page>
 </template>
 
