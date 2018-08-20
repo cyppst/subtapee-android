@@ -46,3 +46,18 @@ export const acceptance = ({commit}, payload) => {
     })
 }
 
+export const fetchTarget= ({commit}) => {
+  this.$store.commit('setLoading', false, {root: true})
+  this.$axiosInstance
+    .get('/equipment/target')
+    .then(response => {
+      commit('setLoading', false, {root: true})
+      commit('SET_TARGET', response)
+
+    })
+    .catch(err => {
+      commit('setLoading', false, {root: true})
+      console.log(err)
+    })
+}
+

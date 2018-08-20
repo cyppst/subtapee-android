@@ -11,6 +11,8 @@
         </q-item-side>
         <q-item-main label="John Doe"/>
         <q-item-side right>
+          <router-link :to="{ name: 'transfer', params: { id: 1 } }">go</router-link>
+
           <q-item-tile icon="chat_bubble" color="green"/>
         </q-item-side>
       </q-item>

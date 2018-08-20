@@ -24,6 +24,7 @@ export default [
       },
       {
         path: '/task/create',
+        name: 'transfer',
         component: () => import('pages/task/create'),
       }
     ]
@@ -38,8 +39,8 @@ export default [
         component: () => import('pages/equipment/index')
       },
       {
-        path: '/task/pending',
-        component: () => import('pages/equipment/pending'),
+        path: ':id/transfer',
+        component: () => import('pages/equipment/transfer'),
       }
     ]
   },

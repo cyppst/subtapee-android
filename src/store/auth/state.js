@@ -2,5 +2,6 @@ export default {
   token: window.localStorage['TOKEN'] || '',
   status: '',
   userId: window.localStorage['USER_ID'] || '',
-  userName: window.localStorage['USER_NAME'] || ''
+  userName: window.localStorage['USER_NAME'] || '',
+  fullName: window.localStorage['FULL_NAME'] || ''
 }

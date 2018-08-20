@@ -1,8 +1,10 @@
 <template>
   <q-page class="flex flex-center">
-<p>ddddddddd</p>
-
-  </q-page>
+    <q-list-header>Essential Links</q-list-header>
+    <q-item to="/equipment/transfer">
+      <q-item-side icon="school"/>
+      <q-item-main label="Docs" sublabel="quasar-framework.org"/>
+    </q-item>  </q-page>
 </template>
 
 <style>
