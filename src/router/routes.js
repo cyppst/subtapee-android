@@ -1,4 +1,4 @@
-import { ifAuthenticated, ifNotAuthenticated } from './access'
+import {ifAuthenticated, ifNotAuthenticated} from './access'
 
 export default [
   {
@@ -37,10 +37,6 @@ export default [
       {
         path: '',
         component: () => import('pages/equipment/index')
-      },
-      {
-        path: ':id/transfer',
-        component: () => import('pages/equipment/transfer'),
       }
     ]
   },
