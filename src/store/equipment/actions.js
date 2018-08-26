@@ -6,7 +6,9 @@ export const refresh = ({commit}) => {
         .get('/equipment')
         .then(response => {
             commit('setLoading', false, {root: true});
-            commit('SET_EQUIPMENT', response.data)
+            commit('SET_EQUIPMENT', response.data);
+            console.log('pending : ');
+            console.log(response.data.pending)
         })
         .catch(err => {
             commit('authError', err);
@@ -27,11 +29,12 @@ export const transfer = ({commit}, payload) => {
             throw err
         })
 };
-export const acceptance = ({commit}, response) => {
+export const acceptance = ({commit}, payload) => {
+    console.log('pl' + payload);
     commit('setLoading', true, {root: true});
     return axiosInstance
         .post('/equipment/pending/' + payload.id, {
-            is_accepted: payload.is_accepted,
+            isAccepted: payload.isAccepted,
         })
         .then(response => {
             commit('setLoading', false, {root: true});
@@ -46,7 +49,7 @@ export const acceptance = ({commit}, response) => {
 export const fetchTarget = ({commit}) => {
     commit('setLoading', false, {root: true});
     return axiosInstance
-        .get('/equipment/target')
+        .get('/transfer/target')
         .then(response => {
             commit('setLoading', false, {root: true});
             console.log('arr: ');

@@ -1,5 +1,5 @@
 export default {
-  onHand: [],
+    onhand: [],
   pending: [],
   target: []
 }

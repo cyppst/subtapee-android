@@ -1,39 +1,44 @@
 <template>
     <q-page padding>
-        <!-- content -->
-        <q-list highlight>
-            <q-list-header>รอการตรวจสอบ</q-list-header>
-            <q-item>
-                <q-item-side>
-                    <q-item-tile avatar>
-                        <img src="assets/linux-avatar.png">
-                    </q-item-tile>
-                </q-item-side>
-                <q-item-main label="John Doe"/>
-                <q-item-side right>
-                    <router-link :to="{ name: 'transfer', params: { id: 1 } }">go</router-link>
+        <q-list highlight v-if="this.pending.length>0">
+            <q-list-header>รอการตรวจสอบ {{pending.length}} รายการ</q-list-header>
+            <q-item v-for="(row, index) in pending" :key="row.id" @native.click="equipmentPending(row.id)">
+                <q-item-side :id="row.id" avatar="assets/linux-avatar.png"/>
+                <q-item-main :id="row.id" :label="row.brand+' รุ่น : '+row.model"/>
 
-                    <q-item-tile icon="chat_bubble" color="green"/>
+                <q-item-side right>
+                    <q-btn :id="row.id" flat round dense icon="search" @click="equipmentPending(row.id)"/>
                 </q-item-side>
-            </q-item id="1" v-touch-home="transferDialog">
-            <q-item>
-                <q-item-side avatar="assets/linux-avatar.png"/>
-                <q-item-main label="Jim Doe"/>
-                <q-item-side right icon="chat_bubble"/>
+
+
             </q-item>
             <q-item-separator/>
+        </q-list>
+        <q-list>
+
             <q-list-header>ที่ท่านทำลังถือ</q-list-header>
-            <q-item :id="111" v-touch-hold="EquipmentAction">
-                <q-item-side avatar="assets/linux-avatar.png"/>
-                <q-item-main label="Jack Doe"/>
+            <q-item v-for="(row, index) in onhand" :key="row.id" @native.click="equipmentTransfer(row.id)">
+                <q-item-side :id="row.id" avatar="assets/linux-avatar.png"/>
+                <q-item-main :id="row.id" :label="row.brand+' รุ่น : '+row.model"/>
+
+                <q-item-side right>
+                    <q-btn :id="row.id" flat round dense icon="send" @click="equipmentTransfer(row.id)"/>
+                </q-item-side>
+
+
             </q-item>
         </q-list>
-        <EquipTransfer :transferDialog="transferDialog"></EquipTransfer>
+        <transfer-dialog :transferDialog="transferDialog"></transfer-dialog>
+        <pending-dialog :pendingDialog="pendingDialog"></pending-dialog>
+        <inner-loading :loading="isLoading"/>
     </q-page>
 </template>
 <script>
-    import {mapState, mapActions} from 'vuex'
-    import EquipTransfer from './EquipTransfer'
+    import {mapGetters, mapState, mapActions} from 'vuex'
+    import transferDialog from 'components/transferDialog'
+    import pendingDialog from 'components/pendingDialog'
+    import InnerLoading from 'components/InnerLoading'
+
 
     export default {
         name: 'Equipment',
@@ -41,24 +46,36 @@
             return {
                 transferDialog: {
                     show: false,
-                    targetId: ''
+                    id: null
+                },
+                pendingDialog: {
+                    show: false,
+                    id: null
                 }
             }
         },
-        components: {EquipTransfer},
+        components: {InnerLoading, transferDialog, pendingDialog},
         mounted() {
             this.refresh()
         },
-        computed: mapState(['onHand', 'pending', 'target'
-        ]),
+        computed: {
+            ...mapGetters(['isLoading']),
+            ...mapState('equipment', ['onhand', 'pending']),  // assuming you are using namespaced modules
+            hasPending: function () {
+                return this.pending.length
+            }
+        },
         methods: {
             ...mapActions('equipment', ['refresh', 'transfer', 'response']),
-            EquipmentAction:
-                function (obj) {
-                    console.log('long touch');
-                    this.transferDialog.show = true;
-                    this.transferDialog.id = obj.evt.target.id;
-                }
+            equipmentTransfer: function (id) {
+                this.transferDialog.show = true;
+                this.transferDialog.id = id
+            },
+            equipmentPending: function (id) {
+                console.log(id);
+                this.pendingDialog.show = true;
+                this.pendingDialog.id = id
+            }
         }
     }
 </script>
