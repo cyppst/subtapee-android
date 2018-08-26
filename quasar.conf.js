@@ -6,7 +6,9 @@ module.exports = function (ctx) {
     plugins: [
       'cordova',
       'axios',
-      'import'
+      'import',
+      'vuelidate',
+      'vue-timeago'
     ],
     css: [
       'app.styl'

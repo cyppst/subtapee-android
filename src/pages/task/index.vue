@@ -1,19 +1,27 @@
 <template>
     <q-page padding>
         <q-timeline responsive color="secondary">
-            <q-timeline-entry heading>
-                ประวัติการทำงาน
-            </q-timeline-entry>
+
 
             <q-timeline-entry v-for="(task, index) in tasks"
                               :key="task.id"
-                              :title="task.Equipment.model"
                               :subtitle="task.created_at"
+                              :title="task.customer_name+' #'+task.circuit_id"
                               side="left">
-                <div :id="task.id" @click="taskDetail">
-                    Lorem ipsum dolor sit amet.
-                </div>
+                <q-chip small class="q-mr-xs" color="primary">
+                    {{getEquip(task.Equipment.brand,task.Equipment.model)}}
+                </q-chip>
+                <q-chip small class="q-mr-xs" color="secondary">
+                    S/N : {{task.serial.toUpperCase()}}
+                </q-chip>
+                <q-chip v-if="task.service_charge>0" small icon="attach_money" class="q-mr-xs" color="orange-8">
+                    {{task.service_charge}}
+                </q-chip>
             </q-timeline-entry>
+
+
+
+
         </q-timeline>
 
         <!-- content -->
@@ -31,6 +39,15 @@
         <!--<q-item-main label="Jack Doe"/>-->
         <!--</q-item>-->
         <!--</q-list>-->
+        <q-page-sticky position="bottom-right" :offset="[18, 18]">
+            <q-btn
+                    round
+                    size="lg"
+                    color="primary"
+                    to="/task/create"
+                    icon="add"
+            />
+        </q-page-sticky>
         <inner-loading :loading="isLoading"/>
     </q-page>
 </template>
@@ -94,6 +111,9 @@
                         message: 'Run again using Android.'
                     })
                 }
+            },
+            getEquip: function (brand, model, serial) {
+                return brand + ' ' + model;
             }
         }
     }

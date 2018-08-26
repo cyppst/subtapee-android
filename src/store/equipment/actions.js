@@ -1,14 +1,12 @@
-import {axiosInstance} from 'plugins/axios.js'
+import {axiosInstance} from 'src/plugins/axios.js'
 
-export const refresh = ({commit}) => {
+export const refresh = async function ({commit}) {
     commit('setLoading', true, {root: true});
-    return axiosInstance
+    return await axiosInstance
         .get('/equipment')
         .then(response => {
             commit('setLoading', false, {root: true});
             commit('SET_EQUIPMENT', response.data);
-            console.log('pending : ');
-            console.log(response.data.pending)
         })
         .catch(err => {
             commit('authError', err);
@@ -21,28 +19,24 @@ export const transfer = ({commit}, payload) => {
     return axiosInstance
         .post('/equipment/transfer', payload)
         .then((response) => {
-            this.store.equipment.$dispatch('refresh');
             commit('setLoading', false, {root: true})
+            resolve()
         })
         .catch(err => {
             commit('setLoading', false, {root: true});
             throw err
         })
 };
-export const acceptance = ({commit}, payload) => {
-    console.log('pl' + payload);
+export const acceptance = async function ({commit}, payload) {
     commit('setLoading', true, {root: true});
-    return axiosInstance
+    return await axiosInstance
         .post('/equipment/pending/' + payload.id, {
-            isAccepted: payload.isAccepted,
-        })
-        .then(response => {
+            is_accept: payload.is_accept,
+        }).then(response => {
             commit('setLoading', false, {root: true});
-            this.store.equipment.$dispatch('refresh')
-        })
-        .catch(err => {
+        }).catch(err => {
             commit('setLoading', false, {root: true});
-            console.log(err)
+            throw err
         })
 };
 
@@ -52,11 +46,7 @@ export const fetchTarget = ({commit}) => {
         .get('/transfer/target')
         .then(response => {
             commit('setLoading', false, {root: true});
-            console.log('arr: ');
-            commit('SET_TARGET', response.data)
-
-        })
-        .catch(err => {
+        }).catch(err => {
             commit('setLoading', false, {root: true});
             throw err
         })

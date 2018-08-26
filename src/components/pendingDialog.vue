@@ -1,47 +1,31 @@
 <template>
-    <q-dialog
-            v-if="this.item"
+    <q-action-sheet
             v-model="pendingDialog.show"
-            prevent-close
+            title="Action Sheet"
             @ok="onOk"
             @cancel="onCancel"
             @show="onShow"
             @hide="onHide"
-    >
-        <!-- This or use "title" prop on <q-dialog> -->
-        <span slot="title">Pending Equipment</span>
-
-        <!-- This or use "message" prop on <q-dialog> -->
-        <span slot="message">
-            <p class="text-white-thin">กรุณาตรวจสอบความถูกต้องของอุปกรณ์ที่ท่านได้รับ</p>
-        </span>
-        <div slot="body">
-            <dl class="horizontal">
-                <dt>Date/Time :</dt>
-                <dd>@{{this.item.pivot.created_at}}</dd>
-                <dt>Equipment :</dt>
-                <dd>{{this.item.brand}} / {{this.item.model}}</dd>
-                <dt>S/N :</dt>
-                <dd>{{this.item.pivot.serial}}</dd>
-            </dl>
-        </div>
-
-
-        <template slot="buttons" slot-scope="props">
-            <q-btn color="primary" label="ถูกต้อง" @click="choose(props.ok, 'Superman')"/>
-            <q-btn label="ไม่ถูกต้อง" @click="props.cancel"/>
-        </template>
-    </q-dialog>
+            :actions="
+            [
+            {label: 'ข้อมูลถูกต้อง', icon: 'delete',color: 'red',is_accept: true},
+            {label: 'ปฏิเสธการรับ', icon: 'delete',color: 'red', is_accept: false}
+            ]"
+    />
+    <!--
+      there's an optional "title" slot if you have
+      something very specific for the ActionSheet title
+      (it replaces "title" prop)
+    -->
 </template>
 <script>
-    import {mapState, mapActions} from 'vuex'
+    import {mapMutations, mapActions} from 'vuex'
 
     export default {
         // name: 'PendingEquipment',
         data() {
             return {
                 name: 'aaa',
-                customDialogModel: true,
             }
         },
         computed: {
@@ -58,42 +42,43 @@
         mounted() {
         },
         methods: {
-            ...mapActions('equipment', ['acceptance']),
+            ...mapActions('equipment', ['refresh', 'acceptance']),
+            ...mapMutations('isLoading', {root: true}),
             // when props.ok() gets called
-            onOk() {
-                this.acceptance({'id': this.pendingDialog.id, 'isAccepted': 1});
-
-                console.log('ok' + this.pendingDialog.id)
+            async onOk(item) {
+                this.isLoading = true;
+                await this.$axiosInstance
+                    .post('/equipment/pending/' + this.pendingDialog.id, {
+                        is_accept: item.is_accept
+                    }).then(response => {
+                        this.isLoading = false
+                        this.$q.notify({
+                            type: 'positive',
+                            message: response.message
+                        })
+                    })
+                    .catch(err => {
+                        this.isLoading = false
+                        this.$q.notify(err)
+                    })
+                this.refresh();
             },
-
             // when props.cancel() gets called
             onCancel() {
-                this.acceptance({'id': this.pendingDialog.id, 'isAccepted': 0})
+                console.log('aa')
 
             },
 
             // when we show it to the user
             onShow() {
-                console.log('show')
+                console.log('aa')
+
             },
 
             // when it gets hidden
             onHide() {
-            },
-
-            // custom handler
-            // async choose(okFn, hero) {
-            //     if (this.name.length === 0) {
-            //         this.$q.dialog({
-            //             title: 'Please specify your name!',
-            //             message: `Can't buy tickets without knowing your name.`
-            //         })
-            //     }
-            //     else {
-            //         await okFn()
-            //         this.$q.notify(`Ok ${this.name}, going with ${hero}`)
-            //     }
-            // }
+                console.log('aa')
+            }
         }
     }
 </script>

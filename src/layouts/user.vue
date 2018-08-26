@@ -5,10 +5,7 @@
             <!-- First row of header is a QToolbar -->
             <q-toolbar>
                 <!-- showLeft is a model attached to left side drawer below -->
-                <q-btn
-                        flat round dense
-                        icon="menu"
-                />
+                <q-icon size="2rem" name="fas fa-broadcast-tower"/>
 
                 <q-toolbar-title>
                     {{$route.meta.title}}

@@ -58,7 +58,7 @@
             }
         },
         computed: {
-            ...mapState('equipment', ['target']),
+            // ...mapState('equipment', ['target']),
 
         },
         props: {
@@ -67,7 +67,7 @@
                 id: null
             }
         }, mounted() {
-            this.fetchTarget()
+            // this.fetchTarget()
         },
         methods: {
             selected: function (item) {
@@ -90,22 +90,8 @@
             onCancel() {
                 transferDialog.show = false
             },
-            verifySerial: function () {
-                let serial = this.form.serial;
-                if (!this.isVerified) {
-                    this.$axiosInstance
-                        .post('/equipment/fetchuser', {body: serial})
-                        .then(response => {
-                            console.log(response.data);
-                            done(parseTargets(response.data))
-                        })
-                        .catch(err => {
-                            console.log(err)
-                        })
-                }
-            },
             search: function (term, done) {
-                this.$axiosInstance.get('/equipment/target', {query: term})
+                this.$axiosInstance.post('/transfer', {q: term})
                     .then(response => {
                         done(parseTargets(response.data))
                     })

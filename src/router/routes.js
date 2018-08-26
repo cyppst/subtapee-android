@@ -9,7 +9,10 @@ export default [
             {
                 path: '',
                 name: 'index',
-                component: () => import('pages/index')
+                component: () => import('pages/index'),
+                meta: {
+                    title: 'Feed'
+                }
             }
         ]
     },
@@ -22,11 +25,11 @@ export default [
                 path: '',
                 component: () => import('pages/task'),
                 meta: {
-                    title: 'Task'
+                    title: 'ประวัติการทำงาน'
                 }
             },
             {
-                path: '/task/create',
+                path: 'create',
                 name: 'transfer',
                 component: () => import('pages/task/create'),
                 meta: {
@@ -44,7 +47,7 @@ export default [
                 path: '',
                 component: () => import('pages/equipment/index'),
                 meta: {
-                    title: 'Equipment'
+                    title: 'อุปกรณ์'
                 }
             }
         ]
