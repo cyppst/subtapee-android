@@ -1,13 +1,10 @@
 <template>
     <q-page padding class="docs-input row justify-center">
         <div style="width: 500px; max-width: 90vw;">
-            <p class="caption">บันทึกข้อมูลงาน</p>
             <q-btn icon="camera_alt" v-if="this.$isCordova" @click="scanBarcode()"/>
             <q-field>
                 <q-input ref="serial" stack-label="Serial"
                          v-model="form.serial"
-                         @blur="this.verifySerial"
-                         :disabled="isVerified"
                          :error="$v.form.serial.$error"/>
 
             </q-field>
@@ -55,7 +52,13 @@
     export default {
         data() {
             return {
-                form: [],
+                form: {
+                    serial: '',
+                    circuit_id: '',
+                    customer_name: '',
+                    service_charge: '',
+                    remarks: ''
+                },
                 Equipment: []
             }
         },
@@ -67,6 +70,9 @@
                 service_charge: {required},
                 remarks: {required},
             }
+        },
+        mounted: function() {
+            this.scanBarcode();
         },
         created: function () {
             this.$nextTick(function () {
@@ -88,7 +94,7 @@
                     cordova.plugins.barcodeScanner.scan(
                         function (result) {
                             if (!result.cancelled) {
-                                this.submitSerial(result)
+                                this.form.serial = result
                             }
                         },
                         function (error) {

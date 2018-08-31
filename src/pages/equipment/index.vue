@@ -29,7 +29,7 @@
         </q-list>
         <q-list highlight v-if="this.onhand.length>0">
 
-            <q-list-header>ที่ท่านทำลังถือ</q-list-header>
+            <q-list-header>ที่ท่านกำลังถือ {{onhand.length}} รายการ</q-list-header>
             <q-item v-for="(row, index) in onhand" :key="row.id">
                 <q-item-side :id="row.id" avatar="assets/linux-avatar.png"/>
                 <q-item-main :id="row.id" :label="row.brand+' '+row.model">
@@ -76,7 +76,7 @@
     import transferDialog from 'components/transferDialog'
     import pendingDialog from 'components/pendingDialog'
     import InnerLoading from 'components/InnerLoading'
-
+    import EquipDialog from 'components/EquipDialog'
 
     export default {
         name: 'Equipment',
@@ -120,7 +120,7 @@
 
                 this.$q.dialog({
                     title: 'Alert',
-                    message: data.brand
+                    message: 'S/N: ' + data.pivot.serial + '<br/>  Date: ' + data.pivot.created_at
                 })
             }
         }

@@ -30,4 +30,5 @@
     <engine name="android" spec="^7.0.0" />
     <plugin name="onesignal-cordova-plugin" spec="^2.4.2" />
     <allow-navigation href="http://192.168.0.100:8081/" />
+    <plugin name="cordova-plugin-barcodescanner" spec="^0.7.4" />
 </widget>

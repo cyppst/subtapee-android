@@ -33,7 +33,7 @@ export default [
                 name: 'transfer',
                 component: () => import('pages/task/create'),
                 meta: {
-                    title: 'Create Task'
+                    title: 'บันทึกข้อมูลงาน'
                 },
             }
         ]
