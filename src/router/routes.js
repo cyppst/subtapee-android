@@ -30,8 +30,28 @@ export default [
             },
             {
                 path: 'create',
-                name: 'transfer',
                 component: () => import('pages/task/create'),
+                meta: {
+                    title: 'บันทึกข้อมูลงาน'
+                },
+            }
+        ]
+    },
+    {
+        path: '/revoke',
+        component: () => import('layouts/user'),
+        beforeEnter: ifAuthenticated,
+        children: [
+            {
+                path: '',
+                component: () => import('pages/revoke'),
+                meta: {
+                    title: 'ประวัติการทำงาน'
+                }
+            },
+            {
+                path: 'create',
+                component: () => import('pages/revoke/create'),
                 meta: {
                     title: 'บันทึกข้อมูลงาน'
                 },

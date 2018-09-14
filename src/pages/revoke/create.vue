@@ -88,7 +88,7 @@
             }
         },
         methods: {
-            ...mapActions('task', ['create_task']),  // assuming you are using namespaced modules
+            ...mapActions('revoke', ['create_revoke']),  // assuming you are using namespaced modules
             scanBarcode: function () {
                 if (this.$isCordova) {
                     cordova.plugins.barcodeScanner.scan(
@@ -145,7 +145,7 @@
                     this.$q.notify('Please review fields again.')
 
                 } else {
-                    this.create_task(this.form)
+                    this.create_revoke(this.form)
                         .then(response => {
                             this.isLoading = false;
                             this.$q.notify({

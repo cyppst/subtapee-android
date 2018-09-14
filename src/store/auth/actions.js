@@ -4,8 +4,6 @@ export const login = ({commit}, form) => {
     return axiosInstance
         .post('auth/login', form)
         .then(response => {
-            console.log(response.data.token);
-            console.log(response.data.user);
             commit('authLogin', {
                 token: response.data.token,
                 user: response.data.user,
