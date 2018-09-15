@@ -5,20 +5,20 @@
             <q-item v-for="(row, index) in pending" :key="row.id" @native.click="equipmentPending(row.id)">
                 <q-item-side :id="row.id" avatar="assets/linux-avatar.png"/>
                 <q-item-main :id="row.id" :label="row.brand+' '+row.model">
-                    <!--:sublabel="'S/N :'+row.pivot.serial.toUpperCase()">-->
+                    <!--:sublabel="'S/N :'+row.serial.toUpperCase()">-->
                     <slot name="sublabel">
                         <q-chip dense class="q-mr-xs" color="primary">
-                            S/N : {{row.pivot.serial.toUpperCase()}}
+                            S/N : {{row.serial.toUpperCase()}}
                         </q-chip>
 
                         <q-chip dense class="q-mr-xs" icon="today" color="secondary">
-                            {{row.pivot.created_at}}
+                            {{row.created_at}}
                         </q-chip>
                     </slot>
                 </q-item-main>
                 <q-item-side right>
                     <q-item-tile stamp>
-                        <timeago :datetime="row.pivot.updated_at"></timeago>
+                        <timeago :datetime="row.updated_at"></timeago>
                     </q-item-tile>
                     <q-btn :id="row.id" flat round dense icon="search" @click="equipmentPending(row.id)"/>
                 </q-item-side>
@@ -33,20 +33,20 @@
             <q-item v-for="(row, index) in onhand" :key="row.id">
                 <q-item-side :id="row.id" avatar="assets/linux-avatar.png"/>
                 <q-item-main :id="row.id" :label="row.brand+' '+row.model">
-                    <!--:sublabel="'S/N :'+row.pivot.serial.toUpperCase()">-->
+                    <!--:sublabel="'S/N :'+row.serial.toUpperCase()">-->
                     <slot name="sublabel">
                         <q-chip dense class="q-mr-xs" color="primary">
-                            S/N : {{row.pivot.serial.toUpperCase()}}
+                            S/N : {{row.serial.toUpperCase()}}
                         </q-chip>
 
                         <q-chip dense class="q-mr-xs" icon="today" color="secondary">
-                            {{row.pivot.created_at}}
+                            {{row.created_at}}
                         </q-chip>
                     </slot>
                 </q-item-main>
                 <q-item-side right>
                     <q-item-tile stamp>
-                        <timeago :datetime="row.pivot.updated_at"></timeago>
+                        <timeago :datetime="row.updated_at"></timeago>
                     </q-item-tile>
                     <q-btn flat round dense icon="more_vert">
                         <q-popover>

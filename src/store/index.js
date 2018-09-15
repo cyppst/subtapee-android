@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import equipment from './equipment'
+import material from './material'
 import auth from './auth'
 import task from './task'
 import revoke from './revoke'
@@ -22,6 +23,7 @@ const store = new Vuex.Store({
         task,
         revoke,
         equipment,
+        material,
     }
 })
 

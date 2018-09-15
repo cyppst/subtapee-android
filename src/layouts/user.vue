@@ -59,8 +59,10 @@
         <q-layout-footer>
             <q-tabs>
                 <q-route-tab slot="title" icon="home" to="/" replace label="หน้าหลัก"/>
-                <q-route-tab slot="title" icon="done_all" to="/task" replace label="ประวัติ"/>
+                <q-route-tab slot="title" icon="done_all" to="/task" replace label="งานติดตั้ง"/>
+                <q-route-tab slot="title" icon="done_all" to="/revoke" replace label="งานถอน"/>
                 <q-route-tab slot="title" icon="input" to="/equipment" replace label="อุปกรณ์"/>
+                <q-route-tab slot="title" icon="input" to="/material" replace label="วัสดุ"/>
             </q-tabs>
         </q-layout-footer>
     </q-layout>

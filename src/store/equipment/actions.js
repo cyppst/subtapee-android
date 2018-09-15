@@ -4,15 +4,16 @@ export const refresh = async function ({commit}) {
     commit('setLoading', true, {root: true});
     return await axiosInstance
         .get('/equipment')
-        .then(response => {
-            commit('setLoading', false, {root: true});
-            commit('SET_EQUIPMENT', response.data);
-        })
-        .catch(err => {
-            commit('authError', err);
-            throw err
-        })
+      .then(response => {
+        commit('setLoading', false, {root: true});
+        commit('SET_EQUIPMENT', response.data);
+      })
+      .catch(err => {
+        commit('authError', err);
+        throw err
+      })
 };
+
 
 export const transfer = ({commit}, payload) => {
     commit('setLoading', true, {root: true});
