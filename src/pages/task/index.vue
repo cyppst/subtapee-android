@@ -1,5 +1,13 @@
 <template>
     <q-page padding>
+        <div v-if="tasks.length==0" class="row">
+            <div style="max-width: 40%;" class="absolute-center text-center">
+                <img src="~assets/404-error.svg">
+                                <hr>
+
+                <span class="text-center q-display-1 text-weight-semibold q-pt-xl q-mt-xl"><strong>No</strong> Data</span>
+            </div>
+        </div>
         <q-timeline responsive color="secondary">
 
 
@@ -53,70 +61,70 @@
 </template>
 
 <script>
-    import {mapGetters, mapState, mapActions} from 'vuex'
-    import InnerLoading from 'components/InnerLoading'
+import { mapGetters, mapState, mapActions } from "vuex";
+import InnerLoading from "components/InnerLoading";
 
-    export default {
-        name: 'Task',
-        data() {
-            return {}
-        },
-        components: {InnerLoading},
-        mounted() {
-            this.refresh()
-        },
-        computed: {
-            ...mapState('task', ['tasks']),
-            ...mapGetters(['isLoading'])
-        },
-        methods: {
-            ...mapActions('task', ['refresh']),
-            taskDetail: function (event) {
-                console.log(event.target.id)
-            },
-            scanBarcode: function () {
-                if (window.hasOwnProperty('cordova')) {
-                    cordova.plugins.barcodeScanner.scan(
-                        function (result) {
-                            if (!result.cancelled) {
-                                this.$notify.create({
-                                    type: 'positive',
-                                    message: result
-                                })
-                            }
-                        },
-                        function (error) {
-                            this.$notify.create({
-                                type: 'negative',
-                                message: error
-                            })
-                        },
-                        {
-                            preferFrontCamera: false, // iOS and Android
-                            showFlipCameraButton: false, // iOS and Android
-                            showTorchButton: true, // iOS and Android
-                            torchOn: true, // Android, launch with the torch switched on (if available)
-                            saveHistory: true, // Android, save scan history (default false)
-                            prompt: 'Place a barcode inside the scan area', // Android
-                            resultDisplayDuration: 1500, // Android, display scanned text for X ms. 0 suppresses it entirely, default 1500
-                            formats: 'UPC_A,UPC_E,EAN_13,CODE_39,CODE_128', // default: all but PDF_417 and RSS_EXPANDED
-                            orientation: 'landscape', // Android only (portrait|landscape), default unset so it rotates with the device
-                            disableAnimations: true, // iOS
-                            disableSuccessBeep: false // iOS and Android
-                        }
-                    )
-                } else {
-                    this.$notify.create({
-                        type: 'negative',
-                        message: 'Run again using Android.'
-                    })
-                }
-            },
-            getEquip: function (brand, model, serial) {
-                return brand + ' ' + model;
+export default {
+  name: "Task",
+  data() {
+    return {};
+  },
+  components: { InnerLoading },
+  mounted() {
+    this.refresh();
+  },
+  computed: {
+    ...mapState("task", ["tasks"]),
+    ...mapGetters(["isLoading"])
+  },
+  methods: {
+    ...mapActions("task", ["refresh"]),
+    taskDetail: function(event) {
+      console.log(event.target.id);
+    },
+    scanBarcode: function() {
+      if (window.hasOwnProperty("cordova")) {
+        cordova.plugins.barcodeScanner.scan(
+          function(result) {
+            if (!result.cancelled) {
+              this.$notify.create({
+                type: "positive",
+                message: result
+              });
             }
-        }
+          },
+          function(error) {
+            this.$notify.create({
+              type: "negative",
+              message: error
+            });
+          },
+          {
+            preferFrontCamera: false, // iOS and Android
+            showFlipCameraButton: false, // iOS and Android
+            showTorchButton: true, // iOS and Android
+            torchOn: true, // Android, launch with the torch switched on (if available)
+            saveHistory: true, // Android, save scan history (default false)
+            prompt: "Place a barcode inside the scan area", // Android
+            resultDisplayDuration: 1500, // Android, display scanned text for X ms. 0 suppresses it entirely, default 1500
+            formats: "UPC_A,UPC_E,EAN_13,CODE_39,CODE_128", // default: all but PDF_417 and RSS_EXPANDED
+            orientation: "landscape", // Android only (portrait|landscape), default unset so it rotates with the device
+            disableAnimations: true, // iOS
+            disableSuccessBeep: false // iOS and Android
+          }
+        );
+      } else {
+        this.$notify.create({
+          type: "negative",
+          message: "Run again using Android."
+        });
+      }
+    },
+    getEquip: function(brand, model, serial) {
+      return brand + " " + model;
     }
+  }
+};
 </script>
 
 <style>

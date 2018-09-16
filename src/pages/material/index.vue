@@ -1,5 +1,14 @@
 <template>
     <q-page>
+        <div v-if="this.pending.length==0" class="row">
+            <div style="max-width: 40%;" class="absolute-center text-center">
+                <img src="~assets/404-error.svg">
+                                <hr>
+
+                <span class="text-center q-display-1 text-weight-semibold q-pt-xl q-mt-xl"><strong>No</strong> Data</span>
+
+            </div>
+        </div>
         <q-list highlight v-if="this.pending.length>0">
             <q-list-header>รอการตรวจสอบ {{pending.length}} รายการ</q-list-header>
             <q-item v-for="(row, index) in pending" :key="row.id" @native.click="materialPending(row.id)">
@@ -50,39 +59,39 @@
     </q-page>
 </template>
 <script>
-    import {mapGetters, mapState, mapActions} from 'vuex'
-    import pendingMaterialDialog from 'components/pendingMaterialDialog'
-    import InnerLoading from 'components/InnerLoading'
+import { mapGetters, mapState, mapActions } from "vuex";
+import pendingMaterialDialog from "components/pendingMaterialDialog";
+import InnerLoading from "components/InnerLoading";
 
-    export default {
-        name: 'Material',
-        data() {
-            return {
-                pendingMaterialDialog: {
-                    show: false,
-                    id: null
-                }
-            }
-        },
-        components: {InnerLoading, pendingMaterialDialog},
-        mounted() {
-            this.refresh()
-        },
-        computed: {
-            ...mapGetters(['isLoading']),
-            ...mapGetters('material', ['onhand', 'pending']),  // assuming you are using namespaced modules
-            hasPending: function () {
-                return this.pending.length
-            }
-        },
-        methods: {
-            ...mapActions('material', ['refresh', 'response']),
-            materialPending: function (id) {
-                this.pendingMaterialDialog.show = true;
-                this.pendingMaterialDialog.id = id
-            },
-        }
+export default {
+  name: "Material",
+  data() {
+    return {
+      pendingMaterialDialog: {
+        show: false,
+        id: null
+      }
+    };
+  },
+  components: { InnerLoading, pendingMaterialDialog },
+  mounted() {
+    this.refresh();
+  },
+  computed: {
+    ...mapGetters(["isLoading"]),
+    ...mapGetters("material", ["onhand", "pending"]), // assuming you are using namespaced modules
+    hasPending: function() {
+      return this.pending.length;
     }
+  },
+  methods: {
+    ...mapActions("material", ["refresh", "response"]),
+    materialPending: function(id) {
+      this.pendingMaterialDialog.show = true;
+      this.pendingMaterialDialog.id = id;
+    }
+  }
+};
 </script>
 
 <style>

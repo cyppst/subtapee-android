@@ -1,21 +1,27 @@
 <template>
-    <q-page class="flex flex-center">
-        <div class="q-display-3">Subtapee App</div>
-        <inner-loading :loading="isLoading"/>
+    <q-page>
+        <div class="absolute-center text-center">
+            <img class="text-center" style="max-width: 60%;" src="~assets/tower.svg" />
+            <hr>
+            <span class="text-center q-display-1 text-weight-semibold ">Welcome to <strong>Subtapee</strong>
+                App</span>
+        </div>
+
+        <inner-loading :loading="isLoading" />
     </q-page>
 </template>
 <style>
 </style>
 
 <script>
-    import {mapGetters, mapState, mapActions} from 'vuex'
-    import InnerLoading from 'components/InnerLoading'
+    import { mapGetters, mapState, mapActions } from "vuex";
+    import InnerLoading from "components/InnerLoading";
 
     export default {
-        name: 'index',
-        components: {InnerLoading},
+        name: "index",
+        components: { InnerLoading },
         computed: {
-            ...mapGetters(['isLoading']),
+            ...mapGetters(["isLoading"])
         }
-    }
+    };
 </script>
