@@ -1,5 +1,6 @@
 <template>
     <q-page>
+        <img class="q-pa-lg" v-if="this.pending.length==0" src="~assets/001-access-denied.svg" style='max-width:200px; margin:50px;'>
         <q-list highlight v-if="this.pending.length>0">
             <q-list-header>รอการตรวจสอบ {{pending.length}} รายการ</q-list-header>
             <q-item v-for="(row, index) in pending" :key="row.id" @native.click="equipmentPending(row.id)">
@@ -72,58 +73,59 @@
     </q-page>
 </template>
 <script>
-    import {mapGetters, mapState, mapActions} from 'vuex'
-    import transferDialog from 'components/transferDialog'
-    import pendingDialog from 'components/pendingDialog'
-    import InnerLoading from 'components/InnerLoading'
-    import EquipDialog from 'components/EquipDialog'
+import { mapGetters, mapState, mapActions } from "vuex";
+import transferDialog from "components/transferDialog";
+import pendingDialog from "components/pendingDialog";
+import InnerLoading from "components/InnerLoading";
+import EquipDialog from "components/EquipDialog";
 
-    export default {
-        name: 'Equipment',
-        data() {
-            return {
-                transferDialog: {
-                    show: false,
-                    id: null
-                },
-                pendingDialog: {
-                    show: false,
-                    id: null
-                }
-            }
-        },
-        components: {InnerLoading, transferDialog, pendingDialog},
-        mounted() {
-            this.refresh()
-        },
-        computed: {
-            ...mapGetters(['isLoading']),
-            ...mapGetters('equipment', ['onhand', 'pending', 'EquipById']),  // assuming you are using namespaced modules
-            hasPending: function () {
-                return this.pending.length
-            }
-        },
-        methods: {
-            ...mapActions('equipment', ['refresh', 'transfer', 'response']),
-            equipmentTransfer: function (id) {
-                this.transferDialog.show = true;
-                this.transferDialog.id = id
-            },
-            equipmentPending: function (id) {
-                this.pendingDialog.show = true;
-                this.pendingDialog.id = id
-            },
-            equipmentDetail: function (id) {
-                console.log(id)
-                let data = this.EquipById(id)
-
-                this.$q.dialog({
-                    title: 'Alert',
-                    message: 'S/N: ' + data.pivot.serial + '<br/>  Date: ' + data.pivot.created_at
-                })
-            }
-        }
+export default {
+  name: "Equipment",
+  data() {
+    return {
+      transferDialog: {
+        show: false,
+        id: null
+      },
+      pendingDialog: {
+        show: false,
+        id: null
+      }
+    };
+  },
+  components: { InnerLoading, transferDialog, pendingDialog },
+  mounted() {
+    this.refresh();
+  },
+  computed: {
+    ...mapGetters(["isLoading"]),
+    ...mapGetters("equipment", ["onhand", "pending", "EquipById"]), // assuming you are using namespaced modules
+    hasPending: function() {
+      return this.pending.length;
     }
+  },
+  methods: {
+    ...mapActions("equipment", ["refresh", "transfer", "response"]),
+    equipmentTransfer: function(id) {
+      this.transferDialog.show = true;
+      this.transferDialog.id = id;
+    },
+    equipmentPending: function(id) {
+      this.pendingDialog.show = true;
+      this.pendingDialog.id = id;
+    },
+    equipmentDetail: function(id) {
+      console.log(id);
+      let data = this.EquipById(id);
+
+      this.$q.dialog({
+        title: "Alert",
+        message:
+          "S/N: " + data.pivot.serial + "<br/>  Date: " + data.pivot.created_at
+      });
+    }
+  }
+};
 </script>
 
 <style>

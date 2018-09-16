@@ -2,6 +2,11 @@ import {ifAuthenticated, ifNotAuthenticated} from './access'
 
 export default [
   {
+    path: '/login',
+    component: () => import('components/auth/Login'),
+    beforeEnter: ifNotAuthenticated
+  },
+  {
     path: '/',
     component: () => import('layouts/user'),
     beforeEnter: ifAuthenticated,
@@ -90,10 +95,5 @@ export default [
     // Always leave this as last one
     path: '*',
     component: () => import('pages/404')
-  },
-  {
-    path: '/login',
-    component: () => import('components/auth/Login'),
-    beforeEnter: ifNotAuthenticated
   }
 ]
