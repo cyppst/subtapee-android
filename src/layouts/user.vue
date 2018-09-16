@@ -69,7 +69,30 @@
 </template>
 
 <script>
-  import {
+import {
+  QLayout,
+  QToolbar,
+  QBtn,
+  QIcon,
+  QToolbarTitle,
+  QList,
+  QItemSide,
+  QItemMain,
+  QItem,
+  QItemTile,
+  QListHeader
+} from "quasar";
+import { mapState, mapGetters } from "vuex";
+
+export default {
+  name: "Layout",
+  data() {
+    return {
+      title: "aa",
+      leftDrawer: true
+    };
+  },
+  components: {
     QLayout,
     QToolbar,
     QBtn,
@@ -81,56 +104,33 @@
     QItem,
     QItemTile,
     QListHeader
-  } from 'quasar'
-  import {mapState, mapGetters} from 'vuex'
-
-  export default {
-    name: 'Layout',
-    data () {
-      return {
-        title: 'aa',
-        leftDrawer: true
-      }
-    },
-    components: {
-      QLayout,
-      QToolbar,
-      QBtn,
-      QIcon,
-      QToolbarTitle,
-      QList,
-      QItemSide,
-      QItemMain,
-      QItem,
-      QItemTile,
-      QListHeader,
-    },
-    methods: {
-      logout: function () {
-        this.$q.dialog({
-          title: 'ยืนยัน',
-          message: 'ออกจากระบบ.',
-          ok: 'Agree',
-          cancel: 'Disagree'
-        }).then(() => {
-          this.$store.dispatch('auth/logout', this.form).then(response => {
-            this.$router.push('/login')
-          })
-        }).catch(() => {
-          this.$q.notify('Disagreed...')
+  },
+  methods: {
+    logout: function() {
+      this.$q
+        .dialog({
+          title: "ยืนยัน",
+          message: "ออกจากระบบ.",
+          ok: "Agree",
+          cancel: "Disagree"
         })
-
-      }
-    },
-    computed: {
-      ...mapState('auth', ['fullName', 'userName']),  // assuming you are using namespaced modules
-      currentPath () {
-        return this.$route.path
-      },
-
+        .then(() => {
+          this.$store.dispatch("auth/logout", this.form).then(response => {
+            this.$router.push("/login");
+          });
+        })
+        .catch(() => {
+          this.$q.notify("Disagreed...");
+        });
+    }
+  },
+  computed: {
+    ...mapState("auth", ["fullName", "userName"]), // assuming you are using namespaced modules
+    currentPath() {
+      return this.$route.path;
     }
   }
-
+};
 </script>
 
 <style>

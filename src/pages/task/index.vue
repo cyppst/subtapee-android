@@ -5,8 +5,9 @@
                 <img src="~assets/404-error.svg">
                                 <hr>
 
-                <span class="text-center q-display-1 text-weight-semibold q-pt-xl q-mt-xl"><strong>No</strong> Data</span>
-            </div>
+                <span class="text-center q-display-1 text-weight-semibold q-pt-xl q-mt-xl"><strong>ไม่พบ</strong>
+                    รายการ</span>
+                                </div>
         </div>
         <q-timeline responsive color="secondary">
 

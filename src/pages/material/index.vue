@@ -5,8 +5,8 @@
                 <img src="~assets/404-error.svg">
                                 <hr>
 
-                <span class="text-center q-display-1 text-weight-semibold q-pt-xl q-mt-xl"><strong>No</strong> Data</span>
-
+                <span class="text-center q-display-1 text-weight-semibold q-pt-xl q-mt-xl"><strong>ไม่พบ</strong>
+                    รายการ</span>
             </div>
         </div>
         <q-list highlight v-if="this.pending.length>0">
