@@ -2,7 +2,7 @@
   <div class="fixed fixed-center bg-grey-1 text-white">
     <form v-on:submit.prevent="submit()">
       <q-card square class="flex-center text-center" style="width: 400px; padding:50px">
-        <span class="q-display-1 text-weight-regular text-dark"><strong>เข้าสู่ระบบบ</strong> ช่างปฏิบัติงาน</span>
+        <span class="q-display-1 text-weight-regular text-dark"><strong>STP</strong> Login</span>
         <hr>
         <img src="~assets/tower.svg" style='max-width:200px; padding-top:30px; padding-bottom:50px'>
         <q-card-separator />
