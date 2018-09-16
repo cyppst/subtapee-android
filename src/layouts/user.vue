@@ -13,11 +13,23 @@
         </q-toolbar-title>
 
         <!-- showRight is a model attached to right side drawer below -->
+                <q-btn
+          flat round dense
+          @click="this.clearLocalStorage"
+          icon="error_outline">
+           <q-tooltip anchor="top left" self="bottom left" :offset="[10, 10]">
+            <strong>คลิก</strong> หากทำอะไรไม่ได้
+</q-tooltip>
+          </q-btn>
         <q-btn
           flat round dense
           @click="logout"
           icon="exit_to_app"
-        />
+        >
+          <q-tooltip anchor="top left" self="bottom left" :offset="[10, 10]">
+            ออกจากระบบ
+</q-tooltip>
+</q-btn>
       </q-toolbar>
 
     </q-layout-header>
@@ -122,6 +134,10 @@ export default {
         .catch(() => {
           this.$q.notify("Disagreed...");
         });
+    },
+    clearLocalStorage: function() {
+      localStorage.clear();
+      this.logout();
     }
   },
   computed: {
