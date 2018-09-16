@@ -2,9 +2,11 @@ import {axiosInstance, setAxiosHeader} from 'plugins/axios'
 
 export const login = ({commit}, form) => {
     return axiosInstance
-        .post('auth/login', form)
+        .post('v1/login', form)
         .then(response => {
-            commit('authLogin', {
+          console.log(response.data.token)
+
+          commit('authLogin', {
                 token: response.data.token,
                 user: response.data.user,
 
@@ -29,7 +31,7 @@ export const register = ({commit}, data) => {
 
 export const logout = ({commit}, data) => {
     return axiosInstance
-        .post('logout')
+        .get('v1/logout')
         .then(response => {
             commit('authLogout');
             setLocalStorageAttributes()

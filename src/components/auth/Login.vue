@@ -24,7 +24,7 @@ export default {
   data () {
     return {
       form: {
-        username: 'admin',
+        username: 'golfcomsci',
         password: 'secret'
       }
     }
@@ -33,7 +33,6 @@ export default {
     submit () {
       this.$store.dispatch('auth/login', this.form).then(response => {
         this.$router.push({name: 'index'})
-
       })
     }
   }

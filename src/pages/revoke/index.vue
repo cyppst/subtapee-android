@@ -54,7 +54,7 @@
           cordova.plugins.barcodeScanner.scan(
             function (result) {
               if (!result.cancelled) {
-                notify.create({
+                this.$notify.create({
                   type: 'positive',
                   message: result
                 })
