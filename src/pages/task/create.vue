@@ -32,6 +32,9 @@
       />
       <q-input stack-label="หมายเหตุ"
                v-model="form.remarks"/>
+
+      <p class="caption">Accepting only .jpg</p>
+      <uploader/>
       <q-page-sticky position="bottom-right" :offset="[18, 18]">
         <q-btn
           round
@@ -48,6 +51,7 @@
 <script>
   import {required} from 'vuelidate/lib/validators'
   import {mapActions} from 'vuex'
+  import uploader from 'components/uploader'
 
   export default {
     data () {
@@ -71,6 +75,7 @@
         remarks: {required},
       }
     },
+    components: {uploader},
     mounted: function () {
       this.scanBarcode()
     },

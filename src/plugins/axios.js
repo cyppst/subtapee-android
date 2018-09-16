@@ -2,7 +2,7 @@ import axios from "axios";
 
 const axiosInstance = axios.create({
   // baseURL: 'https://stp.chaiyapoj.site/api'
-  baseURL: "https://stp.chaiyapoj.site/api"
+  baseURL: "http://stp.loc/api"
 });
 
 const setAxiosHeader = function(token) {
