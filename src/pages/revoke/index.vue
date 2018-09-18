@@ -1,6 +1,6 @@
 <template>
   <q-page padding>
-            <div v-if="this.revoke.length==0" class="row">
+            <div v-if="this.revokes.length==0" class="row">
             <div style="max-width: 60%;" class="absolute-center text-center">
                 <img src="~assets/tower.svg">
                 <span class="text-center q-display-1 text-weight-semibold q-pt-xl q-mt-xl"><strong>ไม่พบ</strong>

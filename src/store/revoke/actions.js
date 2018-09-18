@@ -6,8 +6,6 @@ export const refresh = ({commit}
   commit('setLoading', true, {root: true})
   axiosInstance.get('/revoke')
     .then(response => {
-      console.log('revoke (store) :')
-      console.log(response.data)
       commit('SET_REVOKES', response.data)
       commit('setLoading', false, {root: true})
 

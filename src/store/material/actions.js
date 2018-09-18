@@ -9,7 +9,7 @@ export const refresh = async function ({commit}) {
       commit('SET_MATERIAL', response.data);
     })
     .catch(err => {
-      commit('authError', err);
+
       throw err
     })
 };
