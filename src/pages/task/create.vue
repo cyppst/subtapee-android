@@ -133,7 +133,7 @@
         this.$v.form.$touch()
 
         if (this.$v.form.$error) {
-          this.$notify('กรุณากรอกข้อมูลให้ครบทุกช่อง')
+          this.$q.notify('กรุณากรอกข้อมูลให้ครบทุกช่อง')
 
         } else {
           this.create_task(this.form)
@@ -147,7 +147,7 @@
 
             }).catch(err => {
             this.isLoading = false
-            this.$notify.create({
+            this.$q.notify({
               type: 'negative',
               message: err.response.data
             })
