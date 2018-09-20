@@ -41,13 +41,13 @@ export const logout = ({ commit }, data) => {
 
 const setLocalStorageAttributes = function(data = null) {
   if (data) {
-    window.localStorage["TOKEN"] = data.token;
+    window.localStorage["token"] = data.token;
     window.localStorage["userId"] = data.user.id;
     window.localStorage["userName"] = data.user.username;
     window.localStorage["fullName"] =
       data.user.firstname + " " + data.user.lastname;
   } else {
-    window.localStorage.removeItem("TOKEN");
+    window.localStorage.removeItem("token");
     window.localStorage.removeItem("userId");
     window.localStorage.removeItem("userName");
     window.localStorage.removeItem("fullName");

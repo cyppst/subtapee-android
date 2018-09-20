@@ -1,6 +1,6 @@
 <template>
     <q-page>
-        <div v-if="this.pending.length==0" class="row">
+      <div v-if="this.onhand+this.pending ==0" class="row">
             <div style="max-width: 40%;" class="absolute-center text-center">
                 <img src="~assets/404-error.svg">
                                 <hr>

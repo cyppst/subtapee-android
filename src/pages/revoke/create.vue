@@ -69,7 +69,6 @@
         circuit_id: {required},
         customer_name: {required},
         equipment: {required},
-        remarks: {required},
       }
     },
     mounted: function () {

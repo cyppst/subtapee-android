@@ -13,14 +13,14 @@
         </q-toolbar-title>
 
         <!-- showRight is a model attached to right side drawer below -->
-                <q-btn
+        <q-btn
           flat round dense
           @click="this.clearLocalStorage"
           icon="error_outline">
-           <q-tooltip anchor="top left" self="bottom left" :offset="[10, 10]">
+          <q-tooltip anchor="top left" self="bottom left" :offset="[10, 10]">
             <strong>คลิก</strong> หากทำอะไรไม่ได้
-</q-tooltip>
-          </q-btn>
+          </q-tooltip>
+        </q-btn>
         <q-btn
           flat round dense
           @click="logout"
@@ -28,8 +28,8 @@
         >
           <q-tooltip anchor="top left" self="bottom left" :offset="[10, 10]">
             ออกจากระบบ
-</q-tooltip>
-</q-btn>
+          </q-tooltip>
+        </q-btn>
       </q-toolbar>
 
     </q-layout-header>
@@ -73,38 +73,17 @@
         <q-route-tab slot="title" icon="home" to="/" replace label="หน้าหลัก"/>
         <q-route-tab slot="title" icon="done_all" to="/task" replace label="งานติดตั้ง"/>
         <q-route-tab slot="title" icon="done_all" to="/revoke" replace label="งานถอน"/>
-        <q-route-tab slot="title" icon="input" to="/equipment" replace label="อุปกรณ์"/>
-        <q-route-tab slot="title" icon="input" to="/material" replace label="วัสดุ"/>
+        <q-route-tab slot="title" icon="input" to="/equipment" :alert="hasPending.equipment.alert"
+                     :count="hasPending.equipment.count" replace label="อุปกรณ์"/>
+        <q-route-tab slot="title" icon="input" to="/material" :alert="hasPending.material.alert" :count="hasPending.material.count"
+                     replace label="วัสดุ"/>
       </q-tabs>
     </q-layout-footer>
   </q-layout>
 </template>
 
 <script>
-import {
-  QLayout,
-  QToolbar,
-  QBtn,
-  QIcon,
-  QToolbarTitle,
-  QList,
-  QItemSide,
-  QItemMain,
-  QItem,
-  QItemTile,
-  QListHeader
-} from "quasar";
-import { mapState, mapGetters } from "vuex";
-
-export default {
-  name: "Layout",
-  data() {
-    return {
-      title: "aa",
-      leftDrawer: true
-    };
-  },
-  components: {
+  import {
     QLayout,
     QToolbar,
     QBtn,
@@ -116,37 +95,79 @@ export default {
     QItem,
     QItemTile,
     QListHeader
-  },
-  methods: {
-    logout: function() {
-      this.$q
-        .dialog({
-          title: "ยืนยัน",
-          message: "ออกจากระบบ.",
-          ok: "Agree",
-          cancel: "Disagree"
-        })
-        .then(() => {
-          this.$store.dispatch("auth/logout", this.form).then(response => {
-            this.$router.push("/login");
-          });
-        })
-        .catch(() => {
-          this.$q.notify("Disagreed...");
-        });
+  } from 'quasar'
+  import {mapState, mapActions, mapGetters} from 'vuex'
+
+  export default {
+    name: 'Layout',
+    data () {
+      return {
+        title: 'aa',
+        leftDrawer: true
+      }
     },
-    clearLocalStorage: function() {
-      localStorage.clear();
-      this.logout();
+    components: {
+      QLayout,
+      QToolbar,
+      QBtn,
+      QIcon,
+      QToolbarTitle,
+      QList,
+      QItemSide,
+      QItemMain,
+      QItem,
+      QItemTile,
+      QListHeader
+    },
+    mounted () {
+      this.fetchPending()
+    },
+    methods: {
+      ...mapActions([
+        'fetchPending', // map `this.increment()` to `this.$store.dispatch('increment')`
+      ]),
+      logout: function () {
+        this.$q
+          .dialog({
+            title: 'ยืนยัน',
+            message: 'ออกจากระบบ.',
+            ok: 'Agree',
+            cancel: 'Disagree'
+          })
+          .then(() => {
+            this.$store.dispatch('auth/logout', this.form).then(response => {
+              this.$router.push('/login')
+            })
+          })
+          .catch(() => {
+            this.$q.notify('Disagreed...')
+          })
+      },
+      clearLocalStorage: function () {
+        localStorage.clear()
+        this.logout()
+      }
     }
-  },
-  computed: {
-    ...mapState("auth", ["fullName", "userName"]), // assuming you are using namespaced modules
-    currentPath() {
-      return this.$route.path;
+    ,
+    computed: {
+      ...mapState('auth', ['fullName', 'userName']), // assuming you are using namespaced modules
+      ...mapGetters(['hasPending'])
+      // hasPending () {
+      //   return {
+      //     'equipment': this.pending.equipment > 0,
+      //     'material': this.pending.material > 0
+      //   }
+    },
+    // countPendingEquipment () {
+    //   return this.$store.state.countPendingEquipment
+    // },
+    // countPendingMaterial () {
+    //   return this.$store.state.countPendingEquipment
+    // },
+    currentPath () {
+      return this.$route.path
     }
   }
-};
 </script>
 
 <style>

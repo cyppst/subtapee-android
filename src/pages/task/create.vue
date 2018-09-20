@@ -70,9 +70,7 @@
       form: {
         serial: {required},
         circuit_id: {required},
-        customer_name: {required},
-        service_charge: {required},
-        remarks: {required},
+        customer_name: {required}
       }
     },
     components: {uploader},

@@ -54,7 +54,7 @@
                         this.isLoading = false
                         this.$q.notify({
                             type: 'positive',
-                            message: response.message
+                            message: response.data.message
                         })
                     })
                     .catch(err => {
