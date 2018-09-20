@@ -37,14 +37,14 @@
         <!--<q-list highlight>-->
         <!--<q-list-header>ทั้งหมด {{tasks.length}} รายการ</q-list-header>-->
         <!--<q-item>-->
-        <!--<q-item-side avatar="assets/linux-avatar.png"/>-->
+        <!--<q-item-side avatar="assets/linux-avatar.svg"/>-->
         <!--<q-item-main label="Jack Doe"/>-->
         <!--<q-item-side right>-->
         <!--<q-btn :id="111" flat round dense icon="send"/>-->
         <!--</q-item-side>-->
         <!--</q-item>-->
         <!--<q-item>-->
-        <!--<q-item-side avatar="assets/linux-avatar.png"/>-->
+        <!--<q-item-side avatar="assets/linux-avatar.svg"/>-->
         <!--<q-item-main label="Jack Doe"/>-->
         <!--</q-item>-->
         <!--</q-list>-->
