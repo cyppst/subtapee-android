@@ -15,7 +15,7 @@ const Router = new VueRouter({
    */
 
   // Leave as is and change from quasar.conf.js instead!
-  mode: 'history',
+  mode: 'hash',
   base: process.env.VUE_ROUTER_BASE,
   scrollBehavior: () => ({ y: 0 }),
   routes

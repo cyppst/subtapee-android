@@ -35,7 +35,7 @@
     methods: {
       submit () {
         this.$store.dispatch('auth/login', this.form).then(response => {
-          this.$router.push({name: 'index'})
+          this.$router.push('/')
         })
           .catch(err => {
             this.$q.notify(err)

@@ -12,8 +12,7 @@ export default [
     beforeEnter: ifAuthenticated,
     children: [
       {
-        path: '',
-        name: 'index',
+        path: '/',
         component: () => import('pages/index'),
         meta: {
           title: 'Feed'
@@ -27,7 +26,7 @@ export default [
     beforeEnter: ifAuthenticated,
     children: [
       {
-        path: '',
+        path: '/',
         component: () => import('pages/task'),
         meta: {
           title: 'งานติดตั้ง'
@@ -48,7 +47,7 @@ export default [
     beforeEnter: ifAuthenticated,
     children: [
       {
-        path: '',
+        path: '/',
         component: () => import('pages/revoke'),
         meta: {
           title: 'งานถอน'
@@ -69,7 +68,7 @@ export default [
     beforeEnter: ifAuthenticated,
     children: [
       {
-        path: '',
+        path: '/',
         component: () => import('pages/equipment/index'),
         meta: {
           title: 'อุปกรณ์'
@@ -83,7 +82,7 @@ export default [
     beforeEnter: ifAuthenticated,
     children: [
       {
-        path: '',
+        path: '/',
         component: () => import('pages/material/index'),
         meta: {
           title: 'วัสดุ'
