@@ -12,7 +12,7 @@
         <q-list highlight v-if="this.pending.length>0">
             <q-list-header>รอการตรวจสอบ {{pending.length}} รายการ</q-list-header>
             <q-item v-for="(row, index) in pending" :key="row.id" @native.click="equipmentPending(row.id)">
-                <q-item-side :id="row.id" avatar="assets/linux-avatar.png" />
+                <q-item-side :id="row.id" avatar="~assets/linux-avatar.png" />
                 <q-item-main :id="row.id" :label="getEquip(row.Equipment.brand,row.Equipment.model)">
                     <!--:sublabel="'S/N :'+row.serial.toUpperCase()">-->
                     <slot name="sublabel">
@@ -40,7 +40,7 @@
 
             <q-list-header>ที่ท่านกำลังถือ {{onhand.length}} รายการ</q-list-header>
             <q-item v-for="(row, index) in onhand" :key="row.id">
-                <q-item-side :id="row.id" avatar="assets/linux-avatar.png" />
+                <q-item-side :id="row.id" avatar="~assets/linux-avatar.png" />
                 <q-item-main :id="row.id" :label="row.Equipment.brand+' '+row.Equipment.brand">
                     <!--:sublabel="'S/N :'+row.serial.toUpperCase()">-->
                     <slot name="sublabel">
