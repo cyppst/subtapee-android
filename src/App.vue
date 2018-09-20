@@ -12,7 +12,7 @@
     },
 
     created () {
-        const token = window.localStorage['TOKEN'] || '';
+        const token = window.localStorage[token] || '';
       if (token) {
         this.$setAxiosHeader(token)
       }

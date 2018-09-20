@@ -1,7 +1,7 @@
 export default {
-  token: window.localStorage['TOKEN'] || '',
+  token: window.localStorage[token] || '',
   status: '',
-  userId: window.localStorage['USER_ID'] || '',
-  userName: window.localStorage['USER_NAME'] || '',
-  fullName: window.localStorage['FULL_NAME'] || ''
+  userId: window.localStorage['userId'] || '',
+  userName: window.localStorage['userName'] || '',
+  fullName: window.localStorage['fullName'] || ''
 }
