@@ -1,21 +1,22 @@
 <template>
-  <div class="fixed fixed-center bg-grey-1 text-white">
-    <form v-on:submit.prevent="submit()">
-      <q-card square class="flex-center text-center" style="width: 400px; padding:50px">
-        <span class="q-display-1 text-weight-regular text-dark"><strong>STP</strong> Login</span>
-        <hr>
-        <img src="~assets/tower.svg" style='max-width:200px; padding-top:30px; padding-bottom:50px'>
-        <q-card-separator/>
-        <div class="text-left">
-          <q-input id="username" type="text" v-model.trim="form.username" float-label="ชื่อผู้ใช้" required autofocus/>
-          <q-input id="password" type="password" v-model="form.password" float-label="รหัสผ่าน" required/>
-          <br>
-        </div>
-        <q-card-actions>
-          <q-btn type="submit" class="fit" color="primary">เข้าสู่ระบบ</q-btn>
-        </q-card-actions>
-      </q-card>
-    </form>
+  <div>
+    <q-toolbar>
+      <img class="text-center" style="max-width: 2rem;" src="~assets/tower.svg"/>
+      <!--<q-icon size="2rem" name="fas fa-broadcast-tower"/>-->
+      <q-toolbar-title>
+        Subtapee App
+        <span slot="subtitle">ป้อน Username และ Password ที่ได้รับจากบริษัท</span>
+      </q-toolbar-title>
+    </q-toolbar>
+    <div class="layout-view layout-padding">
+      <q-field icon="account_circle">
+        <q-input v-model="form.username" placeholder="Your username" class="full-width"/>
+      </q-field>
+      <q-field icon="vpn_key">
+        <q-input v-model="form.password" type="password" placeholder="Your password" class="full-width"/>
+      </q-field>
+      <q-btn color="primary" class="full-width" @click="submit()">เข้าสู่ระบบ</q-btn>
+    </div>
   </div>
 </template>
 
@@ -23,12 +24,16 @@
 </style>
 
 <script>
+  import {GoBack, QBtn, QToolbar, QIcon, QToolbarTitle, QField, QInput} from 'quasar'
+
   export default {
+    components: {QBtn, QToolbar, QIcon, QToolbarTitle, QField, QInput},
+
     data () {
       return {
         form: {
-          username: 'golfcomsci',
-          password: 'secret'
+          username: '',
+          password: ''
         }
       }
     },

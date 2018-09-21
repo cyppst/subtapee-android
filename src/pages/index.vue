@@ -3,7 +3,7 @@
     <div class="absolute-center text-center">
       <img class="text-center" style="max-width: 60%;" src="~assets/tower.svg"/>
       <hr>
-      <span class="text-center q-display-1 text-weight-semibold ">ยินดีต้อนรับสู่ <strong>Subtapee</strong>
+      <span class="text-center q-headline text-weight-semibold ">ยินดีต้อนรับสู่ <strong>Subtapee</strong>
                 App</span>
     </div>
 

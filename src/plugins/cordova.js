@@ -6,5 +6,6 @@ export default ({ Vue }) => {
   Vue.use(VueCordova)
   Vue.cordova.on('deviceready', () => {
     console.log('Cordova : device is ready !')
+    screen.orientation.lock('portrait');
   })
 }

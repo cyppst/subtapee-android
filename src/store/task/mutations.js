@@ -5,7 +5,3 @@ export const SET_TASKS = (state, tasks) => {
 export const ADD_TASK = (state, task) => {
   state.tasks.push(task)
 }
-
-
-
-

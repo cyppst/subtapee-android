@@ -4,7 +4,9 @@
       <q-btn icon="camera_alt" v-if="this.$isCordova" @click="scanBarcode()"/>
       <q-field>
         <q-input ref="serial" stack-label="Serial"
+                 :readonly="isScannerData"
                  v-model="form.serial"
+                 @blur="$v.form.serial.$touch"
                  :error="$v.form.serial.$error"/>
 
       </q-field>
@@ -25,8 +27,6 @@
       <q-input
         stack-label="เก็บค่าแรกเข้า"
         v-model="form.service_charge"
-        @blur="$v.form.service_charge.$touch"
-        :error="$v.form.service_charge.$error"
 
 
       />
@@ -56,6 +56,7 @@
   export default {
     data () {
       return {
+        isScannerData: false,
         form: {
           serial: '',
           circuit_id: '',
@@ -93,18 +94,16 @@
     methods: {
       ...mapActions('task', ['create_task']),  // assuming you are using namespaced modules
       scanBarcode: function () {
+        var self = this
+
         if (this.$isCordova) {
           cordova.plugins.barcodeScanner.scan(
             function (result) {
-              if (!result.cancelled) {
-                this.form.serial = result
-              }
+              self.form.serial = result.text
+              self.isScannerData = true
             },
             function (error) {
-              this.$notify.create({
-                type: 'negative',
-                message: error
-              })
+              alert('Scanning failed: ' + error)
             },
             {
               preferFrontCamera: false, // iOS and Android
@@ -115,7 +114,7 @@
               prompt: 'Place a barcode inside the scan area', // Android
               resultDisplayDuration: 1500, // Android, display scanned text for X ms. 0 suppresses it entirely, default 1500
               formats: 'UPC_A,UPC_E,EAN_13,CODE_39,CODE_128', // default: all but PDF_417 and RSS_EXPANDED
-              orientation: 'landscape', // Android only (portrait|landscape), default unset so it rotates with the device
+              orientation: 'portrait', // Android only (portrait|landscape), default unset so it rotates with the device
               disableAnimations: true, // iOS
               disableSuccessBeep: false // iOS and Android
             }

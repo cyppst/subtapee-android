@@ -2,8 +2,8 @@
   <q-page padding>
             <div v-if="this.revokes.length==0" class="row">
             <div style="max-width: 60%;" class="absolute-center text-center">
-                <img src="~assets/tower.svg">
-                <span class="text-center q-display-1 text-weight-semibold q-pt-xl q-mt-xl"><strong>ไม่พบ</strong>
+              <img class="text-center" style="max-width: 60%;" src="~assets/tower.svg"/>
+                <span class="text-center q-headline-1 text-weight-semibold q-pt-xl q-mt-xl"><strong>ไม่พบ</strong>
                     รายการ</span>
             </div>
         </div>
