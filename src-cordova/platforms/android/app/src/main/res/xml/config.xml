@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="site.chaiyapoj.stp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="BarcodeScanner">
+        <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner" />
+    </feature>
+    <feature name="CDVOrientation">
+        <param name="android-package" value="cordova.plugins.screenorientation.CDVOrientation" />
+    </feature>
+    <feature name="AppCenterShared">
+        <param name="onload" value="true" />
+        <param name="android-package" value="com.microsoft.azure.mobile.cordova.AppCenterSharedPlugin" />
+    </feature>
+    <feature name="AppCenterAnalytics">
+        <param name="onload" value="true" />
+        <param name="android-package" value="com.microsoft.azure.mobile.cordova.AppCenterAnalyticsPlugin" />
+    </feature>
+    <feature name="AppCenterCrashes">
+        <param name="onload" value="true" />
+        <param name="android-package" value="com.microsoft.azure.mobile.cordova.AppCenterCrashesPlugin" />
+    </feature>
+    <name>Subtapee</name>
+    <description>A Quasar Framework app</description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <icon qualifier="ldpi" src="res/icon/android/drawable-ldpi-icon.png" />
+    <icon qualifier="mdpi" src="res/icon/android/drawable-mdpi-icon.png" />
+    <icon qualifier="hdpi" src="res/icon/android/drawable-hdpi-icon.png" />
+    <icon qualifier="xhdpi" src="res/icon/android/drawable-xhdpi-icon.png" />
+    <icon qualifier="xxhdpi" src="res/icon/android/drawable-xxhdpi-icon.png" />
+    <icon qualifier="xxxhdpi" src="res/icon/android/drawable-xxxhdpi-icon.png" />
+    <preference name="loglevel" value="DEBUG" />
+</widget>

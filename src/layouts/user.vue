@@ -6,7 +6,7 @@
       <q-toolbar>
         <!-- showLeft is a model attached to left side drawer below -->
         <!--<q-icon size="2rem" name="fas fa-broadcast-tower"/>-->
-        <img class="text-center" style="max-width: 2rem;" src="~assets/tower.svg"/>
+        <q-icon size="2rem" name="fas fa-broadcast-tower"/>
 
         <q-toolbar-title>
           {{$route.meta.title}}
@@ -148,8 +148,7 @@
         localStorage.clear()
         this.logout()
       }
-    }
-    ,
+    },
     computed: {
       ...mapState('auth', ['fullName', 'userName']), // assuming you are using namespaced modules
       ...mapGetters(['hasPending'])

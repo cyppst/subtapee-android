@@ -1,7 +1,7 @@
 <template>
   <div>
     <q-toolbar>
-      <img class="text-center" style="max-width: 2rem;" src="~assets/tower.svg"/>
+      <q-icon size="2rem" name="fas fa-broadcast-tower"/>
       <!--<q-icon size="2rem" name="fas fa-broadcast-tower"/>-->
       <q-toolbar-title>
         Subtapee App
