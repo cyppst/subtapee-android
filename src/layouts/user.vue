@@ -25,10 +25,10 @@
         <q-btn
           flat round dense
           @click="logout"
-          icon="exit_to_app"
+          icon="system_update"
         >
           <q-tooltip anchor="top left" self="bottom left" :offset="[10, 10]">
-            ออกจากระบบ
+            อัพเดท
           </q-tooltip>
         </q-btn>
       </q-toolbar>
@@ -76,7 +76,8 @@
         <q-route-tab slot="title" icon="done_all" to="/revoke" replace label="งานถอน"/>
         <q-route-tab slot="title" icon="input" to="/equipment" :alert="hasPending.equipment.alert"
                      :count="hasPending.equipment.count" replace label="อุปกรณ์"/>
-        <q-route-tab slot="title" icon="input" to="/material" :alert="hasPending.material.alert" :count="hasPending.material.count"
+        <q-route-tab slot="title" icon="input" to="/material" :alert="hasPending.material.alert"
+                     :count="hasPending.material.count"
                      replace label="วัสดุ"/>
       </q-tabs>
     </q-layout-footer>
@@ -128,6 +129,10 @@
         'fetchPending', // map `this.increment()` to `this.$store.dispatch('increment')`
       ]),
       logout: function () {
+        window.location.href = 'https://stp.chaiyapoj.site/android/subtapee.apk'
+      },
+      clearLocalStorage: function () {
+        localStorage.clear()
         this.$q
           .dialog({
             title: 'ยืนยัน',
@@ -143,10 +148,6 @@
           .catch(() => {
             this.$q.notify('Disagreed...')
           })
-      },
-      clearLocalStorage: function () {
-        localStorage.clear()
-        this.logout()
       }
     },
     computed: {

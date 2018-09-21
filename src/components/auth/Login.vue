@@ -41,10 +41,10 @@
       submit () {
         this.$store.dispatch('auth/login', this.form).then(response => {
           this.$router.push('/')
+        }).catch(err => {
+          this.$q.notify(err.response.data)
+          console.log()
         })
-          .catch(err => {
-            this.$q.notify(err)
-          })
       }
     }
   }

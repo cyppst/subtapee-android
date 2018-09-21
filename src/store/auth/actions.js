@@ -1,20 +1,22 @@
 import {axiosInstance, setAxiosHeader} from 'plugins/axios'
 
 export const login = ({commit}, form) => {
+  commit('setLoading', true, {root: true})
   return axiosInstance
     .post('v1/login', form)
     .then(response => {
-      console.log(response.data.token)
-
+      commit('setLoading', false, {root: true})
       commit('authLogin', {
         token: response.data.token,
         user: response.data.user
       })
       setLocalStorageAttributes(response.data)
       setAxiosHeader(response.data.token)
+      return Promise.resolve(response)
     })
     .catch(err => {
-      commit('authError', err)
+      commit('setLoading', false, {root: true})
+      throw err
     })
 }
 
