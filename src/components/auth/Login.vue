@@ -1,6 +1,7 @@
 <template>
   <div>
     <q-toolbar>
+
       <q-icon size="2rem" name="fas fa-broadcast-tower"/>
       <!--<q-icon size="2rem" name="fas fa-broadcast-tower"/>-->
       <q-toolbar-title>
@@ -13,9 +14,12 @@
         <q-input v-model="form.username" placeholder="Your username" class="full-width"/>
       </q-field>
       <q-field icon="vpn_key">
-        <q-input v-model="form.password" type="password" placeholder="Your password" class="full-width"/>
+        <q-input v-model="form.password" type="password" placeholder="Password" class="full-width"/>
       </q-field>
-      <q-btn color="primary" class="full-width" @click="submit()">เข้าสู่ระบบ</q-btn>
+      <q-field>
+        <q-btn color="primary" class="full-width" @click="submit()">เข้าสู่ระบบ</q-btn>
+
+      </q-field>
     </div>
   </div>
 </template>
@@ -29,7 +33,7 @@
   export default {
     components: {QBtn, QToolbar, QIcon, QToolbarTitle, QField, QInput},
 
-    data () {
+    data() {
       return {
         form: {
           username: '',
@@ -38,12 +42,15 @@
       }
     },
     methods: {
-      submit () {
+      submit() {
         this.$store.dispatch('auth/login', this.form).then(response => {
           this.$router.push('/')
-        }).catch(err => {
-          this.$q.notify(err.response.data)
-          console.log()
+        }).catch(error => {
+          this.$q.notify({
+            message: 'User หรือ Password ไม่ถูกต้อง',
+            timeout: 2000,
+            type: 'negative'
+          })
         })
       }
     }

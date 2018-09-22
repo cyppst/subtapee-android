@@ -88,7 +88,7 @@
 
   export default {
     name: 'Equipment',
-    data () {
+    data() {
       return {
         transferDialog: {
           show: false,
@@ -101,7 +101,7 @@
       }
     },
     components: {InnerLoading, transferDialog, pendingDialog},
-    mounted () {
+    mounted() {
       this.refresh()
     },
     computed: {

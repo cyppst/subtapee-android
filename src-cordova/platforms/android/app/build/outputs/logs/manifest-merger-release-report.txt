@@ -6,9 +6,6 @@ INJECTED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/
 INJECTED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
 MERGED from [:barcodescanner-release-2.1.5:] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/1fe93ed1f85f9f14da6cf830e699d732/AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:support-v4:27.1.1] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/f0f13b586b6ec205d3e878fbd22b4e8a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.microsoft.appcenter:appcenter-analytics:1.8.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/appcenter-analytics-1.8.0.aar/134e45a8bc35b13b244553a5eab77970/AndroidManifest.xml:2:1-11:12
-MERGED from [com.microsoft.appcenter:appcenter-crashes:1.8.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/appcenter-crashes-1.8.0.aar/b56b128084719af3faf2ce928935e192/AndroidManifest.xml:2:1-11:12
-MERGED from [com.microsoft.appcenter:appcenter:1.8.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/appcenter-1.8.0.aar/071be8525d33ba18fec6e83d1eb1c5b4/AndroidManifest.xml:2:1-14:12
 MERGED from [:CordovaLib] /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/CordovaLib/build/intermediates/manifests/full/release/AndroidManifest.xml:20:1-27:12
 MERGED from [com.android.support:support-media-compat:27.1.1] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/56e4f050aaeeea85d6dbfe4805bcbcee/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/860a030060c33f8378e54cad47c52873/AndroidManifest.xml:17:1-22:12
@@ -54,8 +51,6 @@ ADDED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/and
 		ADDED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:3:23-48
 uses-permission#android.permission.INTERNET
 ADDED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:4:5-67
-MERGED from [com.microsoft.appcenter:appcenter:1.8.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/appcenter-1.8.0.aar/071be8525d33ba18fec6e83d1eb1c5b4/AndroidManifest.xml:11:5-67
-MERGED from [com.microsoft.appcenter:appcenter:1.8.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/appcenter-1.8.0.aar/071be8525d33ba18fec6e83d1eb1c5b4/AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
 application
@@ -122,12 +117,6 @@ MERGED from [:barcodescanner-release-2.1.5:] /home/golfcomsci/.gradle/caches/tra
 MERGED from [:barcodescanner-release-2.1.5:] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/1fe93ed1f85f9f14da6cf830e699d732/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:27.1.1] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/f0f13b586b6ec205d3e878fbd22b4e8a/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.1] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/f0f13b586b6ec205d3e878fbd22b4e8a/AndroidManifest.xml:20:5-44
-MERGED from [com.microsoft.appcenter:appcenter-analytics:1.8.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/appcenter-analytics-1.8.0.aar/134e45a8bc35b13b244553a5eab77970/AndroidManifest.xml:7:5-9:41
-MERGED from [com.microsoft.appcenter:appcenter-analytics:1.8.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/appcenter-analytics-1.8.0.aar/134e45a8bc35b13b244553a5eab77970/AndroidManifest.xml:7:5-9:41
-MERGED from [com.microsoft.appcenter:appcenter-crashes:1.8.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/appcenter-crashes-1.8.0.aar/b56b128084719af3faf2ce928935e192/AndroidManifest.xml:7:5-9:41
-MERGED from [com.microsoft.appcenter:appcenter-crashes:1.8.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/appcenter-crashes-1.8.0.aar/b56b128084719af3faf2ce928935e192/AndroidManifest.xml:7:5-9:41
-MERGED from [com.microsoft.appcenter:appcenter:1.8.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/appcenter-1.8.0.aar/071be8525d33ba18fec6e83d1eb1c5b4/AndroidManifest.xml:7:5-9:41
-MERGED from [com.microsoft.appcenter:appcenter:1.8.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/appcenter-1.8.0.aar/071be8525d33ba18fec6e83d1eb1c5b4/AndroidManifest.xml:7:5-9:41
 MERGED from [:CordovaLib] /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/CordovaLib/build/intermediates/manifests/full/release/AndroidManifest.xml:25:5-44
 MERGED from [:CordovaLib] /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/CordovaLib/build/intermediates/manifests/full/release/AndroidManifest.xml:25:5-44
 MERGED from [com.android.support:support-media-compat:27.1.1] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/56e4f050aaeeea85d6dbfe4805bcbcee/AndroidManifest.xml:20:5-44
@@ -166,7 +155,3 @@ ADDED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/and
 		ADDED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:18:58-81
 	android:name
 		ADDED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:18:19-57
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.microsoft.appcenter:appcenter:1.8.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/appcenter-1.8.0.aar/071be8525d33ba18fec6e83d1eb1c5b4/AndroidManifest.xml:12:5-79
-	android:name
-		ADDED from [com.microsoft.appcenter:appcenter:1.8.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/appcenter-1.8.0.aar/071be8525d33ba18fec6e83d1eb1c5b4/AndroidManifest.xml:12:22-76

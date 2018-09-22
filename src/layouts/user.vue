@@ -6,7 +6,7 @@
       <q-toolbar>
         <!-- showLeft is a model attached to left side drawer below -->
         <!--<q-icon size="2rem" name="fas fa-broadcast-tower"/>-->
-        <q-icon size="2rem" name="fas fa-broadcast-tower"/>
+        <img class="text-center" style="max-width: 2rem;" src="~assets/tower.svg"/>
 
         <q-toolbar-title>
           {{$route.meta.title}}
@@ -24,11 +24,11 @@
         </q-btn>
         <q-btn
           flat round dense
-          @click="logout"
+          @click="this.getAPK"
           icon="system_update"
         >
           <q-tooltip anchor="top left" self="bottom left" :offset="[10, 10]">
-            อัพเดท
+            อัพเดท App
           </q-tooltip>
         </q-btn>
       </q-toolbar>
@@ -102,7 +102,7 @@
 
   export default {
     name: 'Layout',
-    data () {
+    data() {
       return {
         title: 'aa',
         leftDrawer: true
@@ -121,15 +121,15 @@
       QItemTile,
       QListHeader
     },
-    mounted () {
+    mounted() {
       this.fetchPending()
     },
     methods: {
       ...mapActions([
         'fetchPending', // map `this.increment()` to `this.$store.dispatch('increment')`
       ]),
-      logout: function () {
-        window.location.href = 'https://stp.chaiyapoj.site/android/subtapee.apk'
+      getAPK: function () {
+        window.location = 'https://stp.chaiyapoj.site/android'
       },
       clearLocalStorage: function () {
         localStorage.clear()
@@ -149,7 +149,8 @@
             this.$q.notify('Disagreed...')
           })
       }
-    },
+    }
+    ,
     computed: {
       ...mapState('auth', ['fullName', 'userName']), // assuming you are using namespaced modules
       ...mapGetters(['hasPending'])
@@ -165,7 +166,7 @@
     // countPendingMaterial () {
     //   return this.$store.state.countPendingEquipment
     // },
-    currentPath () {
+    currentPath() {
       return this.$route.path
     }
   }

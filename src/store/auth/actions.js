@@ -16,19 +16,10 @@ export const login = ({commit}, form) => {
     })
     .catch(err => {
       commit('setLoading', false, {root: true})
-      throw err
+      return Promise.reject(err);
     })
 }
 
-export const register = ({commit}, data) => {
-  return axiosInstance
-    .post('register', data)
-    .then(response => {
-    })
-    .catch(error => {
-      console.error('register error: ', error)
-    })
-}
 
 export const logout = ({commit}, data) => {
   return axiosInstance
@@ -38,7 +29,10 @@ export const logout = ({commit}, data) => {
       setLocalStorageAttributes()
     })
     .catch(err => {
-      console.error('logout errors: ', err)
+      if (err.response.status === 419) {
+        commit('auth/authError', null, {root: true})
+        this.$router.push('/login')
+      }
     })
 }
 

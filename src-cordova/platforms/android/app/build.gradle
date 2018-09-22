@@ -261,9 +261,6 @@ dependencies {
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
     compile "com.android.support:support-v4:27.+"
-    compile "com.microsoft.appcenter:appcenter:1.8.0"
-    compile "com.microsoft.appcenter:appcenter-analytics:1.8.0"
-    compile "com.microsoft.appcenter:appcenter-crashes:1.8.0"
     // SUB-PROJECT DEPENDENCIES END
 }
 

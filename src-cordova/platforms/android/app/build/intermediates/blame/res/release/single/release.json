@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/layout_encode.xml.flat",
-        "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/1fe93ed1f85f9f14da6cf830e699d732/res/layout/encode.xml"
-    },
-    {
         "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable-land-mdpi_screen.png.flat",
         "source": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/res/drawable-land-mdpi/screen.png"
+    },
+    {
+        "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/layout_encode.xml.flat",
+        "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/1fe93ed1f85f9f14da6cf830e699d732/res/layout/encode.xml"
     },
     {
         "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable-port-xxhdpi_screen.png.flat",
@@ -224,12 +224,12 @@
         "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/61abf28dd5c6fbb515e3826b2e55aa60/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/layout_search_book_contents_header.xml.flat",
-        "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/1fe93ed1f85f9f14da6cf830e699d732/res/layout/search_book_contents_header.xml"
-    },
-    {
         "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable-port-xhdpi_screen.png.flat",
         "source": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/res/drawable-port-xhdpi/screen.png"
+    },
+    {
+        "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/layout_search_book_contents_header.xml.flat",
+        "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/1fe93ed1f85f9f14da6cf830e699d732/res/layout/search_book_contents_header.xml"
     },
     {
         "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable_launcher_icon.png.flat",
@@ -284,12 +284,12 @@
         "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/61abf28dd5c6fbb515e3826b2e55aa60/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable_toggle_torch.png.flat",
-        "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/1fe93ed1f85f9f14da6cf830e699d732/res/drawable/toggle_torch.png"
-    },
-    {
         "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable-port-xxxhdpi_screen.png.flat",
         "source": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/res/drawable-port-xxxhdpi/screen.png"
+    },
+    {
+        "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable_toggle_torch.png.flat",
+        "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/1fe93ed1f85f9f14da6cf830e699d732/res/drawable/toggle_torch.png"
     },
     {
         "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/layout_notification_action.xml.flat",

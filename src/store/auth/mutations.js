@@ -6,7 +6,7 @@ export const authLogin = (state, payload) => {
   state.status = 'success'
   state.token = payload.token
   state.userId = payload.user.id
-  state.fullName = payload.user.firstname+' '+payload.user.lastname
+  state.fullName = payload.user.firstname + ' ' + payload.user.lastname
   state.userName = payload.user.username
 }
 
