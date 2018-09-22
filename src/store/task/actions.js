@@ -15,7 +15,7 @@ export const refresh = ({commit}
       if (err.response.status === 419) {
 
         commit('auth/authError', null, {root: true})
-        this.$router.push('/login')
+        router.push('/login')
       }
     })
 

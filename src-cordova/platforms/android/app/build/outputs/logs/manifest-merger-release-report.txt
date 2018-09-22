@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
-INJECTED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
-INJECTED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
-INJECTED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+ADDED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-20:12
 MERGED from [:barcodescanner-release-2.1.5:] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/1fe93ed1f85f9f14da6cf830e699d732/AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:support-v4:27.1.1] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/f0f13b586b6ec205d3e878fbd22b4e8a/AndroidManifest.xml:17:1-22:12
 MERGED from [:CordovaLib] /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/CordovaLib/build/intermediates/manifests/full/release/AndroidManifest.xml:20:1-27:12
@@ -16,9 +16,9 @@ MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/golfcomsci/.gradle/cach
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ccbd532f93e62f06c7e295b572eda391/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/87e9a47529c00f5fdc1d24247deb2bcf/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/50d81b8be967a59627952a886a03bfe7/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
-INJECTED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
-INJECTED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:1-20:12
 	package
 		ADDED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:2:102-130
 		INJECTED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml
@@ -155,3 +155,7 @@ ADDED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/and
 		ADDED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:18:58-81
 	android:name
 		ADDED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:18:19-57
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:19:5-75
+	android:name
+		ADDED from /home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:19:22-72

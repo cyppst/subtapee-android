@@ -3,7 +3,7 @@
     <div style="width: 500px; max-width: 90vw;">
       <q-btn icon="camera_alt" v-if="this.$isCordova" @click="scanBarcode()"/>
       <q-field>
-        <q-input ref="serial" stack-label="Serial"
+        <q-input ref="input_serial" stack-label="Serial"
                  :readonly="isScannerData"
                  v-model="form.serial"
                  @blur="$v.form.serial.$touch"
@@ -54,7 +54,7 @@
   import uploader from 'components/uploader'
 
   export default {
-    data () {
+    data() {
       return {
         isScannerData: false,
         form: {
@@ -83,7 +83,7 @@
       })
     },
     computed: {
-      isVerified () {
+      isVerified() {
         if (this.Equipment.length === 0) {
           return false
         } else {
@@ -99,8 +99,15 @@
         if (this.$isCordova) {
           cordova.plugins.barcodeScanner.scan(
             function (result) {
-              self.form.serial = result.text
-              self.isScannerData = true
+              if (!result.cancelled) {
+                self.form.serial = result.text
+                self.isScannerData = true
+              } else {
+                this.$nextTick(() => { // ES6 arrow function
+                  this.$refs.input_serial.focus()
+                })
+
+              }
             },
             function (error) {
               alert('Scanning failed: ' + error)
