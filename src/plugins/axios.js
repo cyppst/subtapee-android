@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  // baseURL: 'https://stp.chaiyapoj.site/api'
-  baseURL: "http://stp.loc/api"
+  baseURL: 'http://manage.suptapee.com/api'
+  // baseURL: "http://stp.loc/api"
 });
 
 const setAxiosHeader = function (token) {
