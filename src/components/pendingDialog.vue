@@ -8,8 +8,8 @@
             @hide="onHide"
             :actions="
             [
-            {label: 'ข้อมูลถูกต้อง', icon: 'delete',color: 'red',is_accept: true},
-            {label: 'ปฏิเสธการรับ', icon: 'delete',color: 'red', is_accept: false}
+            {label: 'ข้อมูลถูกต้อง', icon: 'check_circole',color: 'red',is_accept: true},
+            {label: 'ปฏิเสธการรับ', icon: 'cancel_presentation',color: 'red', is_accept: false}
             ]"
     />
     <!--

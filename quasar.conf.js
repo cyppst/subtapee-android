@@ -8,7 +8,8 @@ module.exports = function (ctx) {
       'axios',
       'import',
       'vuelidate',
-      'vue-timeago'
+      'vue-timeago',
+      'vee-validate'
     ],
     css: [
       'app.styl'

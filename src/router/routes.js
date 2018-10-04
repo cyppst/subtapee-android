@@ -38,6 +38,13 @@ export default [
         meta: {
           title: 'บันทึกข้อมูลงาน'
         },
+      },
+      {
+        path: 'create_serial',
+        component: () => import('pages/task/create_serial'),
+        meta: {
+          title: 'ข้อมูลอุปกรณ์'
+        },
       }
     ]
   },

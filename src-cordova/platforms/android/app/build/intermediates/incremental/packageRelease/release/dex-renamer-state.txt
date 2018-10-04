@@ -1,4 +1,4 @@
-#Sat Sep 22 08:26:09 ICT 2018
+#Wed Sep 26 01:56:07 ICT 2018
 base.0=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/dex/release/0
 renamed.0=classes.dex
 file.0=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/dex/release/0/classes.dex

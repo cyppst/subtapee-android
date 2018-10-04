@@ -33,3 +33,7 @@ export const create_task = ({commit}, payload) => {
 
     })
 }
+
+export const  updateCurrentTask = (payload) => {
+   context.commit('setCurrentTask', payload);
+}

@@ -6,9 +6,7 @@
         <hr>
         <span class="text-center q-headline-1 text-weight-semibold q-pt-xl q-mt-xl"><strong>ไม่พบ</strong>
                     รายการ</span>
-
       </div>
-    </div>
     </div>
     <q-timeline responsive color="secondary">
 
@@ -28,8 +26,6 @@
           {{task.service_charge}}
         </q-chip>
       </q-timeline-entry>
-
-
     </q-timeline>
 
     <!-- content -->

@@ -1,0 +1,6 @@
+#!/bin/bash
+#keytool -genkey -v -keystore subtapee.keystore -alias subtapee -keyalg RSA -keysize 2048 -validity 20000
+rm *.apk -f
+echo subtapee | jarsigner -verbose  -tsa http://timestamp.comodoca.com  -sigalg SHA1withRSA -digestalg SHA1 -keystore subtapee.keystore src-cordova/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk subtapee
+zipalign -v 4 src-cordova/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk subtapee.apk
+echo $PWD/subtapee.apk | xclip -selection c
