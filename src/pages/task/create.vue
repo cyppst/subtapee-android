@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <q-page padding class="row justify-center">
     <div style="width: 700px; max-width: 90vw;">
       <q-field
@@ -12,19 +11,7 @@
         :error="errors.has('customer_name')"
         :error-label="errors.first('customer_name')"
       >
-      <q-input v-validate="'required'" name="customer_name" data-vv-as="ชื่อลูกค้า" v-model="form.customer_name" float-label="ชื่อลูกค้า" />
-=======
-  <q-page padding class="docs-input row justify-center">
-    <div style="width: 500px; max-width: 90vw;">
-      <q-btn icon="camera_alt" v-if="this.$isCordova" @click="scanBarcode()"/>
-      <q-field>
-        <q-input ref="input_serial" stack-label="Serial"
-                 :readonly="isScannerData"
-                 v-model="form.serial"
-                 @blur="$v.form.serial.$touch"
-                 :error="$v.form.serial.$error"/>
-
->>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
+      <q-input v-validate="'required'"  data-vv-as="ชื่อลูกค้า" v-model="form.customer_name" float-label="ชื่อลูกค้า" />
       </q-field>
 
       <q-input v-model="form.service_fees"  data-vv-as="เก็บค่าติดตั้ง" float-label="เก็บค่าติดตั้ง" />
@@ -59,7 +46,7 @@
   import { mapActions} from 'vuex'
 
   export default {
-    data() {
+    data () {
       return {
         form: {
           circuit_id: '',
@@ -70,7 +57,6 @@
         countEquip: 0
       }
     },
-<<<<<<< HEAD
     methods:{
       ...mapActions('task', ['create_task','updateCurrentTask']),  // assuming you are using namespaced modules
       formSubmit: function () {
@@ -99,80 +85,6 @@
                   type: 'negative',
                   message: 'กรุณาตรวจสอบข้อมูล'
                 })
-=======
-    components: {uploader},
-    mounted: function () {
-      this.scanBarcode()
-    },
-    created: function () {
-      this.$nextTick(function () {
-      })
-    },
-    computed: {
-      isVerified() {
-        if (this.Equipment.length === 0) {
-          return false
-        } else {
-          return true
-        }
-      }
-    },
-    methods: {
-      ...mapActions('task', ['create_task']),  // assuming you are using namespaced modules
-      scanBarcode: function () {
-        var self = this
-
-        if (this.$isCordova) {
-          cordova.plugins.barcodeScanner.scan(
-            function (result) {
-              if (!result.cancelled) {
-                self.form.serial = result.text
-                self.isScannerData = true
-              } else {
-                this.$nextTick(() => { // ES6 arrow function
-                  this.$refs.input_serial.focus()
-                })
-
-              }
-            },
-            function (error) {
-              alert('Scanning failed: ' + error)
-            },
-            {
-              preferFrontCamera: false, // iOS and Android
-              showFlipCameraButton: false, // iOS and Android
-              showTorchButton: true, // iOS and Android
-              torchOn: true, // Android, launch with the torch switched on (if available)
-              saveHistory: true, // Android, save scan history (default false)
-              prompt: 'Place a barcode inside the scan area', // Android
-              resultDisplayDuration: 1500, // Android, display scanned text for X ms. 0 suppresses it entirely, default 1500
-              formats: 'UPC_A,UPC_E,EAN_13,CODE_39,CODE_128', // default: all but PDF_417 and RSS_EXPANDED
-              orientation: 'portrait', // Android only (portrait|landscape), default unset so it rotates with the device
-              disableAnimations: true, // iOS
-              disableSuccessBeep: false // iOS and Android
-            }
-          )
-        } else {
-          this.$notify.create({
-            type: 'negative',
-            message: 'Run again using Android.'
-          })
-        }
-      },
-      submit: function () {
-        this.$v.form.$touch()
-
-        if (this.$v.form.$error) {
-          this.$q.notify('กรุณากรอกข้อมูลให้ครบทุกช่อง')
-
-        } else {
-          this.create_task(this.form)
-            .then(response => {
-              this.isLoading = false
-              this.$q.notify({
-                type: 'positive',
-                message: response.data
->>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
               })
             return;
           }
