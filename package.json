@@ -30,7 +30,7 @@
     "vuex-router-sync": "^5.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^10.0.1",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-friendly-formatter": "^4.0.1",
