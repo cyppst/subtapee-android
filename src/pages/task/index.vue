@@ -82,11 +82,21 @@
       ...mapGetters('task', ['tasks', 'TaskById']), // assuming you are using namespaced modules
     },
     methods: {
+<<<<<<< HEAD
       ...mapActions('task', ['refresh', 'transfer', 'response']),
       toggleDialog: function (id) {
         this.TaskDialog.show = true
         this.TaskDialog.id = id
       },
+=======
+      ...mapActions("task", ["refresh"]),
+      taskDetail: function (event) {
+        console.log(event.target.id);
+      },
+      getEquip: function (brand, model, serial) {
+        return brand + " " + model;
+      }
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
     }
   }
 </script>

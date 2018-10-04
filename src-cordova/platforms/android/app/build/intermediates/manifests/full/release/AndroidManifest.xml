@@ -25,6 +25,8 @@
         android:name="android.hardware.camera"
         android:required="true" />
 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:hardwareAccelerated="true"
         android:icon="@mipmap/icon"

@@ -24,16 +24,26 @@
         "source": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/res/drawable-land-hdpi/screen.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/61abf28dd5c6fbb515e3826b2e55aa60/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
+=======
+        "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_launcher_icon.png.flat",
+        "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/1fe93ed1f85f9f14da6cf830e699d732/res/drawable-xhdpi/launcher_icon.png"
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
     },
     {
         "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/61abf28dd5c6fbb515e3826b2e55aa60/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_launcher_icon.png.flat",
         "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/1fe93ed1f85f9f14da6cf830e699d732/res/drawable-xhdpi/launcher_icon.png"
+=======
+        "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/61abf28dd5c6fbb515e3826b2e55aa60/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
     },
     {
         "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal.9.png.flat",
@@ -56,14 +66,24 @@
         "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/1fe93ed1f85f9f14da6cf830e699d732/res/layout/search_book_contents_header.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/debug/drawable_notification_bg.xml.flat",
         "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/61abf28dd5c6fbb515e3826b2e55aa60/res/drawable/notification_bg.xml"
     },
     {
+=======
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
         "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/debug/layout-v21_notification_action.xml.flat",
         "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/61abf28dd5c6fbb515e3826b2e55aa60/res/layout-v21/notification_action.xml"
     },
     {
+<<<<<<< HEAD
+=======
+        "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/debug/drawable_notification_bg.xml.flat",
+        "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/61abf28dd5c6fbb515e3826b2e55aa60/res/drawable/notification_bg.xml"
+    },
+    {
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
         "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_custom.xml.flat",
         "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/56e4f050aaeeea85d6dbfe4805bcbcee/res/layout/notification_template_big_media_custom.xml"
     },

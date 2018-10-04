@@ -1,33 +1,57 @@
 #Internal package file, do not edit.
+<<<<<<< HEAD
 #Wed Sep 26 01:56:07 ICT 2018
 210.set=ANDROID_RESOURCE
 282.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/font.css
 14.set=ANDROID_RESOURCE
 180.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-uk/about2d.html
+=======
+#Sat Sep 22 11:24:58 ICT 2018
+210.set=ANDROID_RESOURCE
+14.set=ANDROID_RESOURCE
+180.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-xhdpi-v4/launcher_icon.png
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 118.set=ASSET
 60.set=ASSET
 2.set=ASSET
 164.set=ANDROID_RESOURCE
 26.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ko/about2d.html
-209.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+209.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 78.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-uk/index.html
 21.set=ASSET
+<<<<<<< HEAD
 53.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-en/whatsnew.html
 107.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 236.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 159.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 125.set=ASSET
 211.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+=======
+53.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-en/about1d.html
+107.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+236.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar
+159.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+125.set=ASSET
+211.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 80.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-it/index.html
 134.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 263.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 186.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 277.set=ASSET
+<<<<<<< HEAD
 161.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 192.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/style.css
 132.set=ASSET
 238.set=ASSET
 179.set=ANDROID_RESOURCE
+=======
+161.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+192.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-es/sharing.html
+132.set=ANDROID_RESOURCE
+238.set=ASSET
+179.set=ASSET
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 59.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 284.set=ASSET
 34.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
@@ -35,6 +59,7 @@
 86.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 65.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v21/notification_action_tombstone.xml
 61.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+<<<<<<< HEAD
 217.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/dex/release/0/classes.dex
 40.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-land-ldpi-v4/screen.png
 245.set=ASSET
@@ -58,11 +83,37 @@
 0.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/resources.arsc
 252.set=ASSET
 193.set=ASSET
+=======
+217.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rCN/scanning.html
+40.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-land-ldpi-v4/screen.png
+245.set=ASSET
+269.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png
+186.set=ASSET
+115.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v17/notification_action_tombstone.xml
+49.set=ASSET
+92.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable/notification_bg_low.xml
+244.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/ionicons.woff2
+167.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/ionicons.woff
+275.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+198.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+121.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+142.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-it/scanning.html
+250.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+173.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+95.set=ASSET
+100.set=ANDROID_RESOURCE
+271.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-it/whatsnew.html
+206.set=ASSET
+0.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/resources.arsc
+252.set=ANDROID_RESOURCE
+193.set=ANDROID_RESOURCE
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 56.set=ASSET
 19.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 15.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-nl/index.html
 46.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 213.set=ASSET
+<<<<<<< HEAD
 98.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 21.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 17.set=ASSET
@@ -80,11 +131,35 @@
 231.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/app_picker_list_item.xml
 154.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rTW/sharing.html
 167.set=ANDROID_RESOURCE
+=======
+98.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+21.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+17.set=ASSET
+73.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+229.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/images/scan-example.png
+225.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+204.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-pt/index.html
+127.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rTW/scanning.html
+63.set=ASSET
+6.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+5.set=ASSET
+256.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-de/about2d.html
+179.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-uk/about2d.html
+102.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-land-mdpi-v4/screen.png
+231.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/icons/favicon-32x32.png
+154.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/AndroidManifest.xml
+167.set=ASSET
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 220.set=ASSET
 283.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/mipmap-mdpi-v4/icon.png
 24.set=ASSET
+<<<<<<< HEAD
 181.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-xhdpi-v4/launcher_icon.png
 128.set=ASSET
+=======
+181.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/cordova.js
+128.set=ANDROID_RESOURCE
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 70.set=JAVA_RESOURCE
 27.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ru/license.html
 79.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable/launcher_icon.png
@@ -97,14 +172,22 @@
 81.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable/notification_icon_background.xml
 135.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 264.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 187.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 110.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 162.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 193.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-es/sharing.html
+=======
+187.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+110.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+162.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+193.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v17/notification_template_big_media.xml
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 142.set=ASSET
 248.set=ASSET
 189.set=ASSET
 35.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 103.set=ANDROID_RESOURCE
 98.set=ASSET
 209.set=ASSET
@@ -131,13 +214,42 @@
 110.set=ASSET
 272.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png
 216.set=ANDROID_RESOURCE
+=======
+103.set=JAVA_RESOURCE
+98.set=ANDROID_RESOURCE
+209.set=ANDROID_RESOURCE
+87.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+10.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+66.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rHK/about2d.html
+218.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-en/index.html
+41.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar/META-INF/com.android.support_support-compat.version
+255.set=ASSET
+196.set=JAVA_RESOURCE
+116.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-es/whatsnew.html
+93.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/js/app.js
+147.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+59.set=ASSET
+245.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/fa-solid-900.woff2
+168.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/sukhumvitlight-webfont-webfont.eot
+276.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+199.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+122.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+220.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/js/3.js
+143.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-nl/sharing.html
+251.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+174.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+110.set=ASSET
+272.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/fa-regular-400.woff2
+216.set=DEX
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 1.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/images/demo-yes.png
-262.set=ASSET
+262.set=ANDROID_RESOURCE
 66.set=ASSET
 8.set=JAVA_RESOURCE
 16.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-ldpi-v4/capture.xml
 47.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 223.set=ASSET
+<<<<<<< HEAD
 99.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 22.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar
 27.set=ASSET
@@ -157,6 +269,26 @@
 171.set=ASSET
 34.set=ASSET
 182.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/cordova.js
+=======
+99.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+22.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar
+27.set=ASSET
+74.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+226.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+205.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-nl/about1d.html
+128.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_template_big_media_custom.xml
+73.set=ASSET
+7.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+257.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/images/big-datamatrix.png
+103.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar/META-INF/android.arch.lifecycle_runtime.version
+232.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/mdi.woff
+155.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/cordova-js-src/android/promptbasednativeapi.js
+230.set=ANDROID_RESOURCE
+130.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rTW/index.html
+171.set=ANDROID_RESOURCE
+34.set=ASSET
+182.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/js/5.js
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 138.set=ANDROID_RESOURCE
 80.set=ASSET
 28.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png
@@ -172,6 +304,7 @@
 265.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 188.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 111.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 240.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 163.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 106.set=ASSET
@@ -179,12 +312,22 @@
 190.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 152.set=ANDROID_RESOURCE
 258.set=ASSET
+=======
+240.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+163.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+106.set=ANDROID_RESOURCE
+194.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/KFOkCnqEu92Fr1MmgVxIIzQ.woff
+190.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar
+152.set=ANDROID_RESOURCE
+258.set=ANDROID_RESOURCE
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 199.set=ANDROID_RESOURCE
 36.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
-113.set=ANDROID_RESOURCE
+113.set=ASSET
 219.set=ASSET
 88.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 11.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 67.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rHK/about2d.html
 219.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/plugins/cordova-plugin-sim/www/android/sim.js
 42.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-port-ldpi-v4/screen.png
@@ -207,6 +350,30 @@
 2.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ru/scanning.html
 150.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar
 272.set=ANDROID_RESOURCE
+=======
+67.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-fr/scanning.html
+219.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/plugins/cordova-plugin-sim/www/android/sim.js
+42.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-port-ldpi-v4/screen.png
+265.set=ANDROID_RESOURCE
+117.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rHK/index.html
+94.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-es/about2d.html
+148.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+69.set=ANDROID_RESOURCE
+246.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/images/contact-results-screen.jpg
+169.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ko/whatsnew.html
+277.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+200.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+123.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar
+221.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png
+144.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/specimen_files/sukhumvitlight-webfont-cleartype.png
+252.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+175.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+120.set=ASSET
+226.set=ANDROID_RESOURCE
+2.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ru/scanning.html
+150.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+272.set=ASSET
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 76.set=ASSET
 48.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 233.set=ASSET
@@ -216,6 +383,7 @@
 75.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 227.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 50.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 206.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-nl/about1d.html
 129.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_template_big_media_custom.xml
 83.set=ASSET
@@ -233,20 +401,40 @@
 148.set=ANDROID_RESOURCE
 90.set=ASSET
 201.set=ANDROID_RESOURCE
+=======
+206.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-uk/scanning.html
+129.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/menu/encode.xml
+83.set=ASSET
+8.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar
+258.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/search_book_contents_list_item.xml
+104.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rCN/license.html
+233.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-uk/whatsnew.html
+156.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v21/notification_template_custom_big.xml
+240.set=ANDROID_RESOURCE
+131.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/KFOlCnqEu92Fr1MmWUlfBBc-.woff
+181.set=ASSET
+44.set=ASSET
+260.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rHK/whatsnew.html
+183.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-fr/about2d.html
+148.set=ANDROID_RESOURCE
+90.set=ASSET
+201.set=ASSET
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 29.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/icons/icon-256x256.png
 109.set=ASSET
 51.set=ANDROID_RESOURCE
 56.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/sukhumvitreg-webfont-webfont.eot
 239.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 31.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-fr/index.html
-155.set=ANDROID_RESOURCE
+155.set=ASSET
 62.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 214.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 83.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-en/license.html
-137.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+137.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 12.set=ASSET
-266.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+266.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 189.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 112.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 241.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 164.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
@@ -255,16 +443,27 @@
 195.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/KFOkCnqEu92Fr1MmgVxIIzQ.woff
 191.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar
 170.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ko/whatsnew.html
+=======
+112.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+241.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+164.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+116.set=ASSET
+0.set=ANDROID_RESOURCE
+195.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_template_part_time.xml
+191.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+170.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rCN/index.html
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 162.set=ASSET
-268.set=ASSET
+268.set=ANDROID_RESOURCE
 37.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
-123.set=ASSET
+123.set=JAVA_RESOURCE
 229.set=ASSET
 89.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 12.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 68.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-port-mdpi-v4/screen.png
 43.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v21/notification_template_icon_group.xml
 275.set=ASSET
+<<<<<<< HEAD
 118.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rHK/index.html
 95.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-es/about2d.html
 149.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
@@ -280,11 +479,31 @@
 176.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 130.set=ANDROID_RESOURCE
 236.set=ASSET
+=======
+118.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/js/1.js
+95.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-en/sharing.html
+149.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar
+79.set=ANDROID_RESOURCE
+247.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/search_book_contents.xml
+278.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+201.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+70.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar/META-INF/com.android.support_support-media-compat.version
+124.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+222.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/sukhumvitlight-webfont-webfont.woff
+145.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/cordova-js-src/platform.js
+253.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+176.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+130.set=ASSET
+236.set=JAVA_RESOURCE
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 177.set=ASSET
 3.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/quasar-logo.png
 151.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 280.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 282.set=ASSET
+=======
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 86.set=ASSET
 49.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 243.set=ASSET
@@ -293,6 +512,7 @@
 47.set=ASSET
 76.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 51.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+<<<<<<< HEAD
 207.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-uk/scanning.html
 93.set=ANDROID_RESOURCE
 204.set=ANDROID_RESOURCE
@@ -309,19 +529,38 @@
 184.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-fr/about2d.html
 158.set=ASSET
 211.set=ANDROID_RESOURCE
+=======
+207.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/sukhumvitlight-webfont-webfont.svg
+93.set=ASSET
+204.set=ASSET
+9.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+259.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png
+105.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-es/license.html
+234.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ko/scanning.html
+157.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html/apache-license.txt
+250.set=ASSET
+191.set=ASSET
+132.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/menu/capture.xml
+54.set=ASSET
+261.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNa.woff
+184.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-nl/scanning.html
+158.set=ANDROID_RESOURCE
+211.set=ASSET
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 15.set=ASSET
-119.set=ASSET
+119.set=ANDROID_RESOURCE
 61.set=ANDROID_RESOURCE
 3.set=ASSET
 57.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-fr/about1d.html
 32.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/specimen_files/easytabs.js
 165.set=ANDROID_RESOURCE
 63.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
-215.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+215.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 84.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-uk/about1d.html
 138.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 22.set=JAVA_RESOURCE
 267.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 113.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 90.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 242.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
@@ -331,6 +570,17 @@
 273.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png
 196.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_template_part_time.xml
 171.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rCN/index.html
+=======
+113.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+90.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+242.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+165.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+126.set=ASSET
+140.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+273.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rCN/whatsnew.html
+196.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar/META-INF/android.arch.core_runtime.version
+171.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 278.set=ASSET
 38.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 133.set=ANDROID_RESOURCE
@@ -339,6 +589,7 @@
 13.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 69.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_template_part_chronometer.xml
 44.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rHK/about1d.html
+<<<<<<< HEAD
 119.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/js/1.js
 96.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-en/sharing.html
 89.set=ASSET
@@ -363,10 +614,36 @@
 207.set=ASSET
 253.set=ASSET
 194.set=ANDROID_RESOURCE
+=======
+119.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v17/notification_action.xml
+96.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-nl/license.html
+89.set=ASSET
+248.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-pt/sharing.html
+279.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+202.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+71.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-de/sharing.html
+125.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+223.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/KFOlCnqEu92Fr1MmYUtfBBc-.woff
+146.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rTW/about1d.html
+254.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+177.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+100.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+140.set=ASSET
+246.set=ASSET
+187.set=ANDROID_RESOURCE
+4.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/share.xml
+152.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+101.set=ANDROID_RESOURCE
+96.set=ASSET
+207.set=ASSET
+253.set=ANDROID_RESOURCE
+194.set=ASSET
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 25.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 57.set=ASSET
 77.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 52.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 208.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/sukhumvitlight-webfont-webfont.svg
 214.set=ASSET
 106.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-es/license.html
@@ -383,19 +660,44 @@
 160.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/fa-solid-900.woff
 168.set=ASSET
 221.set=ASSET
+=======
+208.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/generator_config.txt
+214.set=ASSET
+106.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v17/notification_template_lines_media.xml
+18.set=ANDROID_RESOURCE
+235.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2
+158.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/xml/config.xml
+260.set=ASSET
+210.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png
+133.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-de/whatsnew.html
+64.set=ASSET
+262.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_template_lines_media.xml
+185.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/specimen_files/specimen_stylesheet.css
+6.set=ASSET
+160.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-port-xhdpi-v4/screen.png
+168.set=ASSET
+221.set=ANDROID_RESOURCE
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 25.set=ASSET
 129.set=ANDROID_RESOURCE
 71.set=ASSET
 58.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-land-xxhdpi-v4/screen.png
 33.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/capture.xml
 64.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 216.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 85.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/plugins/cordova-plugin-sim/www/sim.js
 139.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+=======
+216.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/dex/release/0
+85.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/plugins/cordova-plugin-sim/www/sim.js
+139.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 32.set=ASSET
-268.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+268.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 60.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/specimen_files/sukhumvitreg-webfont-cleartype.png
 114.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 91.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 243.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 166.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
@@ -406,12 +708,25 @@
 120.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v17/notification_action.xml
 270.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 172.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png
+=======
+91.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+243.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+166.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+136.set=ASSET
+141.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+274.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/KFOmCnqEu92Fr1Mu4mxM.woff
+197.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-en/scanning.html
+120.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/cordova-js-src/exec.js
+270.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+172.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-port-xxhdpi-v4/screen.png
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 39.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 143.set=ASSET
-249.set=ANDROID_RESOURCE
+249.set=ASSET
 18.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png
 14.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 45.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-port-xxxhdpi-v4/screen.png
+<<<<<<< HEAD
 228.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 99.set=ANDROID_RESOURCE
 104.set=JAVA_RESOURCE
@@ -435,12 +750,37 @@
 180.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 111.set=ASSET
 217.set=DEX
+=======
+228.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+99.set=ASSET
+104.set=ASSET
+97.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/js/6.js
+20.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/icons/icon-384x384.png
+249.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/linux-avatar.svg
+203.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+72.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-uk/license.html
+126.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+224.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ja/sharing.html
+255.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+178.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+101.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+150.set=ANDROID_RESOURCE
+256.set=ASSET
+197.set=ASSET
+230.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+5.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-es/index.html
+153.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+180.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+111.set=ASSET
+217.set=ASSET
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 263.set=ASSET
 26.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 67.set=ASSET
 9.set=ASSET
 78.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 53.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 209.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/generator_config.txt
 224.set=ASSET
 107.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v17/notification_template_lines_media.xml
@@ -457,6 +797,24 @@
 161.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-port-xhdpi-v4/screen.png
 192.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 231.set=ANDROID_RESOURCE
+=======
+209.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/history_list_item.xml
+224.set=ASSET
+107.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-es/scanning.html
+28.set=ANDROID_RESOURCE
+80.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+236.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar/META-INF/com.android.support_support-v4.version
+159.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/fa-solid-900.woff
+270.set=ANDROID_RESOURCE
+211.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ja/about1d.html
+134.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png
+74.set=ANDROID_RESOURCE
+263.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/js/4.js
+186.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rTW/whatsnew.html
+161.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/sukhumvitreg-webfont-webfont.woff
+192.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+231.set=ASSET
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 172.set=ANDROID_RESOURCE
 35.set=ASSET
 139.set=ANDROID_RESOURCE
@@ -464,12 +822,17 @@
 59.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/sukhumvitlight-webfont-demo.html
 34.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ko/about1d.html
 65.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+<<<<<<< HEAD
 217.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/dex/release/0
+=======
+217.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 86.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/plugins/cordova-plugin-screen-orientation/www/screenorientation.js
 40.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 42.set=ANDROID_RESOURCE
 269.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 61.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable/flip_camera.png
+<<<<<<< HEAD
 115.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 92.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 244.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
@@ -486,17 +849,40 @@
 107.set=ANDROID_RESOURCE
 153.set=ANDROID_RESOURCE
 259.set=ASSET
+=======
+115.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+92.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+244.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+167.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+146.set=ASSET
+142.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+275.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/js/vendor.js
+198.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_template_big_media.xml
+121.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/icons/icon-512x512.png
+271.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+0.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+250.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/js/9.js
+173.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-hdpi-v4/notification_bg_low_normal.9.png
+107.set=ASSET
+153.set=ASSET
+259.set=ANDROID_RESOURCE
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 19.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_media_action.xml
 15.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 10.set=ASSET
 46.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ja/scanning.html
 229.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 114.set=ASSET
+<<<<<<< HEAD
 98.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/js/6.js
+=======
+98.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/raw/beep.ogg
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 21.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/icons/favicon-16x16.png
 204.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 73.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rCN/sharing.html
 127.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 225.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ja/sharing.html
 256.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 179.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
@@ -512,11 +898,28 @@
 227.set=ANDROID_RESOURCE
 count=285
 273.set=ANDROID_RESOURCE
+=======
+225.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-de/license.html
+256.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+179.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+102.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+160.set=ANDROID_RESOURCE
+266.set=ASSET
+231.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+154.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+6.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-en/about2d.html
+181.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+121.set=ASSET
+227.set=ANDROID_RESOURCE
+count=281
+273.set=ASSET
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 27.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 77.set=ASSET
 79.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 54.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 234.set=ASSET
+<<<<<<< HEAD
 175.set=ASSET
 108.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ko/sharing.html
 38.set=ASSET
@@ -532,15 +935,36 @@ count=285
 162.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/sukhumvitreg-webfont-webfont.woff
 193.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 241.set=ANDROID_RESOURCE
+=======
+175.set=ANDROID_RESOURCE
+108.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-nl/whatsnew.html
+38.set=ASSET
+81.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+237.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/sukhumvitreg-webfont-webfont.ttf
+280.set=ASSET
+212.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-it/sharing.html
+135.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/encode.xml
+84.set=ASSET
+264.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-pt/whatsnew.html
+187.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_template_big_media_narrow.xml
+110.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/mdi.woff2
+162.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-pt/scanning.html
+193.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+241.set=ASSET
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 182.set=ASSET
 45.set=ANDROID_RESOURCE
-149.set=ANDROID_RESOURCE
-91.set=ASSET
+149.set=JAVA_RESOURCE
+91.set=ANDROID_RESOURCE
 202.set=ASSET
 35.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ja/whatsnew.html
 66.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 218.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 87.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ja/license.html
+=======
+87.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-pt/license.html
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 10.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/images/big-pdf417.png
 41.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar
 52.set=ASSET
@@ -548,6 +972,7 @@ count=285
 93.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 245.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 168.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 156.set=ASSET
 147.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rTW/about1d.html
 220.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
@@ -563,11 +988,29 @@ count=285
 117.set=ASSET
 1.set=ASSET
 163.set=ASSET
+=======
+156.set=ANDROID_RESOURCE
+147.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-xxhdpi-v4/launcher_icon.png
+220.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+143.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+276.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/js/7.js
+199.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-land/encode.xml
+122.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-es/about1d.html
+272.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+13.set=ASSET
+1.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+251.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-it/about1d.html
+174.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rHK/scanning.html
+117.set=ASSET
+1.set=ASSET
+163.set=ANDROID_RESOURCE
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 269.set=ANDROID_RESOURCE
 16.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 20.set=ASSET
 47.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js
 22.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar/META-INF/com.android.support_support-core-ui.version
+<<<<<<< HEAD
 124.set=JAVA_RESOURCE
 99.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/raw/beep.ogg
 205.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
@@ -587,12 +1030,32 @@ count=285
 237.set=JAVA_RESOURCE
 178.set=ASSET
 283.set=ANDROID_RESOURCE
+=======
+124.set=ASSET
+99.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rTW/about2d.html
+205.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+74.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v17/notification_template_big_media_narrow_custom.xml
+128.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+226.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v17/notification_template_big_media_narrow.xml
+257.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+103.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar
+276.set=ASSET
+232.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+155.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+7.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-fr/sharing.html
+130.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+182.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+131.set=ASSET
+237.set=ASSET
+178.set=ANDROID_RESOURCE
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 28.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 87.set=ASSET
 55.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 244.set=ANDROID_RESOURCE
 30.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 185.set=ASSET
+<<<<<<< HEAD
 109.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-nl/whatsnew.html
 48.set=ASSET
 82.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
@@ -612,12 +1075,37 @@ count=285
 55.set=ASSET
 190.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/icons/icon-128x128.png
 159.set=ANDROID_RESOURCE
+=======
+109.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ko/sharing.html
+48.set=ASSET
+82.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+238.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/cordova-js-src/plugin/android/app.js
+213.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ru/index.html
+136.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/cordova-js-src/android/nativeapiprovider.js
+94.set=ASSET
+205.set=ASSET
+265.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-port-hdpi-v4/screen.png
+188.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/images/big-qr.png
+111.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-de/scanning.html
+240.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-hdpi-v4/launcher_icon.png
+163.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/menu/history.xml
+194.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+251.set=ASSET
+192.set=ASSET
+55.set=ASSET
+190.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar/META-INF/com.android.support_support-core-utils.version
+159.set=ASSET
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 212.set=ASSET
 16.set=ANDROID_RESOURCE
 36.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v17/notification_template_media.xml
 67.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 219.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 88.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-pt/license.html
+=======
+88.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ja/license.html
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 11.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ru/about1d.html
 42.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 62.set=ANDROID_RESOURCE
@@ -626,6 +1114,7 @@ count=285
 94.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 246.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 169.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 166.set=ASSET
 148.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/bookmark_picker_list_item.xml
 221.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
@@ -651,15 +1140,50 @@ count=285
 258.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 50.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/images/big-aztec.png
 104.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar
+=======
+166.set=ANDROID_RESOURCE
+148.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/bookmark_picker_list_item.xml
+221.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+144.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+277.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ko/index.html
+200.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/xml/preferences.xml
+123.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar/META-INF/android.arch.lifecycle_viewmodel.version
+23.set=ANDROID_RESOURCE
+2.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+252.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v16/notification_template_custom_big.xml
+175.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_template_big_media_narrow_custom.xml
+150.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_template_icon_group.xml
+127.set=ASSET
+279.set=ANDROID_RESOURCE
+30.set=ANDROID_RESOURCE
+48.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ja/index.html
+23.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable/toggle_torch.png
+134.set=ANDROID_RESOURCE
+206.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+75.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-v21/notification_action_background.xml
+129.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+227.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-xhdpi-v4/notification_bg_normal.9.png
+258.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+50.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/images/big-aztec.png
+104.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 233.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
-156.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+156.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 8.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar/META-INF/android.arch.lifecycle_livedata-core.version
 131.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 260.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 183.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 141.set=ASSET
 247.set=ASSET
 188.set=ANDROID_RESOURCE
+=======
+260.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+183.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+141.set=ASSET
+247.set=ANDROID_RESOURCE
+188.set=ASSET
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 29.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 102.set=ANDROID_RESOURCE
 97.set=ASSET
@@ -670,6 +1194,7 @@ count=285
 31.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 58.set=ANDROID_RESOURCE
 83.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 239.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/cordova-js-src/plugin/android/app.js
 62.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable/notification_bg.xml
 214.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ja/about1d.html
@@ -689,17 +1214,43 @@ count=285
 7.set=ASSET
 169.set=ASSET
 222.set=ANDROID_RESOURCE
+=======
+239.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/fa-brands-400.woff
+62.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable/notification_bg.xml
+214.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rTW/license.html
+137.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v17/notification_template_big_media_custom.xml
+215.set=ANDROID_RESOURCE
+266.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rHK/sharing.html
+189.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/icons/icon-128x128.png
+112.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v21/notification_action.xml
+19.set=ANDROID_RESOURCE
+241.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-it/license.html
+164.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-land-xhdpi-v4/screen.png
+195.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+261.set=ASSET
+170.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+65.set=ANDROID_RESOURCE
+191.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/style.css
+7.set=ASSET
+169.set=ASSET
+222.set=ASSET
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 26.set=ASSET
 37.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ru/about2d.html
 68.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+<<<<<<< HEAD
 89.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/plugins/cordova-plugin-dialogs/www/android/notification.js
+=======
+89.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/KFOlCnqEu92Fr1MmSU5fBBc-.woff
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 12.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-it/about2d.html
 43.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 72.set=ASSET
 118.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 95.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
-247.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+247.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 70.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar
+<<<<<<< HEAD
 149.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-xxhdpi-v4/launcher_icon.png
 222.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 145.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
@@ -714,26 +1265,47 @@ count=285
 151.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_template_icon_group.xml
 137.set=ASSET
 280.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/js/7.js
+=======
+149.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar/META-INF/com.android.support_support-fragment.version
+222.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+145.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+170.set=ASSET
+278.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/font.css
+201.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/js/0.js
+124.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/images/search-book-contents.jpg
+33.set=ANDROID_RESOURCE
+3.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+253.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_action_tombstone.xml
+176.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/fa-regular-400.woff
+151.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png
+137.set=ANDROID_RESOURCE
+280.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/images/big-1d.png
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 40.set=ANDROID_RESOURCE
 49.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/js/8.js
 24.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-pt/about2d.html
 144.set=ASSET
 207.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 76.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-pt/about1d.html
-259.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+259.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 51.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_template_media_custom.xml
 105.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 234.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 9.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/sukhumvitlight-webfont-webfont.ttf
-157.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+157.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 105.set=ASSET
+<<<<<<< HEAD
 132.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 261.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+=======
+132.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+261.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 184.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 151.set=ANDROID_RESOURCE
 257.set=ASSET
-198.set=ASSET
-112.set=ASSET
+198.set=ANDROID_RESOURCE
+112.set=ANDROID_RESOURCE
 218.set=ASSET
 57.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 264.set=ASSET
@@ -741,6 +1313,7 @@ count=285
 68.set=ANDROID_RESOURCE
 84.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 63.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-nl/about2d.html
+<<<<<<< HEAD
 215.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rTW/license.html
 138.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v17/notification_template_big_media_custom.xml
 225.set=ASSET
@@ -755,6 +1328,22 @@ count=285
 271.set=ASSET
 140.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ru/whatsnew.html
 171.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+=======
+215.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_action.xml
+138.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-hdpi-v4/notification_bg_normal.9.png
+225.set=ASSET
+267.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-de/about1d.html
+113.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/index.html
+29.set=ASSET
+90.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rCN/about1d.html
+242.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v17/notification_template_custom_big.xml
+165.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ja/about2d.html
+273.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+196.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/mergeJavaRes/release/0.jar
+271.set=ASSET
+140.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/icons/apple-icon-152x152.png
+171.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 75.set=ANDROID_RESOURCE
 232.set=ASSET
 173.set=ANDROID_RESOURCE
@@ -765,12 +1354,17 @@ count=285
 13.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-fr/license.html
 44.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 82.set=ASSET
+<<<<<<< HEAD
 119.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+=======
+119.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 96.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 248.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 71.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 223.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 146.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 180.set=ASSET
 279.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/js/vendor.js
 202.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/js/0.js
@@ -782,25 +1376,46 @@ count=285
 100.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rTW/about2d.html
 147.set=ASSET
 152.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png
+=======
+180.set=ANDROID_RESOURCE
+279.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/mipmap-mdpi-v4/icon.png
+202.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/KFOlCnqEu92Fr1MmEU9fBBc-.woff
+125.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/plugins/es6-promise-plugin/www/promise.js
+43.set=ANDROID_RESOURCE
+4.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+254.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/help.xml
+177.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ru/sharing.html
+100.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-land-xxxhdpi-v4/screen.png
+147.set=ANDROID_RESOURCE
+152.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable/notification_tile_bg.xml
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 200.set=ANDROID_RESOURCE
 281.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ko/index.html
 108.set=ASSET
 50.set=ASSET
 25.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/sukhumvitreg-webfont-webfont.svg
-154.set=ASSET
+154.set=ANDROID_RESOURCE
 208.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 77.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/cordova_plugins.js
 11.set=ASSET
 52.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ko/license.html
-106.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+106.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 235.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 158.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 115.set=ASSET
 210.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 133.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 262.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+=======
+158.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+115.set=ANDROID_RESOURCE
+210.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+133.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+262.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 185.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
-161.set=ANDROID_RESOURCE
+161.set=ASSET
 267.set=ASSET
 160.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 122.set=ASSET
@@ -812,6 +1427,7 @@ count=285
 85.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 64.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rCN/about2d.html
 60.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 216.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_action.xml
 139.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-hdpi-v4/notification_bg_normal.9.png
 235.set=ASSET
@@ -831,6 +1447,26 @@ count=285
 85.set=ASSET
 270.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rHK/sharing.html
 242.set=ASSET
+=======
+216.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/dex/release/0/classes.dex
+139.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-ru/whatsnew.html
+235.set=ASSET
+268.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png
+176.set=ASSET
+114.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-de/index.html
+39.set=ANDROID_RESOURCE
+91.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-land-hdpi-v4/screen.png
+243.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-uk/sharing.html
+166.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable/share_via_barcode.png
+274.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+197.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+120.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+141.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/fonts/fa-brands-400.woff2
+172.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+85.set=ASSET
+270.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-mdpi-v4/notification_bg_normal.9.png
+242.set=ANDROID_RESOURCE
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 183.set=ASSET
 46.set=ASSET
 18.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
@@ -838,11 +1474,16 @@ count=285
 14.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-mdpi-v4/notification_bg_low_normal.9.png
 45.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
 92.set=ANDROID_RESOURCE
+<<<<<<< HEAD
 203.set=ASSET
+=======
+203.set=ANDROID_RESOURCE
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
 97.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 20.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
-249.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_
+249.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 72.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+<<<<<<< HEAD
 228.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable-xhdpi-v4/notification_bg_normal.9.png
 224.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
 190.set=ASSET
@@ -856,3 +1497,18 @@ count=285
 230.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/images/scan-example.png
 153.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/drawable/notification_tile_bg.xml
 157.set=ANDROID_RESOURCE
+=======
+228.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/images/scan-from-phone.png
+224.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+190.set=JAVA_RESOURCE
+203.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/search_book_contents_header.xml
+126.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/www/statics/sukhumvit/specimen_files/grid_12-825-55-15.css
+53.set=ASSET
+5.base=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release
+255.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/images/demo-no.png
+178.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout-v17/notification_template_media_custom.xml
+101.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/notification_template_media.xml
+230.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/release/resources-release.ap_/res/layout/app_picker_list_item.xml
+153.file=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/assets/release/html-zh-rTW/sharing.html
+157.set=ASSET
+>>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
