@@ -14,3 +14,11 @@ export const hasPending = state => {
     },
   }
 }
+
+
+export const getAnnounceById = (state) => (id) => {
+  return state.items.filter((announce) => {
+    return announce.id === id
+  })
+}
+

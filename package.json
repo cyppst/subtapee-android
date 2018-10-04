@@ -1,8 +1,8 @@
 {
-  "name": "subtapee",
+  "name": "suptapee",
   "version": "1.0.0",
   "description": "A Quasar Framework app",
-  "productName": "Subtapee",
+  "productName": "suptapee",
   "cordovaId": "site.chaiyapoj.stp",
   "author": "Chaiyapoj Pechsathid <golfcomsci@outlook.com>",
   "private": true,

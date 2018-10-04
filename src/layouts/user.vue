@@ -123,10 +123,11 @@
     },
     mounted() {
       this.fetchPending()
+      this.fetchAnnounce()
     },
     methods: {
       ...mapActions([
-        'fetchPending', // map `this.increment()` to `this.$store.dispatch('increment')`
+        'fetchPending','fetchAnnounce' // map `this.increment()` to `this.$store.dispatch('increment')`
       ]),
       getAPK: function () {
         window.location = 'https://stp.chaiyapoj.site/android'

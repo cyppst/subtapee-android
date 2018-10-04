@@ -4,6 +4,7 @@ export default {
   pending: {
     equipment: 0,
     material: 0,
-  }
+  },
+  announce:[]
 
 }

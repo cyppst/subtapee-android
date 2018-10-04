@@ -15,9 +15,17 @@ export default [
         path: '/',
         component: () => import('pages/index'),
         meta: {
-          title: 'Feed'
+          title: 'ข่าวประชาสัมพันธ์'
         }
-      }
+      },
+      {
+        path: '/announce/:id',
+        component: () => import('pages/Announce'),
+        props:true,
+        meta: {
+          title: 'งานติดตั้ง'
+        }
+      },
     ]
   },
   {

@@ -5,7 +5,7 @@
       <q-icon size="2rem" name="fas fa-broadcast-tower"/>
       <!--<q-icon size="2rem" name="fas fa-broadcast-tower"/>-->
       <q-toolbar-title>
-        Subtapee App
+        suptapee App
         <span slot="subtitle">ป้อน Username และ Password ที่ได้รับจากบริษัท</span>
       </q-toolbar-title>
     </q-toolbar>
