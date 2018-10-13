@@ -34,6 +34,14 @@ export default [
     beforeEnter: ifAuthenticated,
     children: [
       {
+        name: 'detail',
+        path: ':id',
+        component: () => import('pages/task/detail'),
+        meta: {
+          title: 'ข้อมูลวงจร'
+        }
+      },
+      {
         path: '/',
         component: () => import('pages/task'),
         meta: {
