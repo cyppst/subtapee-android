@@ -13,23 +13,21 @@
 
       <q-list-header>ประวัติการติดตั้ง {{this.tasks.length}} รายการ</q-list-header>
       <q-item  link :to="{name: 'detail', params: {id: row.id}}" v-for="(row, index) in tasks" :key="row.id"  @click.native="toggleDialog(row.id)">
-        <q-item-side :id="row.id" avatar="statics/linux-avatar.svg"/>
-        <q-item-main :id="row.id" :label="row.customer_name+' '+row.circuit_id">
+        <q-item-side :id="row.id" avatar="statics/networking.png"/>
+        <q-item-main :id="row.id" :label="row.customer_name">
           <!--:sublabel="'S/N :'+row.serial.toUpperCase()">-->
           <slot name="sublabel">
             <!--<q-chip dense class="q-mr-xs" color="primary">-->
               <!--S/N : {{row.serial.toUpperCase()}}-->
             <!--</q-chip>-->
 
-            <q-chip dense class="q-mr-xs" icon="today" color="secondary">
-              {{row.created_at}}
-            </q-chip>
+            <q-chip v-if="row.remarks" dense tag square color="blue-9">{{row.remarks}}</q-chip>
           </slot>
+
         </q-item-main>
-        <!--<q-item-side right>-->
-          <!--<q-item-tile stamp>-->
-            <!--<timeago :datetime="row.created_at"></timeago>-->
-          <!--</q-item-tile>-->
+        <q-item-side right>
+          <q-item-tile stamp color="secondary"><timeago :datetime="row.created_at"></timeago></q-item-tile>
+        </q-item-side>
           <!--<q-btn flat round dense icon="more_vert">-->
             <!--<q-popover>-->
               <!--<q-list link>-->
@@ -79,6 +77,9 @@
     computed: {
       ...mapGetters(['isLoading']),
       ...mapGetters('task', ['tasks', 'TaskById']), // assuming you are using namespaced modules
+      circuit_detail: function () {
+        return this.getTaskById(this.$route.params.id);
+      }
     },
     methods: {
       ...mapActions('task', ['refresh', 'transfer', 'response']),

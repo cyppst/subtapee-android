@@ -1,8 +1,7 @@
 <template>
-<q-page padding class="row justify-center">
-  <div style="width: 500px; max-width: 90vw;">
+  <q-page>
       <q-list highlight inset-separator>
-        <q-item v-for="row in announce"  multiline>
+        <q-item :id="row.id" v-for="row in announce"  multiline>
           <q-item-side avatar="statics/topic.png" />
           <q-item-main  :label="row.title" >
             <q-item-tile sublabel lines="2">
@@ -10,29 +9,10 @@
             </q-item-tile>
           </q-item-main>
           <q-item-side tamp="row.created_at" right>
-            <q-item-tile stamp>{{row.created_at}}</q-item-tile>
+            <q-item-tile stamp><timeago :datetime="row.created_at"></timeago></q-item-tile>
           </q-item-side>
-          <q-modal v-model="opened[row.id]">
-            <h4>{{row.title}}</h4>
-            <q-btn
-              color="primary"
-              @click="opened[row.id] = false"
-              label="Close"
-            />
-          </q-modal>
         </q-item>
-
-
       </q-list>
-    </div>
-  <q-modal v-model="opened">
-    <h4>Basic Modal</h4>
-    <q-btn
-      color="primary"
-      @click="opened = false"
-      label="Close"
-    />
-  </q-modal>
     <inner-loading :loading="isLoading"/>
 </q-page>
 

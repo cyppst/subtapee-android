@@ -1,14 +1,14 @@
 <template>
     <q-action-sheet
             v-model="pendingDialog.show"
-            title="Action Sheet"
+            title="ตรวจสอบความถูกต้อง"
             @ok="onOk"
             @cancel="onCancel"
             @show="onShow"
             @hide="onHide"
             :actions="
             [
-            {label: 'ข้อมูลถูกต้อง', icon: 'check_circole',color: 'red',is_accept: true},
+            {label: 'ข้อมูลถูกต้อง', icon: 'check_circle',color: 'green',is_accept: true},
             {label: 'ปฏิเสธการรับ', icon: 'cancel_presentation',color: 'red', is_accept: false}
             ]"
     />

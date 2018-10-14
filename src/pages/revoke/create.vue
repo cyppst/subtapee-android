@@ -1,146 +1,96 @@
 <template>
-  <q-page padding class="docs-input row justify-center">
-    <div style="width: 500px; max-width: 90vw;">
-      <q-btn icon="camera_alt" v-if="this.$isCordova" @click="scanBarcode()"/>
-      <q-field>
-        <q-input ref="serial" stack-label="Serial"
-                 :readonly="isScannerData"
-                 v-model="form.serial"
-                 @blur="$v.form.serial.$touch"
-                 :error="$v.form.serial.$error"/>
-
+  <q-page padding class="row justify-center">
+    <div style="width: 700px; max-width: 90vw;">
+      <q-field
+        :error="errors.has('circuit_no')"
+        :error-label="errors.first('circuit_no')"
+      >
+        <q-input v-validate="'required'" data-vv-as="เลขวงจร" name="circuit_no" v-model="form.circuit_id" float-label="หมายเลขวงจร" />
       </q-field>
-      <q-input
-        stack-label="หมายเลขวงจร"
-        v-model="form.circuit_id"
-        @blur="$v.form.circuit_id.$touch"
-        :error="$v.form.circuit_id.$error"
-
+      <q-field>
+        <q-input v-validate="'required'"  data-vv-as="ชื่อลูกค้า" v-model="form.customer_name" float-label="ชื่อลูกค้า" />
+      </q-field>
+      <q-input v-model="form.remarks" type="textarea" float-label="หมายเหตุ"/>
+      <q-item-separator />
+      <q-field>
+      <div v-for="(index,eq) in eq">
+        <q-input v-model="eq.serial" :float-label="inputLabel" />
+      </div>
+    </q-field>
+    <q-btn dense class="full-width" color="primary" @click="addEq">
+      เพิ่มอุปกรณ์
+    </q-btn>
+    <q-page-sticky position="bottom-right" :offset="[18, 18]">
+      <q-btn
+        round
+        size="lg"
+        color="primary"
+        @click="formSubmit"
+        icon="add"
       />
-      <q-input
-        stack-label="ชื่อลูกค้า"
-        v-model="form.customer_name"
-        @blur="$v.form.customer_name.$touch"
-        :error="$v.form.customer_name.$error"
-
-      />
-      <q-input
-        stack-label="อุปกรณ์"
-        v-model="form.equipment"
-        @blur="$v.form.equipment.$touch"
-        :error="$v.form.equipment.$error"
-
-
-      />
-      <q-input stack-label="หมายเหตุ"
-               v-model="form.remarks"/>
-      <q-page-sticky position="bottom-right" :offset="[18, 18]">
-        <q-btn
-          round
-          size="lg"
-          color="primary"
-          @click="submit"
-          icon="add"
-        />
-      </q-page-sticky>
+    </q-page-sticky>
     </div>
   </q-page>
 </template>
 
 <script>
-  import {required} from 'vuelidate/lib/validators'
-  import {mapActions} from 'vuex'
+  import { mapActions} from 'vuex'
 
   export default {
     data () {
       return {
-        isScannerData: false,
         form: {
-          serial: '',
           circuit_id: '',
           customer_name: '',
-          equipment: '',
-          remarks: ''
+          service_charge: '',
+          remarks: '',
         },
-        Equipment: []
+        eq: []
+
       }
     },
-    validations: {
-      form: {
-        serial: {required},
-        circuit_id: {required},
-        customer_name: {required},
-        equipment: {required},
+    computed:{
+      inputLabel(){
+        return "Serial No. #"
       }
     },
-    mounted: function () {
-      this.scanBarcode()
-    },
-    created: function () {
-      this.$nextTick(function () {
-      })
-    },
-    methods: {
-      ...mapActions('revoke', ['create_revoke']),  // assuming you are using namespaced modules
-      scanBarcode: function () {
-        var self = this
-
-        if (this.$isCordova) {
-          cordova.plugins.barcodeScanner.scan(
-            function (result) {
-              self.form.serial = result.text
-              self.isScannerData = true
-            },
-            function (error) {
-              alert('Scanning failed: ' + error)
-            },
-            {
-              preferFrontCamera: false, // iOS and Android
-              showFlipCameraButton: false, // iOS and Android
-              showTorchButton: true, // iOS and Android
-              torchOn: true, // Android, launch with the torch switched on (if available)
-              saveHistory: true, // Android, save scan history (default false)
-              prompt: 'Place a barcode inside the scan area', // Android
-              resultDisplayDuration: 1500, // Android, display scanned text for X ms. 0 suppresses it entirely, default 1500
-              formats: 'UPC_A,UPC_E,EAN_13,CODE_39,CODE_128', // default: all but PDF_417 and RSS_EXPANDED
-              orientation: 'portrait', // Android only (portrait|landscape), default unset so it rotates with the device
-              disableAnimations: true, // iOS
-              disableSuccessBeep: false // iOS and Android
-            }
-          )
-        } else {
-          this.$notify.create({
-            type: 'negative',
-            message: 'Run again using Android.'
-          })
-        }
-      },
-      submit: function () {
-        this.$v.form.$touch()
-
-        if (this.$v.form.$error) {
-          this.$notify('Please review fields again.')
-
-        } else {
-          this.create_revoke(this.form)
-            .then(response => {
-              this.isLoading = false
-              this.$q.notify({
-                type: 'positive',
-                message: response.data
+    methods:{
+      ...mapActions('revoke', ['create_revoke','updateCurrentrevoke']),  // assuming you are using namespaced modules
+      formSubmit: function () {
+        this.$validator.validateAll().then((result) => {
+          if (result) {
+            this.create_revoke(this.form)
+              .then(response => {
+                this.isLoading = false
+                //
+                this.$q.dialog({
+                  title: 'ข้อมูลอุปกรณ์',
+                  message: 'มีการติดตั้งอุปกรณ์หรือไม่?',
+                  ok: 'มี',
+                  cancel: 'ไม่มี'
+                }).then((response) => {
+                  this.updateCurrentrevoke(response)
+                  this.$router.push('/revoke/create_serial')
+                }).catch(() => {
+                  this.isLoading = false
+                })
+                //
               })
-              this.$router.push('/')
-
-            }).catch(err => {
-            this.isLoading = false
-            this.$notify.create({
-              type: 'negative',
-              message: err.response.data
-            })
-          })
-        }
-
+              .catch(err => {
+                this.isLoading = false
+                this.$q.notify({
+                  type: 'negative',
+                  message: 'กรุณาตรวจสอบข้อมูล'
+                })
+              })
+            return;
+          }
+        });
+      },
+      addEq: function () {
+        this.eq.push({ serial: '' });
       }
-    }
+
+    },
   }
 </script>

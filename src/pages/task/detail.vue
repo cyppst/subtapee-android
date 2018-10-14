@@ -1,64 +1,71 @@
 <template>
-  <q-page padding class="row justify-center">
+  <q-page>
     <div style="width: 100vw ;">
-
       <q-list>
-        <q-collapsible group="somegroup" icon="explore" label="รายละเอียด" opened>
+        <q-list-header>รายละเอียด</q-list-header>
           <q-item>
             <q-item-main>
               <q-item-tile label>เลขวงจร</q-item-tile>
-              <q-item-tile sublabel>{{circuit['circuit_id']}}</q-item-tile>
+              <q-item-tile sublabel>{{task['circuit_id']}}</q-item-tile>
             </q-item-main>
           </q-item>
           <q-item>
             <q-item-main>
               <q-item-tile label>ชื่อลูกค้า</q-item-tile>
-              <q-item-tile sublabel>{{circuit['customer_name']}}</q-item-tile>
+              <q-item-tile sublabel>{{task['customer_name']}}</q-item-tile>
             </q-item-main>
           </q-item>
-          <q-item v-if="circuit['service_fees']">
+          <q-item v-if="task['service_fees']">
             <q-item-main>
               <q-item-tile label>เก็บค่าบริการ</q-item-tile>
-              <q-item-tile sublabel>{{circuit['service_fees']}}</q-item-tile>
+              <q-item-tile sublabel>{{task['service_fees']}}</q-item-tile>
             </q-item-main>
           </q-item>
           <q-item>
             <q-item-main>
               <q-item-tile label>ระยะสาย</q-item-tile>
-              <q-item-tile sublabel>{{circuit['dropwire_begin']}} - {{circuit['dropwire_end']}} ({{dropWireLength}})</q-item-tile>
+              <q-item-tile sublabel>{{task['dropwire_begin']}} - {{task['dropwire_end']}} ({{dropWireLength}})</q-item-tile>
             </q-item-main>
           </q-item>
-          <q-item v-if="circuit['remarks']">
+          <q-item v-if="task['remarks']">
             <q-item-main>
               <q-item-tile label>หมายเหตุ</q-item-tile>
-              <q-item-tile sublabel>{{circuit['remarks']}}</q-item-tile>
+              <q-item-tile sublabel>{{task['remarks']}}</q-item-tile>
             </q-item-main>
           </q-item>
+        <q-item v-if="task['created_at']">
+          <q-item-main>
+            <q-item-tile label>บันทึกเมื่อ</q-item-tile>
+            <q-item-tile sublabel>{{task['created_at']}}
+            (<timeago :datetime="task['created_at']"></timeago>)
+            </q-item-tile>
+          </q-item-main>
+        </q-item>
           <q-item-separator />
-        </q-collapsible>
-        <q-collapsible v-if="equipments.length>0" group="somegroup" icon="perm_identity" label="อุปกรณ์">
-          <q-item id="e.id" v-for="e in equipments">
+        <div v-if="task['equipments'].length">
+          <q-list-header>อุปกรณ์</q-list-header>
+          <q-item :id="index" v-for="(eq,index) in task['equipments']">
             <q-item-main>
-              <q-item-tile label>{{e.equipment.brand}} {{e.equipment.model}} </q-item-tile>
+              <q-item-tile label>{{eq.equipment.brand}} {{eq.equipment.model}} ({{eq.equipment.category.name}})</q-item-tile>
               <q-item-tile sublabel>
-                <q-chip small square class="q-mr-xs" color="secondary">
-                  {{e.equipment.category.name}}
-                </q-chip>
-                <q-chip small square class="q-mr-xs" color="primary">
-                S/N : {{e.serial.toUpperCase()}}
-                </q-chip>
+                S/N . :{{eq.serial.toUpperCase()}}
               </q-item-tile>
             </q-item-main>
-            <q-item-separator />
           </q-item>
-        </q-collapsible>
-        <q-collapsible v-if="photos.length>0" group="somegroup" icon="shopping_cart" label="รูปภาพ">
-          <div>
-            <img id="photo.id" v-for="photo in photos" :src="photo.fileName" class="responsive">
-          </div>
-        </q-collapsible>
+
+          <q-list>
+            <q-item link @click.native="modal=true" v-ripple.mat>
+              <q-item-side icon="photo_library" />
+              <q-item-main label="ไฟล์รูปภาพ" />
+              <q-item-side right icon="keyboard_arrow_right" />
+            </q-item>
+          </q-list>
+        </div>
+        <q-item-separator />
+
       </q-list>
     </div>
+    <Carousel @close="modal = false" :modal="modal"></Carousel>
     <inner-loading :loading="isLoading"/>
   </q-page>
 
@@ -69,40 +76,36 @@
 <script>
   import {mapGetters, mapState, mapActions} from 'vuex'
   import InnerLoading from 'components/InnerLoading'
+  import Carousel from 'components/Carousel'
+
 
   export default {
     name: 'detail',
     data: function() {
       return {
-        circuit: [],
-        equipments:[],
-        photos:[],
+        id: this.$route.params.id,
+        modal: false
       }
     },
     created() {
-      console.log(this.$route.params.id);
+      console.log(this.task_detail);
     },
-    mounted: function () {
-      this.$axiosInstance.get('/task/'+this.$route.params.id)
-
-        .then(response => {
-       this.circuit = response.data.circuit ;
-       this.equipments= response.data.equipments ;
-       this.photos= response.data.photos;
-        }).catch(err => {
-        throw err
-      })
+    mounted() {
     },
-    components: {InnerLoading},
+    components: {InnerLoading,Carousel},
     computed: {
       ...mapGetters(['isLoading']),
+      ...mapGetters('task', ['tasks', 'getTaskById']), // assuming you are using namespaced modules
       dropWireLength: function () {
-        return this.circuit['dropwire_end'] - this.circuit['dropwire_begin']
+        return this.task['dropwire_end'] - this.task['dropwire_begin']
+      },
+      task() {
+          return this.getTaskById(2)
+
       }
+
       // ...mapGetters('task', ['detailById']),
     },
-    methods: {
 
-    },
   }
 </script>

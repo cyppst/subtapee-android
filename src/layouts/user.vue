@@ -130,7 +130,7 @@
         'fetchPending','fetchAnnounce' // map `this.increment()` to `this.$store.dispatch('increment')`
       ]),
       getAPK: function () {
-        window.location = 'https://stp.chaiyapoj.site/android'
+        window.location = 'https://stock.suptapee.com/android'
       },
       clearLocalStorage: function () {
         localStorage.clear()

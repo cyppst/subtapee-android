@@ -20,5 +20,9 @@ export const getAnnounceById = (state) => (id) => {
   return state.items.filter((announce) => {
     return announce.id === id
   })
-}
 
+}
+export const circuitById = (state) => (id) => {
+  return state.circuit.find(circuit => circuit.id === id)
+
+}

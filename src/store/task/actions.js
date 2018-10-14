@@ -6,7 +6,6 @@ export const refresh = ({commit}
   commit('setLoading', true, {root: true})
   axiosInstance.get('/task')
     .then(response => {
-      console.log(response.data);
       commit('SET_TASKS', response.data)
       commit('setLoading', false, {root: true})
 

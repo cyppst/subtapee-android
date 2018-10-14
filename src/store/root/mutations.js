@@ -11,3 +11,9 @@ export const setAnnounce = (state, payload) => {
   state.announce = payload
 
 }
+
+export const SET_CIRCUIT = (state, payload) => {
+  state.circuit = payload
+
+
+}

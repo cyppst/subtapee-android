@@ -24,12 +24,12 @@
         "source": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/src/main/res/drawable-land-xxhdpi/screen.png"
     },
     {
-        "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/menu_history.xml.flat",
-        "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/1fe93ed1f85f9f14da6cf830e699d732/res/menu/history.xml"
-    },
-    {
         "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/layout_history_list_item.xml.flat",
         "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/1fe93ed1f85f9f14da6cf830e699d732/res/layout/history_list_item.xml"
+    },
+    {
+        "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/menu_history.xml.flat",
+        "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/1fe93ed1f85f9f14da6cf830e699d732/res/menu/history.xml"
     },
     {
         "merged": "/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable_notification_bg.xml.flat",

@@ -91,12 +91,21 @@ export default [
     beforeEnter: ifAuthenticated,
     children: [
       {
+        name: '',
         path: '/',
         component: () => import('pages/equipment/index'),
         meta: {
           title: 'อุปกรณ์'
         }
-      }
+      },
+      {
+        name: 'equipment_detail',
+        path: ':id',
+        component: () => import('pages/equipment/detail'),
+        meta: {
+          title: 'อุปกรณ์'
+        }
+      },
     ]
   },
   {
