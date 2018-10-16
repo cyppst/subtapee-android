@@ -17,3 +17,13 @@ export const SET_CIRCUIT = (state, payload) => {
 
 
 }
+export const SET_ENGINEER = (state, engineers) => {
+  state.engineers = engineers;
+
+};
+
+export const SET_FOOTER_PANEL = (state, payload) => {
+  state.layout = payload
+}
+
+

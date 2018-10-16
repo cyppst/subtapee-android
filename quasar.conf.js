@@ -9,7 +9,7 @@ module.exports = function (ctx) {
       'import',
       'vuelidate',
       'vue-timeago',
-      'vee-validate'
+      'vee-validate',
     ],
     css: [
       'app.styl'

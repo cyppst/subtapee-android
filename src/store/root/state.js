@@ -3,6 +3,7 @@ export default {
   circuit: null,
   notification: 0,
   pending: {},
-  announce:[]
-
+  announce: [],
+  engineers: [],
+  footerPanel: true
 }

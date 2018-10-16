@@ -6,6 +6,7 @@ import material from './material'
 import auth from './auth'
 import task from './task'
 import revoke from './revoke'
+// import user from './user'
 
 import * as actions from './root/actions'
 import * as getters from './root/getters'

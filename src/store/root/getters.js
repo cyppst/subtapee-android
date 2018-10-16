@@ -26,3 +26,8 @@ export const circuitById = (state) => (id) => {
   return state.circuit.find(circuit => circuit.id === id)
 
 }
+
+
+export const footerPanel = state => {
+  return state.footerPanel
+}

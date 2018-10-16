@@ -37,15 +37,6 @@
     </q-dialog>
 </template>
 <script>
-    function parseTargets(targets) {
-        return targets.map(target => {
-            let nameaa = target.label;
-            return {
-                label: nameaa,
-                value: target.value
-            }
-        })
-    }
 
     import {mapState, mapActions} from 'vuex'
 

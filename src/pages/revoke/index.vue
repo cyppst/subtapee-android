@@ -1,38 +1,33 @@
 <template>
-  <q-page padding>
-    <div v-if="this.revokes.length==0" class="row">
-      <div class="absolute-center text-center">
-        <img class="text-center" style="max-width: 60%;" src="~assets/tower.svg"/>
-        <hr>
-        <span class="text-center q-headline-1 text-weight-semibold q-pt-xl q-mt-xl"><strong>ไม่พบ</strong>
+  <q-pull-to-refresh pull-message="ดึงเพื่อโหลด" release-message="ปล่อย" refresh-message="กำลังโหลด"
+                     :handler="refresher">
+    <q-page padding>
+      <div v-if="this.revokes.length==0" class="row">
+        <div class="absolute-center text-center">
+          <img class="text-center" style="max-width: 60%;" src="assets/tower.svg"/>
+          <hr>
+          <span class="text-center q-headline-1 text-weight-semibold q-pt-xl q-mt-xl"><strong>ไม่พบ</strong>
                     รายการ</span>
+        </div>
       </div>
-    </div>
-    <q-timeline responsive color="secondary">
-      <q-timeline-entry v-for="(revoke, index) in revokes"
-                        :key="revoke.id"
-                        :subtitle="revoke.created_at"
-                        :title="revoke.customer_name+' #'+revoke.circuit_id"
-                        side="left">
-        <q-chip small class="q-mr-xs" color="primary">
-          {{revoke.equipment}}
-        </q-chip>
-        <q-chip small class="q-mr-xs" color="secondary">
-          S/N : {{revoke.serial.toUpperCase()}}
-        </q-chip>
-      </q-timeline-entry>
-    </q-timeline>
-    <q-page-sticky position="bottom-right" :offset="[18, 18]">
-      <q-btn
-        round
-        size="lg"
-        color="primary"
-        to="/revoke/create"
-        icon="add"
-      />
-    </q-page-sticky>
-    <inner-loading :loading="isLoading"/>
-  </q-page>
+      <q-timeline responsive color="secondary">
+        <q-timeline-entry v-for="(revoke, index) in revokes"
+                          :key="revoke.id"
+                          :subtitle="revoke.created_at"
+                          :title="revoke.customer_name+' #'+revoke.circuit_id"
+                          side="left">
+
+          <q-chip square dense class="q-mr-xs" olor="dark">
+            {{revoke.equipment}}
+          </q-chip>
+          <q-chip square dense class="q-mr-xs" color="secondary">
+            Serial No. {{revoke.serial.toUpperCase()}}
+          </q-chip>
+        </q-timeline-entry>
+      </q-timeline>
+      <inner-loading :loading="isLoading"/>
+    </q-page>
+  </q-pull-to-refresh>
 </template>
 
 <script>
@@ -46,7 +41,9 @@
     },
     components: {InnerLoading},
     mounted() {
-      this.refresh();
+      if (!this.revoke) {
+        this.refresh();
+      }
     },
     computed: {
       ...mapState("revoke", ["revokes"]),
@@ -94,6 +91,9 @@
             message: "Run again using Android."
           });
         }
+      },
+      refresher: function (done) {
+        this.refresh().then(() => done())
       }
     }
   };

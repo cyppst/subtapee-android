@@ -1,21 +1,43 @@
 <template>
-  <q-page>
-      <q-list highlight inset-separator>
-        <q-item :id="row.id" v-for="row in announce"  multiline>
-          <q-item-side avatar="statics/topic.png" />
-          <q-item-main  :label="row.title" >
-            <q-item-tile sublabel lines="2">
-         {{row.body}}
-            </q-item-tile>
-          </q-item-main>
-          <q-item-side tamp="row.created_at" right>
-            <q-item-tile stamp><timeago :datetime="row.created_at"></timeago></q-item-tile>
-          </q-item-side>
-        </q-item>
-      </q-list>
-    <inner-loading :loading="isLoading"/>
-</q-page>
-
+  <div>
+    <q-pull-to-refresh pull-message="ดึงเพื่อโหลด" release-message="ปล่อย" refresh-message="กำลังโหลด"
+                       :handler="refresher">
+      <q-page>
+        <q-list highlight inset-separator>
+          <q-item link @click.native="openDialog(row)" v-for="(row,index) in announce" :key="row.id" multiline>
+            <q-item-side avatar="statics/topic.png"/>
+            <q-item-main :label="row.title">
+              <q-item-tile sublabel lines="2">
+                {{row.body}}
+              </q-item-tile>
+            </q-item-main>
+            <q-item-side tamp="row.created_at" right>
+              <q-item-tile stamp>
+                <timeago :datetime="row.created_at"></timeago>
+              </q-item-tile>
+            </q-item-side>
+          </q-item>
+        </q-list>
+        <inner-loading :loading="isLoading"/>
+      </q-page>
+    </q-pull-to-refresh>
+    <q-modal v-model="opened" maximized :content-css="{minWidth: '50vw'}">
+      <div style="padding: 50px">
+        <div class="q-headline text-weight-bold q-mb-md">{{currentData.title}}</div>
+        <blockquote>
+          <p>{{currentData.body}}</p>
+          <small>ประกาศเมื่อ {{currentData.created_at}}</small>
+        </blockquote>
+        <div style="padding: 15px">
+          <q-btn
+            color="primary"
+            @click="opened = false"
+            label="ปิด"
+          />
+        </div>
+      </div>
+    </q-modal>
+  </div>
 </template>
 <style>
 </style>
@@ -26,10 +48,13 @@
 
   export default {
     name: 'index',
-    data () {
+    data() {
       return {
-        opened: false
+        opened: false,
+        currentData: {}
       }
+    },
+    mounted() {
     },
     components: {InnerLoading},
     computed: {
@@ -40,6 +65,13 @@
       ...mapActions([
         'fetchAnnounce', // map `this.increment()` to `this.$store.dispatch('increment')`
       ]),
+      openDialog: function (row) {
+        this.opened = true
+        this.currentData = row
+      },
+      refresher: function (done) {
+        this.fetchAnnounce().then(() => done())
+      }
     },
   }
 </script>

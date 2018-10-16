@@ -69,7 +69,7 @@
     </q-page-container>
 
     <!-- Footer -->
-    <q-layout-footer>
+    <q-layout-footer v-model="$route.meta.footerPanel">
       <q-tabs>
         <q-route-tab slot="title" icon="home" to="/" replace label="หน้าหลัก"/>
         <q-route-tab slot="title" icon="done_all" to="/task" replace label="งานติดตั้ง"/>
@@ -81,6 +81,22 @@
                      replace label="วัสดุ"/>
       </q-tabs>
     </q-layout-footer>
+
+    <q-layout-footer v-if="$route.meta.footerPanel===false">
+      <q-tabs>
+        <q-route-tab slot="title" icon="keyboard_return" to="" @click="$router.go(-1)" replace label=" ย้อนกลับ"/>
+      </q-tabs>
+    </q-layout-footer>
+    <q-page-sticky position="bottom-right" :offset="[18, 18]">
+      <q-btn
+        round
+        size="lg"
+        color="primary"
+        v-if="$route.meta.createLink"
+        :to="$route.meta.createLink"
+        icon="add"
+      />
+    </q-page-sticky>
   </q-layout>
 </template>
 
@@ -127,7 +143,7 @@
     },
     methods: {
       ...mapActions([
-        'fetchPending','fetchAnnounce' // map `this.increment()` to `this.$store.dispatch('increment')`
+        'fetchPending', 'fetchAnnounce' // map `this.increment()` to `this.$store.dispatch('increment')`
       ]),
       getAPK: function () {
         window.location = 'https://stock.suptapee.com/android'

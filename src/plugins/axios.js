@@ -1,9 +1,10 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: 'http://manage.suptapee.com/api'
-  // baseURL: "http://stp.loc/api"
+  baseURL: 'http://stp.loc/api'
+  // baseURL: 'https://stock.suptapee.com/api'
 });
+
 
 const setAxiosHeader = function (token) {
   axiosInstance.defaults.headers.common["Authorization"] = "Bearer " + token;

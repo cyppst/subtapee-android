@@ -3,4 +3,3 @@ export const SET_MATERIAL = (state, materials) => {
   state.pending = materials.pending
 };
 
-
