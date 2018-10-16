@@ -21,6 +21,7 @@
 
       </q-field>
     </div>
+    <inner-loading :loading="isLoading"/>
   </div>
 </template>
 
@@ -29,9 +30,11 @@
 
 <script>
   import {GoBack, QBtn, QToolbar, QIcon, QToolbarTitle, QField, QInput} from 'quasar'
+  import {mapGetters, mapMutations} from 'vuex'
+  import InnerLoading from "components/InnerLoading";
 
   export default {
-    components: {QBtn, QToolbar, QIcon, QToolbarTitle, QField, QInput},
+    components: {InnerLoading, QBtn, QToolbar, QIcon, QToolbarTitle, QField, QInput},
 
     data() {
       return {
@@ -41,17 +44,49 @@
         }
       }
     },
+    computed: {
+      ...mapGetters(["isLoading"]),
+
+    },
     methods: {
+      ...mapMutations(['SET_LOADING']),
       submit() {
+        this.SET_LOADING = true
         this.$store.dispatch('auth/login', this.form).then(response => {
           this.$router.push('/')
         }).catch(error => {
-          this.$q.notify({
-            message: 'User หรือ Password ไม่ถูกต้อง',
-            timeout: 2000,
-            type: 'negative'
-          })
-        })
+            // Error
+            if (error.response) {
+              // The request was made and the server responded with a status code
+              // that falls out of the range of 2xx
+              console.log(error.response.data);
+              alert(error.response.data);
+              // console.log(error.response.status);
+              // console.log(error.response.headers);
+              this.SET_LOADING = false
+              this.$q.notify({
+                message: 'User หรือ Password ไม่ถูกต้อง',
+                timeout: 2000,
+                type: 'negative'
+              })
+            } else if (error.request) {
+              // The request was made but no response was received
+              // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+              // http.ClientRequest in node.js
+
+              console.log(error.request);
+              alert(error.request);
+              this.$q.notify({
+                message: 'ไม่สามารถเชื่อมต่อไปยัง Server ได้',
+                timeout: 2000,
+                type: 'negative'
+              })
+            } else {
+              // Something happened in setting up the request that triggered an Error
+              console.log('Error', error.message);
+            }
+          }
+        )
       }
     }
   }

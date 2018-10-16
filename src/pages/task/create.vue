@@ -61,7 +61,7 @@
       }
     },
     methods: {
-      ...mapMutations('isLoading', {root: true}),
+      ...mapMutations(['SET_LOADING']),
       ...mapActions('task', ['create_task', 'updateCurrentTask']),  // assuming you are using namespaced modules
       formSubmit: function () {
         this.$validator.validateAll().then((result) => {
@@ -80,7 +80,7 @@
                 })
               })
               .catch(err => {
-                this.isLoading = false
+                this.SET_LOADING = false
                 this.$q.notify({
                   type: 'negative',
                   message: 'กรุณาตรวจสอบข้อมูล'

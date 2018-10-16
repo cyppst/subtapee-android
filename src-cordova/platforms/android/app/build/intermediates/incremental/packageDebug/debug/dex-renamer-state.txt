@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#Sun Sep 23 09:40:51 ICT 2018
-=======
-#Sat Sep 22 19:58:15 ICT 2018
->>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a
+#Tue Oct 16 23:42:32 ICT 2018
 base.0=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
 renamed.0=classes.dex
-file.0=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

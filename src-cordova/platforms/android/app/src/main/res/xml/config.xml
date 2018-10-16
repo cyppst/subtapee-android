@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="site.chaiyapoj.stp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.suptapee.stock" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
@@ -10,21 +10,12 @@
     <feature name="CDVOrientation">
         <param name="android-package" value="cordova.plugins.screenorientation.CDVOrientation" />
     </feature>
-    <feature name="Sim">
-        <param name="android-package" value="com.pbakondy.Sim" />
-    </feature>
-    <feature name="Geolocation">
-        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
-    </feature>
-    <feature name="Notification">
-        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
-    </feature>
     <name>suptapee</name>
     <description>A Quasar Framework app</description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
-    </author>
-    <content src="index.html" />
+    Apache Cordova Team
+  </author>
+    <content src="http://192.168.0.100:8080/" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -32,12 +23,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <icon qualifier="ldpi" src="res/icon/android/drawable-ldpi-icon.png" />
-    <icon qualifier="mdpi" src="res/icon/android/drawable-mdpi-icon.png" />
-    <icon qualifier="hdpi" src="res/icon/android/drawable-hdpi-icon.png" />
-    <icon qualifier="xhdpi" src="res/icon/android/drawable-xhdpi-icon.png" />
-    <icon qualifier="xxhdpi" src="res/icon/android/drawable-xxhdpi-icon.png" />
-    <icon qualifier="xxxhdpi" src="res/icon/android/drawable-xxxhdpi-icon.png" />
+    <allow-navigation href="http://192.168.0.100:8080/" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
 </widget>

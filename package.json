@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A Quasar Framework app",
   "productName": "suptapee",
-  "cordovaId": "site.chaiyapoj.stp",
+  "cordovaId": "com.suptapee.stock",
   "author": "Chaiyapoj Pechsathid <golfcomsci@outlook.com>",
   "private": true,
   "scripts": {

@@ -39,21 +39,14 @@
         // return "{ 'Authorization': 'Bearer " + window.localStorage['token'] + "' }"
         // return "{ 'x-amz-acl': <acl>, 'content-type': <file-type> }"
       },
-      ...
-        mapGetters(["isLoading"]),
+      ...mapGetters(["isLoading"]),
       circuitId:
-
         function () {
           return this.$route.params.id;
-        }
-
-      ,
-
-    }
-    ,
+        },
+    },
     methods: {
-      ...
-        mapMutations('isLoading', {root: true}),
+      ...mapMutations(['SET_LOADING']),
       added(files) {
         setTimeout(() => {
           this.$refs.uploader.upload()

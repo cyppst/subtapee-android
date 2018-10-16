@@ -3,6 +3,15 @@
     <q-pull-to-refresh pull-message="ดึงเพื่อโหลด" release-message="ปล่อย" refresh-message="กำลังโหลด"
                        :handler="refresher">
       <q-page>
+        <div v-if="this.announce.length===0" class="row">
+          <div class="absolute-center text-center">
+            <img class="text-center" style="max-width: 60%;" src="assets/tower.svg"/>
+            <hr>
+            <span class="text-center q-headline-1 text-weight-semibold q-pt-xl q-mt-xl"><strong>ไม่พบ</strong>
+                    รายการ</span>
+
+          </div>
+        </div>
         <q-list highlight inset-separator>
           <q-item link @click.native="openDialog(row)" v-for="(row,index) in announce" :key="row.id" multiline>
             <q-item-side avatar="statics/topic.png"/>

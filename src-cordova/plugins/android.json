@@ -8,28 +8,19 @@
   },
   "installed_plugins": {
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "site.chaiyapoj.stp"
+      "PACKAGE_NAME": "com.suptapee.stock"
     },
     "phonegap-plugin-barcodescanner": {
       "ANDROID_SUPPORT_V4_VERSION": "27.+",
-      "PACKAGE_NAME": "site.chaiyapoj.stp"
+      "PACKAGE_NAME": "com.suptapee.stock"
     },
     "cordova-plugin-screen-orientation": {
-      "PACKAGE_NAME": "site.chaiyapoj.stp"
-    },
-    "cordova-plugin-sim": {
-      "PACKAGE_NAME": "site.chaiyapoj.stp"
-    },
-    "cordova-plugin-geolocation": {
-      "PACKAGE_NAME": "site.chaiyapoj.stp"
-    },
-    "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "site.chaiyapoj.stp"
+      "PACKAGE_NAME": "com.suptapee.stock"
     }
   },
   "dependent_plugins": {
     "es6-promise-plugin": {
-      "PACKAGE_NAME": "site.chaiyapoj.stp"
+      "PACKAGE_NAME": "com.suptapee.stock"
     }
   }
 }

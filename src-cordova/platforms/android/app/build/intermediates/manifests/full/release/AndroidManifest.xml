@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="site.chaiyapoj.stp"
+    package="com.suptapee.stock"
     android:hardwareAccelerated="true"
     android:versionCode="10000"
     android:versionName="1.0.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="26" />
+        android:minSdkVersion="19"
+        android:targetSdkVersion="27" />
 
     <supports-screens
         android:anyDensity="true"
@@ -25,19 +25,13 @@
         android:name="android.hardware.camera"
         android:required="true" />
 
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-    <uses-feature android:name="android.hardware.location.gps" />
-
     <application
         android:hardwareAccelerated="true"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:supportsRtl="true" >
         <activity
-            android:name="site.chaiyapoj.stp.MainActivity"
+            android:name="com.suptapee.stock.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
             android:label="@string/activity_name"
             android:launchMode="singleTop"

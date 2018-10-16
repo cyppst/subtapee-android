@@ -91,12 +91,12 @@
       ...mapActions('equipment', ['refresh', 'acceptance']),
       // when props.ok() gets called
       async onOk(item) {
-        this.isLoading = true;
+        this.SET_LOADING = true;
         await this.$axiosInstance
           .post('/equipment/pending/' + this.id, {
             is_accept: item.is_accept
           }).then(response => {
-            this.isLoading = false
+            this.SET_LOADING = false
             this.$q.notify({
               type: 'positive',
               message: response.data.message
@@ -104,7 +104,7 @@
             this.router.push('/task')
           })
           .catch(err => {
-            this.isLoading = false
+            this.SET_LOADING = false
             this.$q.notify(err)
           })
         this.refresh();

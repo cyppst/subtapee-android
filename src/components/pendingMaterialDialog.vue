@@ -43,22 +43,22 @@
     },
     methods: {
       ...mapActions('material', ['refresh', 'acceptance']),
-      ...mapMutations('isLoading', {root: true}),
+      ...mapMutations(['SET_LOADING']),
       // when props.ok() gets called
       async onOk(item) {
-        this.isLoading = true;
+        this.SET_LOADING = true;
         await this.$axiosInstance
           .post('/material/pending/' + this.pendingMaterialDialog.id, {
             is_accept: item.is_accept
           }).then(response => {
-            this.isLoading = false
+            this.SET_LOADING = false
             this.$q.notify({
               type: 'positive',
               message: response.message
             })
           })
           .catch(err => {
-            this.isLoading = false
+            this.SET_LOADING = false
             this.$q.notify(err)
           })
         this.refresh();

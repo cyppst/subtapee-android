@@ -10,7 +10,8 @@
   </q-page>
 </template>
 <script>
-  import {mapState} from 'vuex'
+  import {mapState, mapMutations} from 'vuex'
+  import InnerLoading from "components/InnerLoading";
 
   export default {
     name: "create_serial",
@@ -19,11 +20,18 @@
         serial: null
       }
     },
+    watch: {
+      // whenever question changes, this function will run
+      serial: function () {
+        this.submitForm()
+      }
+    },
     components: {InnerLoading},
     computed: {
       ...mapState("task", ["task_id"]),
     },
     methods: {
+      ...mapMutations(['SET_LOADING']),
       scanBarcode: function () {
         var self = this
 
@@ -58,15 +66,18 @@
         }
       },
       submitForm: function () {
+        this.isLoading = true
         this.$axiosInstance.post('/task/serial/', this.serial)
           .then(response => {
             this.$q.notify({
               type: 'positive',
               message: response.message
             })
+            this.isLoading = false
             this.promptDialog()
           })
           .catch(error => {
+            this.isLoading = false
             this.$q.notify({
               type: 'negative',
               message: error.response.data
@@ -82,8 +93,8 @@
         }).then(() => {
           this.$router.push('/task/create_serial')
         }).catch(() => {
-          this.isLoading = false
-          this.$router.push('/task')
+          this.SET_LOADING = false
+          this.$router.push('/task')``
         })
       }
     }

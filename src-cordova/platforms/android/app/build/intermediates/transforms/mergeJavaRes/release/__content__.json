@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-[{"name":"resources","index":0,"scopes":["EXTERNAL_LIBRARIES","SUB_PROJECTS","PROJECT"],"types":["RESOURCES"],"format":"JAR","present":true}]
-=======
 [{"name":"resources","index":0,"scopes":["PROJECT","SUB_PROJECTS","EXTERNAL_LIBRARIES"],"types":["RESOURCES"],"format":"JAR","present":true}]
->>>>>>> 0920a017fb4f0918294b628825b8c601bd383d1a

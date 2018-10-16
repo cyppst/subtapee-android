@@ -62,7 +62,7 @@
     },
     methods: {
       ...mapActions('equipment', ['refresh']),
-      ...mapMutations('isLoading', {root: true}),
+      ...mapMutations(['SET_LOADING']),
       ...mapActions(['fetchEngineer']),
       onSelected(obj) {
         this.userName = obj.firstname + ' ' + obj.lastname
@@ -71,13 +71,13 @@
 
       },
       doTransfer() {
-        this.isLoading = true;
+        this.SET_LOADING = true;
         this.$axiosInstance.post('equipment/transfer', {
           equip_id: this.equipId,
           user_id: this.userId
         })
           .then(response => {
-            this.isLoading = false
+            this.SET_LOADING = false
             this.$q.notify({
               color: 'positive',
               message: response.data.message
@@ -89,7 +89,7 @@
 
           })
           .catch(e => {
-            this.isLoading = false
+            this.SET_LOADING = false
             this.errors.push(e)
           })
       },
