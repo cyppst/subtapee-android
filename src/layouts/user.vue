@@ -10,7 +10,7 @@
 
         <q-toolbar-title>
           {{$route.meta.title}}
-          <span slot="subtitle">{{this.fullName}}</span>
+          <span slot="subtitle">{{$route.meta.subtitle}}</span>
         </q-toolbar-title>
 
         <!-- showRight is a model attached to right side drawer below -->

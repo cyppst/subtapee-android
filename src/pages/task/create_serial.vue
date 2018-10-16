@@ -19,11 +19,7 @@
         serial: null
       }
     },
-    watch: {
-      'serial': function (val) {
-        this.submitForm()
-      }
-    },
+    components: {InnerLoading},
     computed: {
       ...mapState("task", ["task_id"]),
     },

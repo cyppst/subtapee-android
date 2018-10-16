@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: 'http://stp.loc/api'
-  // baseURL: 'https://stock.suptapee.com/api'
+  // baseURL: 'http://stp.loc/api'
+  baseURL: 'https://stock.suptapee.com/api'
 });
 
 

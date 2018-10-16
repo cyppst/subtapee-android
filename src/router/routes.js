@@ -1,5 +1,5 @@
 import {ifAuthenticated, ifNotAuthenticated} from './access'
-
+import '../store'
 export default [
   {
     name: 'login',
@@ -62,7 +62,17 @@ export default [
           title: 'ระบุ Serial Number.',
           footerPanel: false
         },
-      }
+      },
+      {
+        name: 'task-create-upload',
+        path: 'create/upload/:id',
+        component: () => import('pages/task/create_upload'),
+        meta: {
+          title: 'อัพโหลดไฟล์ภาพ',
+          subtitle: 'เลือกไฟล์ภาพประกอบการทำงาน',
+          footerPanel: false
+        }
+      },
     ]
   },
   {
