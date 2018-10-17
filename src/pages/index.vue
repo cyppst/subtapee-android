@@ -75,7 +75,7 @@
         'fetchAnnounce', // map `this.increment()` to `this.$store.dispatch('increment')`
       ]),
       openDialog: function (row) {
-        this.opened = true
+        this.opened = true;
         this.currentData = row
       },
       refresher: function (done) {

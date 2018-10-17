@@ -138,7 +138,7 @@
       QListHeader
     },
     mounted() {
-      this.fetchPending()
+      this.fetchPending();
       this.fetchAnnounce()
     },
     methods: {
@@ -149,7 +149,7 @@
         window.location = 'https://stock.suptapee.com/android'
       },
       clearLocalStorage: function () {
-        localStorage.clear()
+        localStorage.clear();
         this.$q
           .dialog({
             title: 'ยืนยัน',

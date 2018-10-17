@@ -1,6 +1,6 @@
 export const isLoading = state => {
   return state.isLoading
-}
+};
 
 export const hasPending = state => {
   return {
@@ -13,7 +13,7 @@ export const hasPending = state => {
       count: state.pending.material
     },
   }
-}
+};
 
 
 export const getAnnounceById = (state) => (id) => {
@@ -21,13 +21,13 @@ export const getAnnounceById = (state) => (id) => {
     return announce.id === id
   })
 
-}
+};
 export const circuitById = (state) => (id) => {
   return state.circuit.find(circuit => circuit.id === id)
 
-}
+};
 
 
 export const footerPanel = state => {
   return state.footerPanel
-}
+};

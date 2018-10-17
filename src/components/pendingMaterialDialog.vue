@@ -51,16 +51,16 @@
           .post('/material/pending/' + this.pendingMaterialDialog.id, {
             is_accept: item.is_accept
           }).then(response => {
-            this.SET_LOADING = false
+            this.SET_LOADING = false;
             this.$q.notify({
               type: 'positive',
               message: response.message
             })
           })
           .catch(err => {
-            this.SET_LOADING = false
+            this.SET_LOADING = false;
             this.$q.notify(err)
-          })
+          });
         this.refresh();
       },
       // when props.cancel() gets called

@@ -19,4 +19,4 @@ export const getPendingById = (state, getters) => (id) => {
 
 export const getOnHandById = state => (id) => {
   return state.onhand.find(equipment => equipment.id === id)
-}
+};

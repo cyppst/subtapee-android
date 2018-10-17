@@ -33,12 +33,12 @@
     methods: {
       ...mapMutations(['SET_LOADING']),
       scanBarcode: function () {
-        var self = this
+        var self = this;
 
         if (this.$isCordova) {
           cordova.plugins.barcodeScanner.scan(
             function (result) {
-              self.form.serial = result.text
+              self.form.serial = result.text;
               self.isScannerData = true
             },
             function (error) {
@@ -66,18 +66,18 @@
         }
       },
       submitForm: function () {
-        this.isLoading = true
+        this.isLoading = true;
         this.$axiosInstance.post('/task/serial/', this.serial)
           .then(response => {
             this.$q.notify({
               type: 'positive',
               message: response.message
-            })
-            this.isLoading = false
+            });
+            this.isLoading = false;
             this.promptDialog()
           })
           .catch(error => {
-            this.isLoading = false
+            this.isLoading = false;
             this.$q.notify({
               type: 'negative',
               message: error.response.data
@@ -93,7 +93,7 @@
         }).then(() => {
           this.$router.push('/task/create_serial')
         }).catch(() => {
-          this.SET_LOADING = false
+          this.SET_LOADING = false;
           this.$router.push('/task')``
         })
       }

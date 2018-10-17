@@ -65,8 +65,8 @@
       ...mapMutations(['SET_LOADING']),
       ...mapActions(['fetchEngineer']),
       onSelected(obj) {
-        this.userName = obj.firstname + ' ' + obj.lastname
-        this.userId = obj.id
+        this.userName = obj.firstname + ' ' + obj.lastname;
+        this.userId = obj.id;
         this.actionSheet = !this.actionSheet
 
       },
@@ -77,19 +77,19 @@
           user_id: this.userId
         })
           .then(response => {
-            this.SET_LOADING = false
+            this.SET_LOADING = false;
             this.$q.notify({
               color: 'positive',
               message: response.data.message
-            })
+            });
             this.refresh().then(
 
-            )
+            );
             this.$router.push('/equipment')
 
           })
           .catch(e => {
-            this.SET_LOADING = false
+            this.SET_LOADING = false;
             this.errors.push(e)
           })
       },
@@ -98,7 +98,7 @@
           // if we've already triggered a handler
           return
         }
-        console.log('aa' + item)
+        console.log('aa' + item);
         this.$q.notify({
           color: 'secondary',
           message: `Clicked on "${item.label}"`

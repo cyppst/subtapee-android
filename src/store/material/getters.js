@@ -8,4 +8,4 @@ export const pending = state => {
 
 export const getOnHandById = state => (id) => {
   return state.onhand.find(material => material.id === id)
-}
+};

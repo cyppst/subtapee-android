@@ -8,4 +8,4 @@ export const me = ({ commit, dispatch }) => {
     .catch(errors => {
       commit('userError', errors)
     })
-}
+};

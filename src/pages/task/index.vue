@@ -74,7 +74,7 @@
     methods: {
       ...mapActions('task', ['refresh', 'transfer', 'response']),
       toggleDialog: function (id) {
-        this.TaskDialog.show = true
+        this.TaskDialog.show = true;
         this.TaskDialog.id = id
       },
       refresher: function (done) {

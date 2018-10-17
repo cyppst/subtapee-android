@@ -6,4 +6,4 @@ export const Auth = {
       return store.getters['auth/getAuthUserStatus']
     }
   }
-}
+};

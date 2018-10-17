@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 import routes from './routes'
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const Router = new VueRouter({
   /*
@@ -19,6 +19,6 @@ const Router = new VueRouter({
   base: process.env.VUE_ROUTER_BASE,
   scrollBehavior: () => ({ y: 0 }),
   routes
-})
+});
 
 export default Router

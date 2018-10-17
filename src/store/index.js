@@ -13,7 +13,7 @@ import * as getters from './root/getters'
 import * as mutations from './root/mutations'
 import state from './root/state'
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 const store = new Vuex.Store({
     namespaced: true,
@@ -28,6 +28,6 @@ const store = new Vuex.Store({
         equipment,
         material,
     }
-})
+});
 
 export default store

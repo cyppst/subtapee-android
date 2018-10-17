@@ -100,11 +100,11 @@
     methods: {
       ...mapActions('equipment', ['refresh', 'transfer', 'response']),
       equipmentTransfer: function (id) {
-        this.transferDialog.show = true
+        this.transferDialog.show = true;
         this.transferDialog.id = id
       },
       equipmentPending: function (id) {
-        this.pendingDialog.show = true
+        this.pendingDialog.show = true;
         this.pendingDialog.id = id
       },
       getEquip: function (brand, model, serial) {

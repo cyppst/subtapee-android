@@ -60,14 +60,14 @@
       formSubmit: function () {
         this.$validator.validateAll().then((result) => {
           if (result) {
-            this.SET_LOADING = false
+            this.SET_LOADING = false;
 
             this.create_revoke(this.form)
               .then(response => {
                 this.$q.notify({
                   type: 'negative',
                   message: response.data.message
-                })
+                });
                 this.$router.push('/revoke/create')
               })
               .catch(err => {
@@ -75,8 +75,8 @@
                   type: 'negative',
                   message: 'กรุณาตรวจสอบข้อมูล'
                 })
-              })
-            return;
+              });
+
           }
         });
       },

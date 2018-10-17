@@ -51,7 +51,7 @@
     methods: {
       ...mapMutations(['SET_LOADING']),
       submit() {
-        this.SET_LOADING = true
+        this.SET_LOADING = true;
         this.$store.dispatch('auth/login', this.form).then(response => {
           this.$router.push('/')
         }).catch(error => {
@@ -63,7 +63,7 @@
               alert(error.response.data);
               // console.log(error.response.status);
               // console.log(error.response.headers);
-              this.SET_LOADING = false
+              this.SET_LOADING = false;
               this.$q.notify({
                 message: 'User หรือ Password ไม่ถูกต้อง',
                 timeout: 2000,

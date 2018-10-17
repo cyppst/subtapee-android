@@ -24,6 +24,6 @@ register(process.env.SERVICE_WORKER_FILE, {
   error (err) {
     console.error('Error during service worker registration:', err)
   }
-})
+});
 
 // ServiceWorkerRegistration: https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration

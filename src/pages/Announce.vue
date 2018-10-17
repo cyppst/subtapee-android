@@ -25,7 +25,7 @@
       this.$axiosInstance.get('/announce', {id: this.$route.params.id})
 
         .then(response => {
-          console.log(response)
+          console.log(response);
           response.data = this.data;
         }).catch(err => {
         throw err

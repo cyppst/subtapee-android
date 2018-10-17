@@ -3,9 +3,9 @@ import VueCordova from 'vue-cordova'
 import axios from 'axios'
 // leave the export, even if you don't use it
 export default ({Vue}) => {
-  Vue.use(VueCordova)
+  Vue.use(VueCordova);
   Vue.cordova.on('deviceready', () => {
-    console.log('Cordova : device is ready !')
+    console.log('Cordova : device is ready !');
     screen.orientation.lock('portrait');
     //
     // window.plugins.sim.getSimInfo(successCallback, errorCallback);

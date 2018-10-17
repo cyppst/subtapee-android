@@ -51,7 +51,7 @@
     name: 'secondary',
     data() {
       return {},
-        components
+        components;
     :
       {
         QLayout,
@@ -67,16 +67,16 @@
           QListHeader
       }
     ,
-      mounted()
+      mounted();
       {
 
       }
     ,
-      methods: {
+      {
       }
     ,
-      computed: {
-        currentPath()
+      {
+        currentPath();
         {
           return this.$route.path
         }

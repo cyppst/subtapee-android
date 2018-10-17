@@ -6,14 +6,14 @@ export const fetchPending = ({commit}) => {
     .then(response => {
       commit('setPending', response.data)
     }).catch(err => {
-      commit('setLoading', false, {root: true})
+      commit('setLoading', false, {root: true});
       if (err.response.status === 419) {
 
-        commit('auth/authError', null, {root: true})
+        commit('auth/authError', null, {root: true});
         router.push('/login')
       }
     })
-}
+};
 
 
 export const fetchAnnounce = ({commit}) => {
@@ -22,28 +22,28 @@ export const fetchAnnounce = ({commit}) => {
     .then(response => {
       commit('setAnnounce', response.data)
     }).catch(err => {
-      commit('setLoading', false, {root: true})
+      commit('setLoading', false, {root: true});
       if (err.response.status === 419) {
 
-        commit('auth/authError', null, {root: true})
+        commit('auth/authError', null, {root: true});
         this.$router.push('/login')
       }
     })
-}
+};
 
 
 export const fetchEngineer = function ({commit}) {
-  commit('setLoading', true, {root: true})
+  commit('setLoading', true, {root: true});
   return axiosInstance.get('fetch/engineer')
     .then(response => {
-      commit('SET_ENGINEER', response.data)
+      commit('SET_ENGINEER', response.data);
       commit('setLoading', false, {root: true})
     }).catch(err => {
-      commit('setLoading', false, {root: true})
+      commit('setLoading', false, {root: true});
       if (err.response.status === 419) {
-        commit('auth/authError', null, {root: true})
+        commit('auth/authError', null, {root: true});
         this.$router.push('/login')
       }
     })
-}
+};
 

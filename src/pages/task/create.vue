@@ -80,13 +80,13 @@
                 })
               })
               .catch(err => {
-                this.SET_LOADING = false
+                this.SET_LOADING = false;
                 this.$q.notify({
                   type: 'negative',
                   message: 'กรุณาตรวจสอบข้อมูล'
                 })
-              })
-            return;
+              });
+
           }
         });
 
