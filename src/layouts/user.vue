@@ -62,8 +62,6 @@
     <q-layout-drawer side="right">
       Right Side of Layout
     </q-layout-drawer>
-
-
     <!-- sub-routes get injected here: -->
     <q-page-container>
       <router-view/>
