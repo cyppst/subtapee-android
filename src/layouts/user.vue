@@ -66,6 +66,7 @@
     <q-page-container>
       <router-view/>
     </q-page-container>
+
     <!-- Footer -->
     <q-layout-footer v-model="$route.meta.footerPanel">
       <q-tabs>
