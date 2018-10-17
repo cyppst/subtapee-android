@@ -77,6 +77,7 @@
         <q-route-tab slot="title" icon="input" to="/material" :alert="hasPending.material.alert"
                      :count="hasPending.material.count"
                      replace label="วัสดุ"/>
+
       </q-tabs>
     </q-layout-footer>
 
