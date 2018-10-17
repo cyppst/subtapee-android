@@ -43,22 +43,21 @@
     },
     methods: {
       ...mapActions('equipment', ['refresh', 'acceptance']),
-      ...mapMutations(['SET_LOADING']),
       // when props.ok() gets called
       async onOk(item) {
-        this.SET_LOADING = true;
+        this.$store.commit("setLoading", true, {root: true})
         await this.$axiosInstance
           .post('/equipment/pending/' + this.pendingDialog.id, {
             is_accept: item.is_accept
           }).then(response => {
-            this.SET_LOADING = false;
+            this.$store.commit("setLoading", false, {root: true})
             this.$q.notify({
               type: 'positive',
               message: response.data.message
             })
           })
           .catch(err => {
-            this.SET_LOADING = false;
+            this.$store.commit("setLoading", false, {root: true})
             this.$q.notify(err)
           });
         this.refresh();

@@ -4,7 +4,7 @@
     <q-page>
       <div v-if="this.tasks.length==0" class="row">
         <div class="absolute-center text-center">
-          <img class="text-center" style="max-width: 60%;" src="assets/tower.svg"/>
+          <img class="text-center" style="max-width: 60%;" src="~assets/tower.svg"/>
           <hr>
           <span class="text-center q-headline-1 text-weight-semibold q-pt-xl q-mt-xl"><strong>ไม่พบ</strong>
                     รายการ</span>

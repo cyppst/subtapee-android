@@ -44,7 +44,6 @@
         },
     },
     methods: {
-      ...mapMutations(['SET_LOADING']),
       added(files) {
         setTimeout(() => {
           this.$refs.uploader.upload()

@@ -31,7 +31,6 @@
       ...mapState("task", ["task_id"]),
     },
     methods: {
-      ...mapMutations(['SET_LOADING']),
       scanBarcode: function () {
         var self = this;
 
@@ -66,18 +65,18 @@
         }
       },
       submitForm: function () {
-        this.isLoading = true;
+        this.$store.commit("setLoading", true, {root: true})
         this.$axiosInstance.post('/task/serial/', this.serial)
           .then(response => {
             this.$q.notify({
               type: 'positive',
               message: response.message
             });
-            this.isLoading = false;
+            this.$store.commit("setLoading", false, {root: true})
             this.promptDialog()
           })
           .catch(error => {
-            this.isLoading = false;
+            this.$store.commit("setLoading", false, {root: true})
             this.$q.notify({
               type: 'negative',
               message: error.response.data
@@ -93,7 +92,7 @@
         }).then(() => {
           this.$router.push('/task/create_serial')
         }).catch(() => {
-          this.SET_LOADING = false;
+          this.$store.commit("setLoading", true, {root: true})
           this.$router.push('/task')``
         })
       }

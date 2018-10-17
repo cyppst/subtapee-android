@@ -6,48 +6,48 @@
         <q-item>
           <q-item-main>
             <q-item-tile label>เลขวงจร</q-item-tile>
-            <q-item-tile sublabel>{{task['circuit_id']}}</q-item-tile>
+            <q-item-tile sublabel>{{task.circuit_id}}</q-item-tile>
           </q-item-main>
         </q-item>
         <q-item>
           <q-item-main>
             <q-item-tile label>ชื่อลูกค้า</q-item-tile>
-            <q-item-tile sublabel>{{task['customer_name']}}</q-item-tile>
+            <!--<q-item-tile sublabel>{{task.customer_name}}</q-item-tile>-->
           </q-item-main>
         </q-item>
-        <q-item v-if="task['service_fees']">
+        <q-item v-if="task.service_fees>0">
           <q-item-main>
             <q-item-tile label>เก็บค่าบริการ</q-item-tile>
-            <q-item-tile sublabel>{{task['service_fees']}}</q-item-tile>
+            <q-item-tile sublabel>{{task.service_fees}}</q-item-tile>
           </q-item-main>
         </q-item>
         <q-item>
           <q-item-main>
             <q-item-tile label>ระยะสาย</q-item-tile>
-            <q-item-tile sublabel>{{task['dropwire_begin']}} - {{task['dropwire_end']}} ({{dropWireLength}})
+            <q-item-tile sublabel>{{task.dropwire_begin}} - {{task.dropwire_end}})
             </q-item-tile>
           </q-item-main>
         </q-item>
-        <q-item v-if="task['remarks']">
+        <q-item v-if="task.remarks">
           <q-item-main>
             <q-item-tile label>หมายเหตุ</q-item-tile>
-            <q-item-tile sublabel>{{task['remarks']}}</q-item-tile>
+            <q-item-tile sublabel>{{task.remarks}}</q-item-tile>
           </q-item-main>
         </q-item>
-        <q-item v-if="task['created_at']">
+        <q-item v-if="task.created_at">
           <q-item-main>
             <q-item-tile label>บันทึกเมื่อ</q-item-tile>
-            <q-item-tile sublabel>{{task['created_at']}}
+            <q-item-tile sublabel>{{task.created_at}}
               (
-              <timeago :datetime="task['created_at']"></timeago>
+              <timeago :datetime="task.created_at"></timeago>
               )
             </q-item-tile>
           </q-item-main>
         </q-item>
         <q-item-separator/>
-        <div v-if="task['equipments'].length">
+        <div v-if="task.equipments.length">
           <q-list-header>อุปกรณ์</q-list-header>
-          <q-item v-for="(eq,index) in task['equipments']" :key="eq.id">
+          <q-item v-for="eq in task.equipments" :key="eq.id">
             <q-item-main>
               <q-item-tile label>{{eq.equipment.brand}} {{eq.equipment.model}} ({{eq.equipment.category.name}})
               </q-item-tile>
@@ -102,7 +102,7 @@
       ...mapGetters(['isLoading']),
       ...mapGetters('task', ['tasks', 'getTaskById']), // assuming you are using namespaced modules
       dropWireLength: function () {
-        return this.task['dropwire_end'] - this.task['dropwire_begin']
+        return this.task.dropwire_end - this.task.dropwire_begin
       },
       task() {
         return this.getTaskById(this.id)

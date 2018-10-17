@@ -4,7 +4,7 @@
     <q-page>
       <div v-if="this.onhand+this.pending ==0" class="row">
         <div class="absolute-center text-center">
-          <img class="text-center" style="max-width: 60%;" src="assets/tower.svg"/>
+          <img class="text-center" style="max-width: 60%;" src="~assets/tower.svg"/>
           <hr>
           <span class="text-center q-headline-1 text-weight-semibold q-pt-xl q-mt-xl"><strong>ไม่พบ</strong>
                     รายการ</span>
@@ -14,7 +14,7 @@
       <q-list highlight v-if="this.pending.length>0">
         <q-list-header>รอการตรวจสอบ {{pending.length}} รายการ</q-list-header>
         <q-item v-for="(row, index) in pending" :key="row.id" link
-                :to="{name: 'equipment_pending', params: {id: row.id}}">
+                :to="{name: 'equipment-pending', params: {id: row.id}}">
           <q-item-side :id="row.id" avatar="statics/wifi.png"/>
           <q-item-main :id="row.id" :label="getEquip(row.Equipment.brand,row.Equipment.model)">
             <slot name="sublabel">

@@ -62,7 +62,6 @@
     },
     methods: {
       ...mapActions('equipment', ['refresh']),
-      ...mapMutations(['SET_LOADING']),
       ...mapActions(['fetchEngineer']),
       onSelected(obj) {
         this.userName = obj.firstname + ' ' + obj.lastname;
@@ -71,13 +70,13 @@
 
       },
       doTransfer() {
-        this.SET_LOADING = true;
+        this.$store.commit("setLoading", true, {root: true})
         this.$axiosInstance.post('equipment/transfer', {
           equip_id: this.equipId,
           user_id: this.userId
         })
           .then(response => {
-            this.SET_LOADING = false;
+            this.$store.commit("setLoading", false, {root: true})
             this.$q.notify({
               color: 'positive',
               message: response.data.message
@@ -89,7 +88,7 @@
 
           })
           .catch(e => {
-            this.SET_LOADING = false;
+            this.$store.commit("setLoading", false, {root: true})
             this.errors.push(e)
           })
       },

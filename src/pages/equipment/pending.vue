@@ -61,7 +61,7 @@
 </style>
 
 <script>
-  import {mapGetters, mapState, mapActions} from "vuex";
+  import {mapMutations, mapGetters, mapState, mapActions} from "vuex";
   import InnerLoading from "components/InnerLoading";
   import Carousel from "components/Carousel";
 
@@ -87,43 +87,41 @@
       },
     },
     methods: {
-      ...mapActions(['isLoading']),
       ...mapActions('equipment', ['refresh', 'acceptance']),
       // when props.ok() gets called
-      async onOk(item) {
-        this.SET_LOADING = true;
-        await this.$axiosInstance
+      onOk(item) {
+        this.$store.commit("setLoading", true, {root: true})
+
+        this.$axiosInstance
           .post('/equipment/pending/' + this.id, {
             is_accept: item.is_accept
-          }).then(response => {
-            this.SET_LOADING = false;
+          })
+          .then(response => {
+            console.log('response:success')
             this.$q.notify({
               type: 'positive',
               message: response.data.message
             });
-            this.router.push('/task')
+            this.$router.push('/equipment')
           })
-          .catch(err => {
-            this.SET_LOADING = false;
-            this.$q.notify(err)
-          });
-        this.refresh();
       },
       // when props.cancel() gets called
       onCancel() {
-        console.log('aa')
+        console.log('actionSheet:cancel')
 
-      },
+      }
+      ,
 
       // when we show it to the user
       onShow() {
-        console.log('aa')
+        console.log('actionSheet:show')
 
-      },
+      }
+      ,
 
       // when it gets hidden
       onHide() {
-        console.log('aa')
+        console.log('actionSheet:hide')
       }
     }
 

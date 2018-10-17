@@ -60,7 +60,7 @@
       formSubmit: function () {
         this.$validator.validateAll().then((result) => {
           if (result) {
-            this.SET_LOADING = false;
+            this.$store.commit("setLoading", true, {root: true})
 
             this.create_revoke(this.form)
               .then(response => {

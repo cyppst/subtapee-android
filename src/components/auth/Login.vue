@@ -11,10 +11,10 @@
     </q-toolbar>
     <div class="layout-view layout-padding">
       <q-field icon="account_circle">
-        <q-input v-model="form.username" placeholder="Your username" class="full-width"/>
+        <q-input v-model="form.username" placeholder="ชื่อผู้ใช้" class="full-width"/>
       </q-field>
       <q-field icon="vpn_key">
-        <q-input v-model="form.password" type="password" placeholder="Password" class="full-width"/>
+        <q-input v-model="form.password" type="password" placeholder="รหัสผ่าน" class="full-width"/>
       </q-field>
       <q-field>
         <q-btn color="primary" class="full-width" @click="submit()">เข้าสู่ระบบ</q-btn>
@@ -49,9 +49,8 @@
 
     },
     methods: {
-      ...mapMutations(['SET_LOADING']),
       submit() {
-        this.SET_LOADING = true;
+        this.$store.commit("setLoading", true, {root: true})
         this.$store.dispatch('auth/login', this.form).then(response => {
           this.$router.push('/')
         }).catch(error => {
@@ -63,7 +62,7 @@
               alert(error.response.data);
               // console.log(error.response.status);
               // console.log(error.response.headers);
-              this.SET_LOADING = false;
+              this.$store.commit("setLoading", facebookOauth2Data, {root: true})
               this.$q.notify({
                 message: 'User หรือ Password ไม่ถูกต้อง',
                 timeout: 2000,

@@ -14,14 +14,14 @@
         </q-toolbar-title>
 
         <!-- showRight is a model attached to right side drawer below -->
-        <q-btn
-          flat round dense
-          @click="this.clearLocalStorage"
-          icon="error_outline">
-          <q-tooltip anchor="top left" self="bottom left" :offset="[10, 10]">
-            <strong>คลิก</strong> หากทำอะไรไม่ได้
-          </q-tooltip>
-        </q-btn>
+        <!--<q-btn-->
+          <!--flat round dense-->
+          <!--@click="this.clearLocalStorage"-->
+          <!--icon="error_outline">-->
+          <!--<q-tooltip anchor="top left" self="bottom left" :offset="[10, 10]">-->
+            <!--<strong>คลิก</strong> หากทำอะไรไม่ได้-->
+          <!--</q-tooltip>-->
+        <!--</q-btn>-->
         <q-btn
           flat round dense
           @click="this.getAPK"
@@ -36,27 +36,27 @@
     </q-layout-header>
 
     <!-- Left Side Drawer -->
-    <q-layout-drawer side="left">
-      <q-list no-border link inset-separator>
-        <q-list-header>Essential Links</q-list-header>
-        <q-item to="/docs">
-          <q-item-side icon="school"/>
-          <q-item-main label="Docs" sublabel="quasar-framework.org"/>
-        </q-item>
-        <q-item to="/forum">
-          <q-item-side icon="record_voice_over"/>
-          <q-item-main label="Forum" sublabel="forum.quasar-framework.org"/>
-        </q-item>
-        <q-item to="/chat">
-          <q-item-side icon="chat"/>
-          <q-item-main label="Discord Chat Channel" sublabel="https://discord.gg/5TDhbDg"/>
-        </q-item>
-        <q-item to="/twitter">
-          <q-item-side icon="rss feed"/>
-          <q-item-main label="Twitter" sublabel="@quasarframework"/>
-        </q-item>
-      </q-list>
-    </q-layout-drawer>
+    <!--<q-layout-drawer side="left">-->
+      <!--<q-list no-border link inset-separator>-->
+        <!--<q-list-header>Essential Links</q-list-header>-->
+        <!--<q-item to="/docs">-->
+          <!--<q-item-side icon="school"/>-->
+          <!--<q-item-main label="Docs" sublabel="quasar-framework.org"/>-->
+        <!--</q-item>-->
+        <!--<q-item to="/forum">-->
+          <!--<q-item-side icon="record_voice_over"/>-->
+          <!--<q-item-main label="Forum" sublabel="forum.quasar-framework.org"/>-->
+        <!--</q-item>-->
+        <!--<q-item to="/chat">-->
+          <!--<q-item-side icon="chat"/>-->
+          <!--<q-item-main label="Discord Chat Channel" sublabel="https://discord.gg/5TDhbDg"/>-->
+        <!--</q-item>-->
+        <!--<q-item to="/twitter">-->
+          <!--<q-item-side icon="rss feed"/>-->
+          <!--<q-item-main label="Twitter" sublabel="@quasarframework"/>-->
+        <!--</q-item>-->
+      <!--</q-list>-->
+    <!--</q-layout-drawer>-->
 
     <!-- Right Side Panel -->
     <q-layout-drawer side="right">
@@ -70,9 +70,9 @@
     <!-- Footer -->
     <q-layout-footer v-model="$route.meta.footerPanel">
       <q-tabs>
-        <q-route-tab slot="title" icon="home" to="/" replace label="หน้าหลัก1"/>
-        <q-route-tab slot="title" icon="done_all" to="/task" replace label="งานติดตั้ง"/>
-        <q-route-tab slot="title" icon="done_all" to="/revoke" replace label="งานถอน"/>
+        <q-route-tab slot="title" icon="home" to="/" replace label="หน้าหลัก"/>
+        <q-route-tab slot="title" icon="work" to="/task" replace label="งานติดตั้ง"/>
+        <q-route-tab slot="title" icon="work" to="/revoke" replace label="งานถอน"/>
         <q-route-tab slot="title" icon="input" to="/equipment" :alert="hasPending.equipment.alert"
                      :count="hasPending.equipment.count" replace label="อุปกรณ์"/>
         <q-route-tab slot="title" icon="input" to="/material" :alert="hasPending.material.alert"
