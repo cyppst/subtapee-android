@@ -71,7 +71,7 @@
     <!-- Footer -->
     <q-layout-footer v-model="$route.meta.footerPanel">
       <q-tabs>
-        <q-route-tab slot="title" icon="home" to="/" replace label="หน้าหลัก"/>
+        <q-route-tab slot="title" icon="home" to="/" replace label="หน้าหลัก1"/>
         <q-route-tab slot="title" icon="done_all" to="/task" replace label="งานติดตั้ง"/>
         <q-route-tab slot="title" icon="done_all" to="/revoke" replace label="งานถอน"/>
         <q-route-tab slot="title" icon="input" to="/equipment" :alert="hasPending.equipment.alert"
