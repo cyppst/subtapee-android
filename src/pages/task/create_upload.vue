@@ -10,13 +10,11 @@
                     method="POST"
                     :headers="headers"
                     :additionalFields="[{name: 'circuit_id', value: this.circuitId}]"/>
-
       </q-field>
       <div style="padding-top: 15px">
         <q-btn glossy color="primary" :to="task" class="full-width"
                label="จบการทำงาน"/>
       </div>
-
     </div>
     <inner-loading :loading="isLoading"/>
   </q-page>
