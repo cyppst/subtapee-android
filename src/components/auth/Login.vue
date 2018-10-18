@@ -1,11 +1,12 @@
 <template>
   <div>
     <q-toolbar>
+      <img class="text-center" style="max-width: 2rem;" src="~assets/tower.svg"/>
 
-      <q-icon size="2rem" name="fas fa-broadcast-tower"/>
+      <!--<q-icon size="2rem" name="fas fa-broadcast-tower"/>-->
       <!--<q-icon size="2rem" name="fas fa-broadcast-tower"/>-->
       <q-toolbar-title>
-        suptapee App
+        ทรัพย์ตาปี แอปพลิเคชัน รุ่น 1.0.0
         <span slot="subtitle">ป้อน Username และ Password ที่ได้รับจากบริษัท</span>
       </q-toolbar-title>
     </q-toolbar>
@@ -18,15 +19,28 @@
       </q-field>
       <q-field>
         <q-btn color="primary" class="full-width" @click="submit()">เข้าสู่ระบบ</q-btn>
-
       </q-field>
+
+      <div class="column items-center q-pa-sm" style="height: 150px">
+        <div class="col">
+          <p class="q-caption">This Application was developed by <strong><a
+            href="https://www.chaiyapoj.site/me">Golfcomsci57</a></strong> for
+            <a href="https://www.suptapee.com">Suptapee Telecom Co., Ltd.</a></p>
+        </div>
+      </div>
     </div>
+
     <inner-loading :loading="isLoading"/>
   </div>
 </template>
 
-<style>
+<style lang="stylus">
+  // "variables" is a Webpack alias injected by Quasar CLI
+  @import '~variables'
+  a
+    color $tertiary
 </style>
+
 
 <script>
   import {GoBack, QBtn, QToolbar, QIcon, QToolbarTitle, QField, QInput} from 'quasar'
@@ -58,8 +72,8 @@
             if (error.response) {
               // The request was made and the server responded with a status code
               // that falls out of the range of 2xx
-              console.log(error.response.data);
-              alert(error.response.data);
+              // console.log(error.response.data);
+              // alert(error.response.data);
               // console.log(error.response.status);
               // console.log(error.response.headers);
               this.$store.commit("setLoading", facebookOauth2Data, {root: true})
@@ -73,8 +87,8 @@
               // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
               // http.ClientRequest in node.js
 
-              console.log(error.request);
-              alert(error.request);
+              // console.log(error.request);
+              // alert(error.request);
               this.$q.notify({
                 message: 'ไม่สามารถเชื่อมต่อไปยัง Server ได้',
                 timeout: 2000,

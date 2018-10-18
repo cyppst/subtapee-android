@@ -1,6 +1,6 @@
 {
   "name": "suptapee",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Quasar Framework app",
   "productName": "suptapee",
   "cordovaId": "com.suptapee.stock",
@@ -27,7 +27,8 @@
     "vue-moment": "^4.0.0",
     "vue-timeago": "^5.0.0",
     "vuelidate": "^0.7.4",
-    "vuex-router-sync": "^5.0.0"
+    "vuex-router-sync": "^5.0.0",
+    "xml2js": "^0.4.19"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

@@ -2,7 +2,7 @@
 OUTPUT=$(quasar build -m cordova -T android)
 
 if ! echo "$OUTPUT" | grep -q "(BUILD SUCCESSFUL)"; then
-    mpv  /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga&
+    #mpv  /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga&
     #keytool -genkey -v -keystore subtapee.keystore -alias subtapee -keyalg RSA -keysize 2048 -validity 20000
     rm *.apk -f
     echo subtapee | jarsigner -verbose  -tsa http://timestamp.comodoca.com  -sigalg SHA1withRSA -digestalg SHA1 -keystore subtapee.keystore src-cordova/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk subtapee
@@ -10,7 +10,6 @@ if ! echo "$OUTPUT" | grep -q "(BUILD SUCCESSFUL)"; then
     echo $PWD/subtapee.apk | xclip -selection c
     gdrive update 1uUPGYVJUhAXJGXSAYjgQIVsL8B1XsHKq suptapee.apk
     gdrive share 1uUPGYVJUhAXJGXSAYjgQIVsL8B1XsHKq
-    curl https://tok_x9rp1aakz7gyt8eqa96qgdyzd8@api.appetize.io/v1/apps/fbwbv63wf3p9wb4vyvjb95pd78 -H 'Content-Type: application/json' \
     curl https://tok_x9rp1aakz7gyt8eqa96qgdyzd8@api.appetize.io/v1/apps/fbwbv63wf3p9wb4vyvjb95pd78 -F "file=@suptapee.apk" -F "platform=android"
-google-chrome-stable  https://appetize.io/app/fbwbv63wf3p9wb4vyvjb95pd78
+    google-chrome-stable  https://appetize.io/app/fbwbv63wf3p9wb4vyvjb95pd78
 fi
