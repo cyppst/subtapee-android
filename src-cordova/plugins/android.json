@@ -16,6 +16,9 @@
     },
     "cordova-plugin-screen-orientation": {
       "PACKAGE_NAME": "com.suptapee.stock"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.suptapee.stock"
     }
   },
   "dependent_plugins": {

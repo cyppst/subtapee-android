@@ -15,7 +15,8 @@
       <q-field>
         <div v-for="e in form.eq">
           <q-input v-model="e.equipment" float-label="อุปกรณ์"/>
-          <q-input v-model="e.serial" float-label="Serial No."/>
+          <q-input v-model="e.serial" float-label="Serial No."
+                   :after="[{icon: 'camera_alt', handler () {scanBarcode()}}]"/>
         </div>
       </q-field>
       <q-btn dense class="full-width" color="primary" @click="addEq">
@@ -57,6 +58,40 @@
     },
     methods: {
       ...mapActions('revoke', ['create_revoke', 'updateCurrentrevoke']),  // assuming you are using namespaced modules
+    scanBarcode: function () {
+      var self = this;
+
+      if (this.$isCordova) {
+        cordova.plugins.barcodeScanner.scan(
+          function (result) {
+            self.e.serial = result.text;
+            self.isScannerData = true
+          },
+          function (error) {
+            alert('Scanning failed: ' + error)
+          },
+          {
+            preferFrontCamera: false, // iOS and Android
+            showFlipCameraButton: false, // iOS and Android
+            showTorchButton: true, // iOS and Android
+            torchOn: true, // Android, launch with the torch switched on (if available)
+            saveHistory: true, // Android, save scan history (default false)
+            prompt: 'Place a barcode inside the scan area', // Android
+            resultDisplayDuration: 1500, // Android, display scanned text for X ms. 0 suppresses it entirely, default 1500
+            formats: 'UPC_A,UPC_E,EAN_13,CODE_39,CODE_128', // default: all but PDF_417 and RSS_EXPANDED
+            orientation: 'portrait', // Android only (portrait|landscape), default unset so it rotates with the device
+            disableAnimations: true, // iOS
+            disableSuccessBeep: false // iOS and Android
+          }
+        )
+      } else {
+        this.$notify.create({
+          type: 'negative',
+          message: 'Run again using Android.'
+        })
+      }
+    },
+
       formSubmit: function () {
         this.$validator.validateAll().then((result) => {
           if (result) {

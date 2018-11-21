@@ -18,7 +18,7 @@ module.exports = function(ctx) {
             'buildConfig': String
         }, {}, ctx.opts.options.argv, 0);
 
-        // Check if --appx flag is passed so that we have a project build version override:
+      // Check if --appx flag is passed so that we have a project build version override:
         var isWin10 = args.appx && args.appx.toLowerCase() === 'uap';
 
         // Else check "windows-target-version" preference:
@@ -49,4 +49,4 @@ module.exports = function(ctx) {
             }
         }
     }
-};
+}

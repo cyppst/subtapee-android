@@ -1,4 +1,4 @@
-#Thu Oct 18 08:28:44 ICT 2018
-base.0=/home/golfcomsci/Workspace/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/dex/release/0
+#Wed Nov 21 05:51:40 ICT 2018
+base.0=/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/dex/release/0
 path.0=classes.dex
 renamed.0=classes.dex

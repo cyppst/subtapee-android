@@ -76,9 +76,13 @@
               // alert(error.response.data);
               // console.log(error.response.status);
               // console.log(error.response.headers);
-              this.$store.commit("setLoading", facebookOauth2Data, {root: true})
+
+          //
+          // let result = Object.entries(error).map(( [k, v] ) => ({ [k]: v }));
+          // console.log(result);
+          this.$store.commit("setLoading", false, {root: true})
               this.$q.notify({
-                message: 'User หรือ Password ไม่ถูกต้อง',
+                message: 'Username หรือ Password ผิดพลาด',
                 timeout: 2000,
                 type: 'negative'
               })
@@ -90,13 +94,18 @@
               // console.log(error.request);
               // alert(error.request);
               this.$q.notify({
-                message: 'ไม่สามารถเชื่อมต่อไปยัง Server ได้',
+                message: error.request,
                 timeout: 2000,
                 type: 'negative'
               })
             } else {
               // Something happened in setting up the request that triggered an Error
-              console.log('Error', error.message);
+          // console.log('Error', error.message);
+          this.$q.notify({
+            message: 'ไม่สามารถเข้าสู่ระบบได้',
+            timeout: 2000,
+            type: 'negative'
+          })
             }
           }
         )

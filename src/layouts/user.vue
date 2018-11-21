@@ -15,21 +15,16 @@
 
         <!-- showRight is a model attached to right side drawer below -->
         <!--<q-btn-->
-          <!--flat round dense-->
-          <!--@click="this.clearLocalStorage"-->
-          <!--icon="error_outline">-->
-          <!--<q-tooltip anchor="top left" self="bottom left" :offset="[10, 10]">-->
-            <!--<strong>คลิก</strong> หากทำอะไรไม่ได้-->
-          <!--</q-tooltip>-->
+        <!--flat round dense-->
+        <!--@click="this.clearLocalStorage"-->
+        <!--icon="error_outline">-->
+        <!--<q-tooltip anchor="top left" self="bottom left" :offset="[10, 10]">-->
+        <!--<strong>คลิก</strong> หากทำอะไรไม่ได้-->
+        <!--</q-tooltip>-->
         <!--</q-btn>-->
-        <q-btn
-          flat round dense
-          @click="this.getAPK"
-          icon="system_update"
-        >
-          <q-tooltip anchor="top left" self="bottom left" :offset="[10, 10]">
-            อัพเดท App
-          </q-tooltip>
+        <a href="https://play.google.com/store/apps/details?id=com.suptapee.stock""> <img
+        src="~assets/google-play.svg"/>
+        </a>
         </q-btn>
       </q-toolbar>
 
@@ -37,25 +32,25 @@
 
     <!-- Left Side Drawer -->
     <!--<q-layout-drawer side="left">-->
-      <!--<q-list no-border link inset-separator>-->
-        <!--<q-list-header>Essential Links</q-list-header>-->
-        <!--<q-item to="/docs">-->
-          <!--<q-item-side icon="school"/>-->
-          <!--<q-item-main label="Docs" sublabel="quasar-framework.org"/>-->
-        <!--</q-item>-->
-        <!--<q-item to="/forum">-->
-          <!--<q-item-side icon="record_voice_over"/>-->
-          <!--<q-item-main label="Forum" sublabel="forum.quasar-framework.org"/>-->
-        <!--</q-item>-->
-        <!--<q-item to="/chat">-->
-          <!--<q-item-side icon="chat"/>-->
-          <!--<q-item-main label="Discord Chat Channel" sublabel="https://discord.gg/5TDhbDg"/>-->
-        <!--</q-item>-->
-        <!--<q-item to="/twitter">-->
-          <!--<q-item-side icon="rss feed"/>-->
-          <!--<q-item-main label="Twitter" sublabel="@quasarframework"/>-->
-        <!--</q-item>-->
-      <!--</q-list>-->
+    <!--<q-list no-border link inset-separator>-->
+    <!--<q-list-header>Essential Links</q-list-header>-->
+    <!--<q-item to="/docs">-->
+    <!--<q-item-side icon="school"/>-->
+    <!--<q-item-main label="Docs" sublabel="quasar-framework.org"/>-->
+    <!--</q-item>-->
+    <!--<q-item to="/forum">-->
+    <!--<q-item-side icon="record_voice_over"/>-->
+    <!--<q-item-main label="Forum" sublabel="forum.quasar-framework.org"/>-->
+    <!--</q-item>-->
+    <!--<q-item to="/chat">-->
+    <!--<q-item-side icon="chat"/>-->
+    <!--<q-item-main label="Discord Chat Channel" sublabel="https://discord.gg/5TDhbDg"/>-->
+    <!--</q-item>-->
+    <!--<q-item to="/twitter">-->
+    <!--<q-item-side icon="rss feed"/>-->
+    <!--<q-item-main label="Twitter" sublabel="@quasarframework"/>-->
+    <!--</q-item>-->
+    <!--</q-list>-->
     <!--</q-layout-drawer>-->
 
     <!-- Right Side Panel -->
