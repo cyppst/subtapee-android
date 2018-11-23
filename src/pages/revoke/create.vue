@@ -64,7 +64,7 @@
       if (this.$isCordova) {
         cordova.plugins.barcodeScanner.scan(
           function (result) {
-            self.e.serial = result.text;
+            self.eq.serial[eq.length] = result.text;
             self.isScannerData = true
           },
           function (error) {

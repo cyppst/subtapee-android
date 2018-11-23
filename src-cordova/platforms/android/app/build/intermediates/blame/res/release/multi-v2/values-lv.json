@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-          "outputFile": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-lv/values-lv.xml",
+            "outputFile": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-lv/values-lv.xml",
             "map": [
                 {
                     "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/0b0f13d77fb9980fc79f03154920c9a0/res/values-lv/values-lv.xml",

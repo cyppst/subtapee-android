@@ -1,4 +1,4 @@
-#Wed Nov 21 05:51:40 ICT 2018
+#Sat Nov 24 01:07:03 ICT 2018
 base.0=/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/dex/release/0
 path.0=classes.dex
 renamed.0=classes.dex
