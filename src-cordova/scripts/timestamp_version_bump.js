@@ -9,7 +9,7 @@ if (rootdir) {
   module.exports = function (context) {
 
     var cordova_util = context.requireCordovaModule("cordova-lib/src/cordova/util"),
-    var ConfigParser = require('cordova-common').ConfigParser;
+    ConfigParser = require('cordova-common').ConfigParser;
 
 
     platforms = context.requireCordovaModule("cordova-lib/src/cordova/platforms"),
