@@ -10,7 +10,7 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "dependencies": {
-    "cordova-android": "^7.1.2",
+    "cordova-android": "^7.1.4",
     "cordova-build-increment": "^0.1.0",
     "cordova-plugin-geolocation": "^4.0.1",
     "cordova-plugin-screen-orientation": "^3.0.1",

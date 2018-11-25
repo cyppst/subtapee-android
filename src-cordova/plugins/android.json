@@ -7,17 +7,17 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.suptapee.stock"
-    },
-    "phonegap-plugin-barcodescanner": {
-      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+    "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "com.suptapee.stock"
     },
     "cordova-plugin-screen-orientation": {
       "PACKAGE_NAME": "com.suptapee.stock"
     },
-    "cordova-plugin-geolocation": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.suptapee.stock"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
       "PACKAGE_NAME": "com.suptapee.stock"
     }
   },

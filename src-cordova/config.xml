@@ -34,5 +34,5 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <hook src="scripts/timestamp_version_bump.js" type="after_build" />
-    <engine name="android" spec="^7.1.2" />
+    <engine name="android" spec="^7.1.4" />
 </widget>

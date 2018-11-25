@@ -1,12 +1,18 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
   {
-    "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
-    "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
-    "pluginId": "phonegap-plugin-barcodescanner",
+    "id": "cordova-plugin-geolocation.geolocation",
+    "file": "plugins/cordova-plugin-geolocation/www/android/geolocation.js",
+    "pluginId": "cordova-plugin-geolocation",
     "clobbers": [
-      "cordova.plugins.barcodeScanner"
+      "navigator.geolocation"
     ]
+  },
+  {
+    "id": "cordova-plugin-geolocation.PositionError",
+    "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
+    "pluginId": "cordova-plugin-geolocation",
+    "runs": true
   },
   {
     "id": "es6-promise-plugin.Promise",
@@ -23,28 +29,22 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-geolocation.geolocation",
-    "file": "plugins/cordova-plugin-geolocation/www/android/geolocation.js",
-    "pluginId": "cordova-plugin-geolocation",
+    "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
+    "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
+    "pluginId": "phonegap-plugin-barcodescanner",
     "clobbers": [
-      "navigator.geolocation"
+      "cordova.plugins.barcodeScanner"
     ]
-  },
-  {
-    "id": "cordova-plugin-geolocation.PositionError",
-    "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
-    "pluginId": "cordova-plugin-geolocation",
-    "runs": true
   }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-  "cordova-plugin-whitelist": "1.3.3",
-  "phonegap-plugin-barcodescanner": "8.0.0",
+  "cordova-plugin-geolocation": "4.0.1",
   "es6-promise-plugin": "4.2.2",
   "cordova-plugin-screen-orientation": "3.0.1",
-  "cordova-plugin-geolocation": "4.0.1"
+  "cordova-plugin-whitelist": "1.3.3",
+  "phonegap-plugin-barcodescanner": "8.0.0"
 };
 // BOTTOM OF METADATA
 });

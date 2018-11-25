@@ -7,5 +7,5 @@
 /* jshint esnext: false */
 
 module.exports.isAndroidStudioProject = function isAndroidStudioProject (root) {
-  return true;
+    return true;
 };

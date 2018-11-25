@@ -1,4 +1,0 @@
-#Sat Nov 24 15:26:36 ICT 2018
-base.0=/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex

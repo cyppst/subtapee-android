@@ -113,6 +113,7 @@ ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platfo
 		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:13:41-109
 uses-sdk
 ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:15:5-74
+INJECTED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:15:5-74
 MERGED from [:barcodescanner-release-2.1.5:] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/080240253cf58428aca65b66bf48a688/AndroidManifest.xml:7:5-9:41
 MERGED from [:barcodescanner-release-2.1.5:] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/080240253cf58428aca65b66bf48a688/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:27.1.1] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/972e176eb61fc894ec819b2b2e3fc0ff/AndroidManifest.xml:20:5-44
@@ -137,33 +138,36 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/golfcomsci/.gradle/ca
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/7b401c90a8f8799be44beaf11dd5623c/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c5b59f4c0a209144d82a32ce7d19cb5d/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] /home/golfcomsci/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c5b59f4c0a209144d82a32ce7d19cb5d/AndroidManifest.xml:20:5-44
+INJECTED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:15:5-74
 	android:targetSdkVersion
 		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:15:42-71
 	android:minSdkVersion
 		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:15:15-41
-uses-permission#android.permission.CAMERA
-ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:16:5-65
-	android:name
-		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:16:22-62
-uses-permission#android.permission.FLASHLIGHT
-ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:17:5-69
-	android:name
-		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:17:22-66
-uses-feature#android.hardware.camera
-ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:18:5-84
-	android:required
-		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:18:58-81
-	android:name
-		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:18:19-57
+		INJECTED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:19:5-81
+ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:16:5-81
 	android:name
-		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:19:22-78
+		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:16:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:20:5-79
+ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:17:5-79
 	android:name
-		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:20:22-76
+		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:17:22-76
 uses-feature#android.hardware.location.gps
-ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:21:5-66
+ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:18:5-66
 	android:name
-		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:21:19-63
+		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:18:19-63
+uses-permission#android.permission.CAMERA
+ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:19:5-65
+	android:name
+		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:19:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:20:5-69
+	android:name
+		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:20:22-66
+uses-feature#android.hardware.camera
+ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:21:5-84
+	android:required
+		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:21:58-81
+	android:name
+		ADDED from /home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/AndroidManifest.xml:21:19-57

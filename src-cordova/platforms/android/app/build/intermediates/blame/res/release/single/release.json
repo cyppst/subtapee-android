@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable-land-xxxhdpi_screen.png.flat",
+        "source": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/res/drawable-land-xxxhdpi/screen.png"
+    },
+    {
         "merged": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/layout-v21_notification_template_icon_group.xml.flat",
         "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/0b0f13d77fb9980fc79f03154920c9a0/res/layout-v21/notification_template_icon_group.xml"
     },
@@ -20,8 +24,16 @@
         "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/0b0f13d77fb9980fc79f03154920c9a0/res/layout/notification_template_icon_group.xml"
     },
     {
+        "merged": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable-land-hdpi_screen.png.flat",
+        "source": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/res/drawable-land-hdpi/screen.png"
+    },
+    {
         "merged": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable-port-mdpi_screen.png.flat",
         "source": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/res/drawable-port-mdpi/screen.png"
+    },
+    {
+        "merged": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable-land-mdpi_screen.png.flat",
+        "source": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/res/drawable-land-mdpi/screen.png"
     },
     {
         "merged": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/layout_notification_template_big_media_narrow_custom.xml.flat",
@@ -100,6 +112,10 @@
         "source": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/res/drawable-port-xhdpi/screen.png"
     },
     {
+        "merged": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable-land-ldpi_screen.png.flat",
+        "source": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/res/drawable-land-ldpi/screen.png"
+    },
+    {
         "merged": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/xml_config.xml.flat",
         "source": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/res/xml/config.xml"
     },
@@ -176,12 +192,20 @@
         "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/080240253cf58428aca65b66bf48a688/res/layout-land/share.xml"
     },
     {
+        "merged": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable-land-xhdpi_screen.png.flat",
+        "source": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/res/drawable-land-xhdpi/screen.png"
+    },
+    {
         "merged": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/0b0f13d77fb9980fc79f03154920c9a0/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
     },
     {
         "merged": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/0b0f13d77fb9980fc79f03154920c9a0/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable-land-xxhdpi_screen.png.flat",
+        "source": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/res/drawable-land-xxhdpi/screen.png"
     },
     {
         "merged": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable-v21_notification_action_background.xml.flat",
@@ -262,6 +286,10 @@
     {
         "merged": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable_notification_bg_low.xml.flat",
         "source": "/home/golfcomsci/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/0b0f13d77fb9980fc79f03154920c9a0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable-port-hdpi_screen.png.flat",
+        "source": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/src/main/res/drawable-port-hdpi/screen.png"
     },
     {
         "merged": "/home/golfcomsci/WebstormProjects/subtapee-android/src-cordova/platforms/android/app/build/intermediates/res/merged/release/drawable-xxhdpi_launcher_icon.png.flat",
